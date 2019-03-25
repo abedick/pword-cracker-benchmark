@@ -30,29 +30,31 @@ def main():
 			trials.append(str(x)+"-"+y)
 
 	# for generating hash files for the dictionary attacks
-	# gen_hash_files(sizes, ltr)
+	gen_hash_files(sizes, ltr)
 
 	'''
 		Dictionary Attacks
 	'''
 
 	# for running john with dictionary list rockyou
-	# start_john_dict(trials)
+	start_john_dict(trials)
 
 	# for running hash_cat with dictionary list rockyou
-	# start_hc_dict(trials)
+	start_hc_dict(trials)
 
 	'''
 		Brute Force Attacks
 	'''
 
 	# for running john with brute froce
-	# start_john_brute(trials)
+	start_john_brute(trials)
 
 	# for running hans_cat with brute force
 	start_hc_brute(trials)
 
 def gen_hash_files(sizes, ltr):
+	if os.path.exists("hashes"):
+		return
 
 	# Generate hashed files for dictionary attacks
 	print("generating hashed word lists for dictionary attacks")
