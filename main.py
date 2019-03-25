@@ -21,28 +21,20 @@ from io import StringIO
 
 def main():
 
-	sizes = [10,50,100,500,1000,5000]
+	'''
+		Dictionary Attacks
+	'''
+
+	sizes = [10,50,100,500,1000]
 	ltr = ["a", "b", "c"]
 
-	# if not os.path.exists("./hashes"):
-		
-	# 	print("generating hashed word lists")
+	# trials = []
+	# for x in sizes:
+	# 	for y in ltr:
+	# 		trials.append(str(x)+"-"+y)
 
-	# 	mkdir("./hashes/md5")
-	# 	mkdir("./hashes/sha256")
-		
-	# 	words = sample_wordList("./input/100_000.txt")
-
-	# 	for x in sizes:
-	# 		for y in ltr:
-	# 			gen_hashes_sample(words,x,y)
-
-	# mkdir("./output")
-
-	trials = []
-	for x in sizes:
-		for y in ltr:
-			trials.append(str(x)+"-"+y)
+	# for generating hash files for the dictionary attacks
+	gen_hash_files(sizes, ltr)
 
 	# for running john with dictionary list rockyou
 	# start_john_dict(trials)
@@ -50,25 +42,57 @@ def main():
 	# for running hash_cat with dictionary list rockyou
 	# start_hc_dict(trials)
 
+	'''
+		Brute Force Attacks
+	'''
 
+	# for generating the hash files for brute force attacks
 	# gen_hashes_small()
 
 	# for running john with brute froce
+	start_john_brute()
+
 	# for running hans_cat with brute force
 
-	
-def sample_wordList(fpath):
-	file = open(fpath, "r", encoding="ISO-8859-1")	
-	return file.read().splitlines()
+def gen_hash_files(sizes, ltr):
 
 
-def gen_hashes_sample(words, size, ltr):
+	# Generate hashed files for dictionary attacks
+	print("generating hashed word lists for dictionary attacks")
+	mkdir("./hashes/md5/random")
+	mkdir("./hashes/sha256/random")
+	words = sample_wordList("./input/100_000.txt")
 
-	md5 = open("./hashes/md5/"+str(size)+"-"+ltr+".txt", "w")
-	sha = open("./hashes/sha256/"+str(size)+"-"+ltr+".txt", "w")
+	for x in sizes:
+		for y in ltr:
+			gen_hashes(words, "random", 99_999, x, y)
 
-	for _ in range(size):
-		target = random.randint(0,99_999)
+	# generate hashes files for brute force attacks
+	print("generating hashed word lists for brute force attacks")
+	mkdir("./hashes/md5/fivechar")
+	mkdir("./hashes/sha256/fivechar")
+	words = gen_wordList_fivechar("lists/rockyou.txt")
+
+	for x in sizes:
+		for y in ltr:
+			if x < 1001:
+				gen_hashes(words, "fivechar", 7499, x, y)
+
+def gen_hashes(words, dst, ra, size, ltr):
+
+	md5 = open("./hashes/md5/"+dst+"/"+str(size)+"-"+ltr+".txt", "w")
+	sha = open("./hashes/sha256/"+dst+"/"+str(size)+"-"+ltr+".txt", "w")
+
+	found = {}
+	i = 0
+	while i < size:
+
+		target = random.randint(0,ra)
+		if hasattr(found, str(target)):
+			continue
+		else:
+			found[str(target)] = True
+			i += 1
 
 		md5_hash = subprocess.check_output(["openssl", "passwd", "-salt", "\"\"", "-1", words[target]])
 		sha_hash = subprocess.check_output(["openssl", "passwd", "-salt", "\"\"", "-5", words[target]])
@@ -79,43 +103,24 @@ def gen_hashes_sample(words, size, ltr):
 	md5.close()
 	sha.close()
 
-def gen_hashes_small():
+def start_john_brute():
+	print("running john with brute force attack")
 
-	md5path = "./hashes/brute/md5"
-	mkdir(md5path)
-	md5 = open(md5path+"/1000.txt", "w")
+	md5_file = sample_wordList("hashes/brute/md5/1000.txt")
 
-	shapath = "./hashes/brute/sha"
-	mkdir(shapath)
-	sha = open(shapath+"/1000.txt", "w")
+	outPath = "output/john/brute/"
+	mkdir(outPath)
 
-	f = open("lists/rockyou.txt", "r")
-	
-	res = []
-	while len(res) < 7500:
-		ln = f.readline().strip()
-		if [ln] == re.findall(r"[a-z][a-z][a-z][a-z][a-z]", ln):
-			res.append(ln)
-	
-	i = 0
-	found = {}
-	while i < 1000:
-
-		target = random.randint(0,7499)
-
-		if hasattr(found, str(target)):
-			continue
-		else:
-			found[str(target)] = True
-			i += 1
-
-		md5_hash = subprocess.check_output(["openssl", "passwd", "-salt", "\"\"", "-1", res[target]])
-		sha_hash = subprocess.check_output(["openssl", "passwd", "-salt", "\"\"", "-5", res[target]])
-
-		md5.write((str(md5_hash))[2:-3] + "\r\n")
-		sha.write((str(sha_hash))[2:-3] + "\r\n")
+	for _ in range(5):
+		run_john_brute(md5_file[random.randint(0,999)])
 
 
+# for bruteforce john
+# john --incremental=lower --format
+# modify john.conf [incremental:lower]
+
+def run_john_brute(hash):
+	print(hash)
 
 def start_john_dict(trials):
 	print("running john with dictionary attack using list rockyou.txt")
@@ -163,7 +168,26 @@ def run_hc_dict(dic, hashFile, format, fname, x, y):
 	subprocess.call(["rm", "/root/.hashcat/hashcat.potfile"])
 	subprocess.call(["rm", "-rf", "/root/.hashcat/sessions"])
 
+''' 
+	helpers
+'''
 
+# Reds a file and returns it as an array with each element a single line
+def sample_wordList(fpath):
+	file = open(fpath, "r", encoding="ISO-8859-1")	
+	return file.read().splitlines()	
+
+# Scans file fpath for the first 7500 5 lowercase words; returns them as array
+def gen_wordList_fivechar(fpath):
+	f = open(fpath, "r")
+	res = []
+	while len(res) < 7500:
+		ln = f.readline().strip()
+		if [ln] == re.findall(r"[a-z][a-z][a-z][a-z][a-z]", ln):
+			res.append(ln)
+	return res	
+
+# makes fpath dir is not exist
 def mkdir(fpath):
 	if not os.path.exists(fpath):
 		os.makedirs(fpath)
