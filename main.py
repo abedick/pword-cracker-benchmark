@@ -21,20 +21,20 @@ from io import StringIO
 
 def main():
 
-	'''
-		Dictionary Attacks
-	'''
-
 	sizes = [10,50,100,500,1000]
 	ltr = ["a", "b", "c"]
 
-	# trials = []
-	# for x in sizes:
-	# 	for y in ltr:
-	# 		trials.append(str(x)+"-"+y)
+	trials = []
+	for x in sizes:
+		for y in ltr:
+			trials.append(str(x)+"-"+y)
 
 	# for generating hash files for the dictionary attacks
-	gen_hash_files(sizes, ltr)
+	# gen_hash_files(sizes, ltr)
+
+	'''
+		Dictionary Attacks
+	'''
 
 	# for running john with dictionary list rockyou
 	# start_john_dict(trials)
@@ -46,16 +46,13 @@ def main():
 		Brute Force Attacks
 	'''
 
-	# for generating the hash files for brute force attacks
-	# gen_hashes_small()
-
 	# for running john with brute froce
-	start_john_brute()
+	# start_john_brute(trials)
 
 	# for running hans_cat with brute force
+	start_hc_brute(trials)
 
 def gen_hash_files(sizes, ltr):
-
 
 	# Generate hashed files for dictionary attacks
 	print("generating hashed word lists for dictionary attacks")
@@ -103,31 +100,16 @@ def gen_hashes(words, dst, ra, size, ltr):
 	md5.close()
 	sha.close()
 
-def start_john_brute():
-	print("running john with brute force attack")
-
-	md5_file = sample_wordList("hashes/brute/md5/1000.txt")
-
-	outPath = "output/john/brute/"
-	mkdir(outPath)
-
-	for _ in range(5):
-		run_john_brute(md5_file[random.randint(0,999)])
-
-
-# for bruteforce john
-# john --incremental=lower --format
-# modify john.conf [incremental:lower]
-
-def run_john_brute(hash):
-	print(hash)
+'''
+	John the Ripper
+'''
 
 def start_john_dict(trials):
 	print("running john with dictionary attack using list rockyou.txt")
 	i = 1
 	for trial in trials:
-		run_john_dict("lists/rockyou.txt", "./hashes/md5/"+trial+".txt", "md5crypt", "md5_"+trial, str(i), str(len(trials)*2))		
-		run_john_dict("lists/rockyou.txt", "./hashes/sha256/"+trial+".txt", "sha256crypt", "sha_"+trial, str(i+1), str(len(trials)*2))
+		run_john_dict("lists/rockyou.txt", "./hashes/md5/random/"+trial+".txt", "md5crypt", "md5_"+trial, str(i), str(len(trials)*2))		
+		run_john_dict("lists/rockyou.txt", "./hashes/sha256/random/"+trial+".txt", "sha256crypt", "sha_"+trial, str(i+1), str(len(trials)*2))
 		i += 2
 
 def run_john_dict(dic, hashFile, format, fname, x, y):
@@ -145,12 +127,39 @@ def run_john_dict(dic, hashFile, format, fname, x, y):
 	subprocess.call(["rm", "/root/.john/john.pot"])
 	subprocess.call(["rm", "/root/.john/john.log"])
 
+def start_john_brute(trials):
+	print("running john with brute force attack")
+	i = 1
+	for trial in trials:
+		run_john_brute("md5crypt", "./hashes/md5/fivechar/"+trial+".txt", "md5_"+trial, str(i), str(len(trials)*2))
+		run_john_brute("sha256crypt", "./hashes/sha256/fivechar/"+trial+".txt", "sha256_"+trial, str(i+1), str(len(trials)*2))
+		i += 2
+
+def run_john_brute(format, hashFile, fname, x, y):
+	print("("+x+"/"+y+") john " + format + " " + fname)
+
+	path = "output/john/brute/"
+	mkdir(path)
+
+	f = open(path+fname+"_out.txt", "w")
+	g = open(path+fname+"_err.txt", "w")
+
+	subprocess.call(["john", "--incremental=lower", "--format="+format, hashFile],stdout=f, stderr=g)
+
+	# Remove the pot
+	subprocess.call(["rm", "/root/.john/john.pot"])
+	subprocess.call(["rm", "/root/.john/john.log"])
+
+'''
+	hashcat
+'''
+
 def start_hc_dict(trials):
 	print("running hashcat with dictionary attack using list rockyou.txt")
 	i = 1
 	for trial in trials:
-		run_hc_dict("lists/rockyou.txt", "./hashes/md5/"+trial+".txt", "500", "md5_"+trial, str(i), str(len(trials)*2))
-		run_hc_dict("lists/rockyou.txt", "./hashes/sha256/"+trial+".txt", "7400", "sha_"+trial, str(i+1), str(len(trials)*2))
+		run_hc_dict("lists/rockyou.txt", "./hashes/md5/random/"+trial+".txt", "500", "md5_"+trial, str(i), str(len(trials)*2))
+		run_hc_dict("lists/rockyou.txt", "./hashes/sha256/random/"+trial+".txt", "7400", "sha_"+trial, str(i+1), str(len(trials)*2))
 		i += 2
 
 def run_hc_dict(dic, hashFile, format, fname, x, y):
@@ -167,6 +176,30 @@ def run_hc_dict(dic, hashFile, format, fname, x, y):
 	# Remove the pot and session
 	subprocess.call(["rm", "/root/.hashcat/hashcat.potfile"])
 	subprocess.call(["rm", "-rf", "/root/.hashcat/sessions"])
+
+def start_hc_brute(trials):
+	print("running hashcat with dictionary attack using list rockyou.txt")
+	i = 1
+	for trial in trials:
+		run_hc_brute("./hashes/md5/fivechar/"+trial+".txt", "500", "md5_"+trial, str(i), str(len(trials)*2))
+		run_hc_brute("./hashes/sha256/fivechar/"+trial+".txt", "7400", "sha_"+trial, str(i+1), str(len(trials)*2))
+		i += 2
+
+def run_hc_brute(hashFile, format, fname, x, y):
+	print("("+x+"/"+y+") hashcat " + format + " " + fname)
+
+	path = "output/hc/brute/"
+	mkdir(path)
+	f = open(path+fname+"_out.txt", "w")
+	g = open(path+fname+"_err.txt", "w")
+
+	# hashcat -a 3 -m 500 l?l?l?l?
+	subprocess.call(["hashcat", "-a", "3", "-m", format, hashFile, "?l?l?l?l?l", "--force"],stdout=f, stderr=g)
+
+	# Remove the pot and session
+	subprocess.call(["rm", "/root/.hashcat/hashcat.potfile"])
+	subprocess.call(["rm", "-rf", "/root/.hashcat/sessions"])
+
 
 ''' 
 	helpers
