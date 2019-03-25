@@ -38,13 +38,37 @@ def main():
 
 	mkdir("./output")
 
-	# for running john with dictionary list rockyou
-	# for x in range(5):
-		# run_john_dict("lists/rockyou.txt", "./hashes/1000_0_md5.txt", "md5crypt", "md5_"+str(x+1), str(x+1), str(5))
+	trials = []
+	for x in sizes:
+		for y in ltr:
+			trials.append(str(x)+"-"+y)
 
-	# for running hash_cat with dictionary list rockyou
-	# for x in range(1):
-		# run_hc_dict("lists/rockyou.txt", "./hashes/1000_0_md5.txt", "500", "hc_md5_"+str(x), str(x), str(4))
+	# # for running john with dictionary list rockyou
+	# print("running john with dictionary attack using list rockyou.txt")
+	# i = 1
+	# for trial in trials:
+	# 	run_john_dict(
+	# 		"lists/rockyou.txt", 
+	# 		"./hashes/md5/"+trial+".txt", 
+	# 		"md5crypt", 
+	# 		"md5_"+trial,
+	# 		str(i), 
+	# 		str(len(trials)))
+	# 	i += 1
+
+	# # for running hash_cat with dictionary list rockyou
+	# print("running hashcat with dictionary attack using list rockyou.txt")
+	# i = 1
+	# for trial in trials:
+	# 	run_hc_dict(
+	# 		"lists/rockyou.txt", 
+	# 		"./hashes/md5/"+trial+".txt", 
+	# 		"md5crypt", 
+	# 		"md5_"+trial,
+	# 		str(i), 
+	# 		str(len(trials)))
+	# 	i += 1
+
 
 	# # for running john with brute froce
 	# # for running hans_cat with brute force
@@ -74,7 +98,7 @@ def gen_hashes_sample(words, size, ltr):
 
 
 def run_john_dict(dic, hashFile, format, fname, x, y):
-	print("("+x+"/"+y+") John " + format)
+	print("("+x+"/"+y+") john " + format + " " + fname)
 
 	path = "output/john/dict/"
 	mkdir(path)
@@ -90,7 +114,7 @@ def run_john_dict(dic, hashFile, format, fname, x, y):
 
 
 def run_hc_dict(dic, hashFile, format, fname, x, y):
-	print("("+x+"/"+y+") hashcat " + format)
+	print("("+x+"/"+y+") hashcat " + format + " " + fname)
 
 	path = "output/hc/dict/"
 	mkdir(path)
@@ -103,22 +127,6 @@ def run_hc_dict(dic, hashFile, format, fname, x, y):
 	# Remove the pot and session
 	subprocess.call(["rm", "/root/.hashcat/hashcat.potfile"])
 	subprocess.call(["rm", "-rf", "/root/.hashcat/sessions"])
-
-def gen_hashes(testWords):
-
-	md5crypt = "./hashes/md5"
-	mkdir(md5crypt)
-
-	sha256 = "./hashes/sha256"
-	mkdir(sha256)
-
-	print("generating hashes for word list")
-	for word in testWords:
-		f = open(md5crypt + "/" +word+".txt", "w")
-		subprocess.call(["openssl", "passwd", "-1", word], stdout=f)
-
-		g = open(sha256 + "/" +word+".txt", "w")
-		subprocess.call(["openssl", "passwd", "-5", word], stdout=g)
 
 
 def mkdir(fpath):
