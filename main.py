@@ -49,17 +49,17 @@ def main():
 	#start_john_dict(trials, mem)
 
 	# for running hash_cat with dictionary list rockyou
-	start_hc_dict(trials, mem)
+	#start_hc_dict(trials, mem)
 
 	'''
 		Brute Force Attacks
 	'''
 
 	# for running john with brute froce
-	#start_john_brute(trials, mem)
+	start_john_brute(trials, mem)
 
 	# for running hans_cat with brute force
-	start_hc_brute(trials, mem)
+	#start_hc_brute(trials, mem)
 
 def gen_hash_files(sizes, ltr):
 	if os.path.exists("hashes"):
@@ -160,7 +160,7 @@ def start_john_brute(trials, mem):
 		forkExec(args2,"john_brute", mem, "./output/john/brute/mem/sha_"+trial+".dat")
 
 		args3 = ["LM", "./hashes/lm/fivechar/"+trial+".txt", "lm"+trial, str(i+2), str(len(trials)*3)]
-		args3 = ','.join(str(x) for x in args2)
+		args3 = ','.join(str(x) for x in args3)
 		forkExec(args3,"john_brute", mem, "./output/john/brute/mem/lm_"+trial+".dat")
 
 		i += 3

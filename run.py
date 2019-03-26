@@ -7,7 +7,10 @@ def main():
         print("error; not enough or too many args")
         return
 
+    print(sys.argv[2])
+
     args = sys.argv[2].split(',')
+
     if len(args) == 6:
         if sys.argv[1] == "john_dict":
             run_john_dict(args[0],args[1],args[2],args[3], args[4], args[5])
@@ -25,6 +28,7 @@ def main():
             return
 
     print("error; wrong number of args")
+    print(args)
 
 def run_john_dict(dic, hashFile, format, fname, x, y):
 	print("("+x+"/"+y+") john " + format + " " + fname)
