@@ -1,0 +1,118 @@
+hashcat (v5.1.0) starting...
+
+OpenCL Platform #1: Intel(R) Corporation
+========================================
+* Device #1: Intel(R) Xeon(R) CPU E3-1240 v3 @ 3.40GHz, 3996/15984 MB allocatable, 8MCU
+
+OpenCL Platform #2: The pocl project
+====================================
+* Device #2: pthread-Intel(R) Xeon(R) CPU E3-1240 v3 @ 3.40GHz, 4096/13936 MB allocatable, 8MCU
+
+OpenCL Platform #3: NVIDIA Corporation
+======================================
+* Device #3: Quadro K600, skipped.
+
+Counting lines in ./hashes/md5/random/50-a.txt...[2KCounted lines in ./hashes/md5/random/50-a.txt...[2KParsing Hashes: 1/50 (2.00%)...[2KParsed Hashes: 50/50 (100.00%)[2KSorting hashes...[2KSorted hashes...[2KRemoving duplicate hashes...[2KRemoved duplicate hashes...[2KSorting salts...[2KSorted salts...[2KComparing hashes with potfile entries...[2KCompared hashes with potfile entries...[2KGenerating bitmap tables...[2KGenerated bitmap tables...[2KHashes: 50 digests; 50 unique digests, 1 unique salts
+Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
+Rules: 1
+
+Applicable optimizers:
+* Optimized-Kernel
+* Zero-Byte
+* Single-Salt
+
+Minimum password length supported by kernel: 0
+Maximum password length supported by kernel: 15
+
+Watchdog: Temperature abort trigger set to 90c
+
+Initializing device kernels and memory...[2KInitializing OpenCL runtime for device #1...[2K[33m* Device #1: build_opts '-cl-std=CL1.2 -I OpenCL -I /usr/share/hashcat/OpenCL -D LOCAL_MEM_TYPE=2 -D VENDOR_ID=8 -D CUDA_ARCH=0 -D AMD_ROCM=0 -D VECT_SIZE=8 -D DEVICE_TYPE=2 -D DGST_R0=0 -D DGST_R1=1 -D DGST_R2=2 -D DGST_R3=3 -D DGST_ELEM=4 -D KERN_TYPE=500 -D _unroll'[0m
+Initialized OpenCL runtime for device #1...[2KInitializing OpenCL runtime for device #2...[2K[33m* Device #2: build_opts '-cl-std=CL1.2 -I OpenCL -I /usr/share/hashcat/OpenCL -D LOCAL_MEM_TYPE=2 -D VENDOR_ID=64 -D CUDA_ARCH=0 -D AMD_ROCM=0 -D VECT_SIZE=8 -D DEVICE_TYPE=2 -D DGST_R0=0 -D DGST_R1=1 -D DGST_R2=2 -D DGST_R3=3 -D DGST_ELEM=4 -D KERN_TYPE=500 -D _unroll'[0m
+Initialized OpenCL runtime for device #2...[2KInitialized device kernels and memory...[2KDictionary cache hit:
+* Filename..: lists/rockyou.txt
+* Passwords.: 14344385
+* Bytes.....: 139921507
+* Keyspace..: 14344385
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$JkpiDGfs8D/yttZaw6lpn.:fletcher
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$PrH3TVW4U6IfOUGiT.HyD1:roswell
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$NAfdNkkQbotUsLo9LpaFa1:magical
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$liIlAKoks88FTf9f.CD3r1:mamacita
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$VB1o7GhSVY2P9gidK8ZUg/:lolipop
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$Qd6Y8DX1CP9zhyr4lFCaO1:slippers
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$spliZ1DwyWj4uYv1Riw2n.:riders
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$dBqB.WgwRq6l.DNJvVJgD1:200188
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$0dr82tPNklQwzbixNrNKV.:Australia
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$teEtaJ0e/Wd4nuD0IB0ua/:200991
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$sBUCrM7RpoFgEHuSPACGn0:milford
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$4r.k5i1X68Ovzi7a37hry0:sandler
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$QbiWKYW34mgthP2n/eQtb1:manpreet
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$47jlO8VOo9b.Z7nGZkx4S1:hairball
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$GLoHSH85Jec8hMoROI3Os.:parade
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$A2w07hhB0DRLjlB8mtFu00:menudo
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$haNkZXyHkfwsRwjTBShC00:nubia
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$8fFH27su8T1HLFU/3273t/:dessert
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$0IzeNfPFA1cLx65ot9wKe0:filbert
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$dBF2B7mgWwBd3yUlVU69e0:121971
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$TfxSABrezclkXiYW53T.B0:103180
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$GAJS1preRlIWsE91mn/UI1:01101985
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$ggPZKsbIB/vBOmeYycgBC.:21021991
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$CJKtFLVwnjPr4vt32KzNm.:TENNIS
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$tod2XsR80zdgBYs7MKiau/:slovenija
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$04qx5/Jq6mG5YX0gljDiZ.:vanburen
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$lqDoCk0Sd.amE.bILkcjd0:dolomite
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$BWq5PP3TSXhqzJzTzn5YO.:22322232
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$OtYzOPSc.kZgIYB17TsQw.:1jeffrey
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$6TT6vY5VjPuvB2chJhIMc.:logistic
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$byO9XHtMK62leBDYWqcj..:frankd
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$4EfvdDoOzVEh7l39CNJX10:eater
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$aYiz4g8VpLwl237Kl46.40:bygrace
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$PUvk2PIBR6n55Mvx6T/bi1:silmarillion
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$owylTmiotmscmMIESO2jH/:slayers1
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$Jj0rVfgxxnVlR5CLNmFxq.:031073
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  [33mCracking performance lower than expected?[0m
+[33m[0m
+[33m* Append -w 3 to the commandline.[0m
+[33m  This can cause your screen to lag.[0m
+[33m[0m
+[33m* Update your OpenCL runtime / driver the right way:[0m
+[33m  https://hashcat.net/faq/wrongdriver[0m
+[33m[0m
+[33m* Create more work items to make use of your parallelization power:[0m
+[33m  https://hashcat.net/faq/morework[0m
+[33m[0m
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$witzv00ZZH4Blv2SEv/jl.:250770
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$nIYVY.U21fY9XohkCdmNY/:240459
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$PjPrK7Vc4yVJD9B4suWEl1:17101998
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$8EKtNDUtVDNRemJR3Q7uP.:pornoporno
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$RkZEsb5T9EVTRZ0oDPuBH.:10121966
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$u6CjSL0cRkE1Gcf8qsxe4.:suckmyco
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$e7Zbff7vuGTe3T4EY98/z0:3488
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$VJxU6djEpCEFRo8JZv0Wo.:1549
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  [33mApproaching final keyspace - workload adjusted.[0m
+[33m[0m
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  
+Session..........: hashcat
+Status...........: Exhausted
+Hash.Type........: md5crypt, MD5 (Unix), Cisco-IOS $1$ (MD5)
+Hash.Target......: ./hashes/md5/random/50-a.txt
+Time.Started.....: Tue Mar 26 12:31:09 2019 (5 mins, 5 secs)
+Time.Estimated...: Tue Mar 26 12:36:14 2019 (0 secs)
+Guess.Base.......: File (lists/rockyou.txt)
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........:    27577 H/s (17.31ms) @ Accel:512 Loops:125 Thr:1 Vec:8
+Speed.#2.........:    18627 H/s (12.66ms) @ Accel:256 Loops:125 Thr:1 Vec:8
+Speed.#*.........:    46204 H/s
+Recovered........: 44/50 (88.00%) Digests, 0/1 (0.00%) Salts
+Progress.........: 14344385/14344385 (100.00%)
+Rejected.........: 244335/14344385 (1.70%)
+Restore.Point....: 14342606/14344385 (99.99%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:875-1000
+Restore.Sub.#2...: Salt:0 Amplifier:0-1 Iteration:875-1000
+Candidates.#1....: $HEX[21303937393031313231] -> $HEX[042a0337c2a156616d6f732103]
+Candidates.#2....: !adyakana -> !0N3W0!f
+Hardware.Mon.#1..: N/A
+Hardware.Mon.#2..: N/A
+
+Started: Tue Mar 26 12:31:07 2019
+[2KStopped: Tue Mar 26 12:36:15 2019

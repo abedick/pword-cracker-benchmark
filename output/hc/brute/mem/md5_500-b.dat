@@ -1,0 +1,2 @@
+CMDLINE python3 run.py john_dict ./hashes/md5/fivechar/500-b.txt,500,md5_500-b,21,30
+MEM 0.695312 1553636015.2388

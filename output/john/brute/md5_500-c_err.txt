@@ -1,0 +1,7 @@
+Using default input encoding: UTF-8
+Will run 8 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+485g 0:01:06:31 DONE (2019-03-26 15:37) 0.1215g/s 353779p/s 353779c/s 1130KC/s fqzxa..iqbtm
+Warning: passwords printed above might not be all those cracked
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed

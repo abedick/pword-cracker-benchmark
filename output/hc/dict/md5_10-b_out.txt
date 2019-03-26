@@ -1,0 +1,83 @@
+hashcat (v5.1.0) starting...
+
+OpenCL Platform #1: Intel(R) Corporation
+========================================
+* Device #1: Intel(R) Xeon(R) CPU E3-1240 v3 @ 3.40GHz, 3996/15984 MB allocatable, 8MCU
+
+OpenCL Platform #2: The pocl project
+====================================
+* Device #2: pthread-Intel(R) Xeon(R) CPU E3-1240 v3 @ 3.40GHz, 4096/13936 MB allocatable, 8MCU
+
+OpenCL Platform #3: NVIDIA Corporation
+======================================
+* Device #3: Quadro K600, skipped.
+
+Counting lines in ./hashes/md5/random/10-b.txt...[2KCounted lines in ./hashes/md5/random/10-b.txt...[2KParsing Hashes: 1/10 (10.00%)...[2KParsed Hashes: 10/10 (100.00%)[2KSorting hashes...[2KSorted hashes...[2KRemoving duplicate hashes...[2KRemoved duplicate hashes...[2KSorting salts...[2KSorted salts...[2KComparing hashes with potfile entries...[2KCompared hashes with potfile entries...[2KGenerating bitmap tables...[2KGenerated bitmap tables...[2KHashes: 10 digests; 10 unique digests, 1 unique salts
+Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
+Rules: 1
+
+Applicable optimizers:
+* Optimized-Kernel
+* Zero-Byte
+* Single-Salt
+
+Minimum password length supported by kernel: 0
+Maximum password length supported by kernel: 15
+
+Watchdog: Temperature abort trigger set to 90c
+
+Initializing device kernels and memory...[2KInitializing OpenCL runtime for device #1...[2K[33m* Device #1: build_opts '-cl-std=CL1.2 -I OpenCL -I /usr/share/hashcat/OpenCL -D LOCAL_MEM_TYPE=2 -D VENDOR_ID=8 -D CUDA_ARCH=0 -D AMD_ROCM=0 -D VECT_SIZE=8 -D DEVICE_TYPE=2 -D DGST_R0=0 -D DGST_R1=1 -D DGST_R2=2 -D DGST_R3=3 -D DGST_ELEM=4 -D KERN_TYPE=500 -D _unroll'[0m
+Initialized OpenCL runtime for device #1...[2KInitializing OpenCL runtime for device #2...[2K[33m* Device #2: build_opts '-cl-std=CL1.2 -I OpenCL -I /usr/share/hashcat/OpenCL -D LOCAL_MEM_TYPE=2 -D VENDOR_ID=64 -D CUDA_ARCH=0 -D AMD_ROCM=0 -D VECT_SIZE=8 -D DEVICE_TYPE=2 -D DGST_R0=0 -D DGST_R1=1 -D DGST_R2=2 -D DGST_R3=3 -D DGST_ELEM=4 -D KERN_TYPE=500 -D _unroll'[0m
+Initialized OpenCL runtime for device #2...[2KInitialized device kernels and memory...[2KDictionary cache hit:
+* Filename..: lists/rockyou.txt
+* Passwords.: 14344385
+* Bytes.....: 139921507
+* Keyspace..: 14344385
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$TeoLKuzq45lfIjUcbeudR.:flipper
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$CaY4h18YKOSvXBY5hHfJB0:09071995
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$cB8Oi9yiuKRt5M1udBj38.:63chevy
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$RdBjaLQo2OykA78K3dzLf0:dane
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$zrVhQYdXhg3F4M6vqC5Lo1:cossack
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  [33mCracking performance lower than expected?[0m
+[33m[0m
+[33m* Append -w 3 to the commandline.[0m
+[33m  This can cause your screen to lag.[0m
+[33m[0m
+[33m* Update your OpenCL runtime / driver the right way:[0m
+[33m  https://hashcat.net/faq/wrongdriver[0m
+[33m[0m
+[33m* Create more work items to make use of your parallelization power:[0m
+[33m  https://hashcat.net/faq/morework[0m
+[33m[0m
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$KOK6gt8S9byURDC5B9w6c/:mrbungle
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$dnAEaZlreSpHAvkYU2DDp.:gfgfg
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$e0M.WVSSlpKSYR6fBgsoW0:07061972
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$JKRS3ms3WPIszWxWs3AKr.:covet
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  [33mApproaching final keyspace - workload adjusted.[0m
+[33m[0m
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  
+Session..........: hashcat
+Status...........: Exhausted
+Hash.Type........: md5crypt, MD5 (Unix), Cisco-IOS $1$ (MD5)
+Hash.Target......: ./hashes/md5/random/10-b.txt
+Time.Started.....: Tue Mar 26 12:20:51 2019 (5 mins, 8 secs)
+Time.Estimated...: Tue Mar 26 12:25:59 2019 (0 secs)
+Guess.Base.......: File (lists/rockyou.txt)
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........:    30149 H/s (15.46ms) @ Accel:512 Loops:125 Thr:1 Vec:8
+Speed.#2.........:    15257 H/s (7.53ms) @ Accel:128 Loops:125 Thr:1 Vec:8
+Speed.#*.........:    45406 H/s
+Recovered........: 9/10 (90.00%) Digests, 0/1 (0.00%) Salts
+Progress.........: 14344385/14344385 (100.00%)
+Rejected.........: 244335/14344385 (1.70%)
+Restore.Point....: 14342675/14344385 (99.99%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:875-1000
+Restore.Sub.#2...: Salt:0 Amplifier:0-1 Iteration:875-1000
+Candidates.#1....: $HEX[212a6d69746368656c6c652a21] -> $HEX[042a0337c2a156616d6f732103]
+Candidates.#2....: !@@##$ -> !*muah*!
+Hardware.Mon.#1..: N/A
+Hardware.Mon.#2..: N/A
+
+Started: Tue Mar 26 12:20:49 2019
+[2KStopped: Tue Mar 26 12:26:00 2019

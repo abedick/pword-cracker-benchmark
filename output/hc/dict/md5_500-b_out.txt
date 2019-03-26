@@ -1,0 +1,518 @@
+hashcat (v5.1.0) starting...
+
+OpenCL Platform #1: Intel(R) Corporation
+========================================
+* Device #1: Intel(R) Xeon(R) CPU E3-1240 v3 @ 3.40GHz, 3996/15984 MB allocatable, 8MCU
+
+OpenCL Platform #2: The pocl project
+====================================
+* Device #2: pthread-Intel(R) Xeon(R) CPU E3-1240 v3 @ 3.40GHz, 4096/13936 MB allocatable, 8MCU
+
+OpenCL Platform #3: NVIDIA Corporation
+======================================
+* Device #3: Quadro K600, skipped.
+
+Counting lines in ./hashes/md5/random/500-b.txt...[2KCounted lines in ./hashes/md5/random/500-b.txt...[2KParsing Hashes: 1/500 (0.20%)...[2KParsed Hashes: 500/500 (100.00%)[2KSorting hashes...[2KSorted hashes...[2KRemoving duplicate hashes...[2KRemoved duplicate hashes...[2KSorting salts...[2KSorted salts...[2KComparing hashes with potfile entries...[2KCompared hashes with potfile entries...[2KGenerating bitmap tables...[2KGenerated bitmap tables...[2KHashes: 500 digests; 500 unique digests, 1 unique salts
+Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
+Rules: 1
+
+Applicable optimizers:
+* Optimized-Kernel
+* Zero-Byte
+* Single-Salt
+
+Minimum password length supported by kernel: 0
+Maximum password length supported by kernel: 15
+
+Watchdog: Temperature abort trigger set to 90c
+
+Initializing device kernels and memory...[2KInitializing OpenCL runtime for device #1...[2K[33m* Device #1: build_opts '-cl-std=CL1.2 -I OpenCL -I /usr/share/hashcat/OpenCL -D LOCAL_MEM_TYPE=2 -D VENDOR_ID=8 -D CUDA_ARCH=0 -D AMD_ROCM=0 -D VECT_SIZE=8 -D DEVICE_TYPE=2 -D DGST_R0=0 -D DGST_R1=1 -D DGST_R2=2 -D DGST_R3=3 -D DGST_ELEM=4 -D KERN_TYPE=500 -D _unroll'[0m
+Initialized OpenCL runtime for device #1...[2KInitializing OpenCL runtime for device #2...[2K[33m* Device #2: build_opts '-cl-std=CL1.2 -I OpenCL -I /usr/share/hashcat/OpenCL -D LOCAL_MEM_TYPE=2 -D VENDOR_ID=64 -D CUDA_ARCH=0 -D AMD_ROCM=0 -D VECT_SIZE=8 -D DEVICE_TYPE=2 -D DGST_R0=0 -D DGST_R1=1 -D DGST_R2=2 -D DGST_R3=3 -D DGST_ELEM=4 -D KERN_TYPE=500 -D _unroll'[0m
+Initialized OpenCL runtime for device #2...[2KInitialized device kernels and memory...[2KDictionary cache hit:
+* Filename..: lists/rockyou.txt
+* Passwords.: 14344385
+* Bytes.....: 139921507
+* Keyspace..: 14344385
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$.7uCI3I/w/y3G9ITaJBNx1:cocacola1
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$mBJruR5N69GkY2LiU6DRB0:almond
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$6pGuyXl6LfoHO8HwjeT3l/:ganesh
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$yng0FWp07bzvxeI3c6ACD0:roman
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$WEcxlMeH2/V/AWgieTaGr.:whore
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$JG3DcLo5lg5cTD.OcxhNI1:nieves
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$RWTixBqs5i8XiccCrthMt/:salamat
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$WnXeaB.DnOcaUlzO.8IxR1:jeffry
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$6uOA6RGNVVKHh9G4IYPvD1:bigdog1
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$y2vqMcHhPiIdzmwMt905F1:duckies
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$wZ5w0ORvyfxbRU91DbdCC1:reallove
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$MgmMo7WUhg8CxE5eg9G0S.:imperial
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$ZFN.F/iLndH6OpLABITIa1:agape
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$hidCCPQcd26fhO/0TYQz7/:thebeatles
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$auwIUYy6D5J9RaACEYvaq/:120687
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$by5mSeDq9WNq3s8ZurwV51:guille
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$NIaD.vGCfPR2uIgcRaD640:420247
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$AHvJprR2.hNT0avI1LR/c.:piano
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$7ksSfSgX9zjLNtjNubBhb/:100590
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$mDtHIv7jlhGX/qcsvXftD0:alcatraz
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$U0vBMNHML3PKXnrsOHErD.:signin
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$Gcy40FjnLOXEW2zSvr4QA/:090990
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$m5o77j2CcwlRZX8xaH6901:t12345
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$2AVnoayTuyDx5yECr0shh.:greengrass
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$HQkdoGm/aKDsXGbBDU5JQ/:hotshit
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$IHyYtQpSDgAUDlfYjFOR./:eric123
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$RyWLrbKsYZeaWRdxUs0Tu1:nipple
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$hvexCt.yLbdSIWACkfcfQ/:hansol
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$ZmSrXTXozo/ypYYR9CsH71:eraser
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$UYn7Ro915JBqeElZ/UN5U/:andrei
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$mNupWJHj9TB94SiUxpq/D.:50cent
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$P3QSmGRLt0FlRG6CkIrXP0:undertaker
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$ce/QHpDbGIZY99wCtGyBi0:swordfish
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$FSyoY7tEmM5eQjvAIV.1k/:christine
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$3LXpOUJ6x/ey.nBwEbmY11:11111
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$zGwBuo.hcIY03cfCB4NRU.:love14
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$tuJMjSkgLmrkdZka/CqEl0:bubbles1
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$Zyr21MHFdFBA2Gtq1ldcT.:jellybean
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$LGkp84AVjPvzvGYw5270f/:ginger1
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$AeZxqlNf4Y5bniPkxnXVk.:tiger
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$QE.O8gqTK69HFZQZSfqkg.:duckie
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$MrSosn8nBQUWprPRx25zc/:mikey1
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$gLd8rOtlZK.vDCaYf0C0X.:banana1
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$P0J6h7rSA/mtv5DfMaxy50:jhonatan
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$0GqUsptOSUpGL5qrCFDVe.:blackjack
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$zzMql7OHdYW.SpvEmsGjN.:logan
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$YHLhCwdwvwOX.rUtOW7w8.:love16
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$bheQyIL.Nmo/n/7dLNSjt1:printer
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$hLN4ZxwPJUsvkxG3IaIX0.:25252525
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$VxnSvoMMxdGspw5GBEZE4/:chase1
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$tt/E.ew3MD6a/RdregIG71:search
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$/f7bVB2Xpd8BJ2ISgb4f8.:venus
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$3KdZg7guF5CmNZTxRoycZ/:glamour
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$abnIhRvdbDFRV8/2inErS1:beachbum
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$AIEvUd4JYz1twHXZOq45I.:faggot
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$lM2d1eSsla/himtGzKMa3.:sodapop
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$gz0cR8HBvRL82BzMVqf3O.:bigboss
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$I7nygOEwfpBDChQVSI4MX.:280390
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$hZMpBAC0gpZQLNHezmKeT.:rampage
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$M8Qv3R5WRZ7AbGgxAXC3H1:skull
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$DyBizgQfTHrhgTkd2ltJl1:goblin
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$PDdYP2dureB4rr8bJ8Voy0:william3
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$lQAjbhExOoVBalBQVeqIk1:aloha1
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$buH1quLPxR3o00WBZhhxL.:040989
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$ZboiaI2jH9y1YeJiOTHtk1:230889
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$9mWxjaVdSTvEFhoOvp/lc1:snoopy2
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$sBujvFA3oI1jCOxbE9.hc.:110685
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$QNG7EYtaIuD7KbwQRU4881:killing
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$tR3M9dGaz1gi0dNHCdoa.1:green15
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$kSMB5XIEJKm5DaeL5KeWn0:tommylee
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$2EVvgeS1BOfarG3HCMpFC/:incognito
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$OaLY/GA/WTWZH07os5uXx.:211286
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$qK5MIR25MCPDeM2ovEn4v1:aishwarya
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$vcbTZuxX/0et2NDWak6qt0:monkey19
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$Tw6p92cNh0Csl.llneP9d.:january2
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$uUNRKfX49ex6NZmJnXehg.:graves
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$EWwFx2oUJcTUoN77jzYzJ/:131287
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$.M.cDU2LAHXfou8F/Ayol0:lillypad
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$CI60J5AHvgevv.HQ8n/5N0:250791
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$R/PiZgJnWDYrcJ8kAcPeR.:271288
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$4dV.u5Oj5VkQCpbYeJAbS1:147147147
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$6drjAxCVFejmaefzk13jz.:swanson
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$mgziHHw3Xz4Hz9dKP99Px/:tristian
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$.HaJCCpr6bqRn1Dkoi065/:elohim
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$qp3UK33r8QO1K7iL8F2MW0:shalini
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$ngll5G2OyGsX/O9/VdRBL/:diablito
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$S0yIG20fEdtjCudJQpdh9/:logitech1
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$CcTLL/N9czuNaFfUKtZhx0:latinos
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$ytwoNR7EY1/.kFgaAKiBS.:131192
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$xv5rWJNhinoqk8wT5W6AQ0:230989
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$N2iOiBxKVra1/dY/3XwP5.:satana
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$0K.m61CQQ4EX47t5B2SMD0:200590
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$/V2/rIX.vnTwBPzEQXQ5m/:021185
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$OoEbBnx1dM/DgWGfM39Zl1:beaumont
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$awPrzurpmeh2Om/W2ntwR/:toulouse
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$x9CkTdmEvOyXJIaZxz8Zb1:fuckall
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$FO4/hZSRqbmkY9pV3SkEq0:020593
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$W7CHxz/ujCCXaGuMBLOUa0:milwaukee
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$d68SBLLL.L/pPtrT44xnL0:050606
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$fasMyDafwZEonVqHjxzU20:bluegrass
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$RsxZ2tsvCzmDpHosaZy/L1:danzig
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$PT5.MJTAYzUIWqpfOaLGs.:290592
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$qbjOllLetWXbatI6KnFFV/:281186
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$fMdKVsc6I3y23iSutW52u0:021285
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$BA22g5wpqIuSddZhbc7Nh0:161292
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$WnmgFNHO408ZyQkUD5f/q.:secret12
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$FkCHEP9..2/hhuBMy4JH70:fotball
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$iQbjNZPzWPGmrQgo64HA0.:130788
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$jN6jNQOlU9TCmHlIgoT5e/:070793
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$yU.XX2Zgng/pNpsutL/9l.:060786
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$8jx8KTct5eLDOJl3iBWqP0:261194
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$0Naws.C8BeL9rE289telR.:270687
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$NLUj02QGVsFLMyO.wPgMh/:felixx
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$QFzgUY8BdENWoIm2K7Hsr/:q2w3e4
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$jHS/FobBKfdb3FZq89m.L1:coaster
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$uoZhxphN5r6MY1QWAA3ou1:lucifer1
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$s8eP2jlZW1TthtT3HPxqD/:billygoat
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$vaSWescys8BcwOGnDi1aH/:felony
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$6.dDwAeaVoVBLVx8XrZws1:porshe
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$7abuW5uj58Dakt45p4uOh.:curry
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$rCcCcH0OBHnBOrQze4KN1.:170194
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$a2q5gZOb/vbFd.vNFF.UJ.:anneke
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$pyeOKnfGVnLBmHLNxFGOm1:watanabe
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$smh/N17uCnaa9OpbtNLEZ0:kannan
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$zB3wYZFbkkGSXr9C7SbOF.:molly7
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$yH8xd4a.Zwymk/3ihEJvC1:081195
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$CPtcEhz3B3h.t.GVGJvDH/:Leonardo
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$zkeEz.nbHopiPfSA29r5C1:231231
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$wDEere9uxLX1PoP7iu53b1:021021
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$7y7nscHC3/0aFWQug14eo/:200293
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$Sy/egP3GJcCZwK8fJIwzW.:dreday
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$Ha4REYOfRMi9foM./BqWo1:300993
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$e79ZLaozNlfV.k/Aj6Sem1:5555
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$0W/8eqc57yGc1KO7cODUn/:070384
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$mHbOILScJ/prNNVFoWEfg/:author
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$nEY4A6rcSr5I1.3Uz7nS41:28121990
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$SJrXUwmwgpwjdvWkY6JsL.:homebase
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$ouiyCdxIIMoj4IAHEY9CR/:080879
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$/w7wNhd3i8Up3pTzVnt6Q0:011081
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$i01wyzKV0v77S46Xkv5SU.:061179
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$.7FovywZKoxUfUy.efVvK/:intern
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$ZicGLpIxdx/HcvK6vd/vW0:fordf250
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$6VbZuZdtjSdZsbHJyNkvq.:s123456789
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$2cvqJyo9BSXY3SHcOqdJ6/:232629
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$GvqQCnojb5ajH3SwFEOfg/:whiplash
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$SdNo369dlYdOjMY7T/LXb.:mongo
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$EOHjY.3Wtg8KW1RPCu6RZ/:112081
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$TR3is.331NDe3OFUIuVOy.:cowboy12
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$pI32JkQ7QAMoWlYywubsD1:lazyboy
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$KjVWJKZVNcAiR2c0PdstR1:01012006
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$Wy9cq.s3cusvdRGurMOUb.:ryder1
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$MAzhKjJx27kHLbu2nVGMj0:missmiss
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$4TEtldgybD428y9rS17NA0:ford123
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$Wp/kGssjMCQu1zyRpG09J.:04031989
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$k.MesgPHZYoXk6ovkRPp11:taison
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$rSHzvYxZQh5FW5H6TdOgM1:workhard
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$J7rxeJShz473zF9a5ghqo1:starscream
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$eodEDfo.wMXWUkJnsFgPt/:jeff1234
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$jJMMCI62h9l6Katfaxl3T0:131296
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$VJmvKJAqXDqlm/9HhhxIt/:03061992
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$9UtlYe7l8E1XJD1HRKTeZ0:psytrance
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$piQrn0LKkRrwrq3Dc.1oV.:kingme
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$bpH7SmkuLvxWfUBSrWqDl0:centurion
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$qXJ2u4hqw3RENb.KgTmuy.:davin
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$mdqzxoKeVF0XdmJkZ/WXH0:koko
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$nqtGL/kHs9hH3bMJIQfOP0:westminster
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$Q6JMC5NJDUaO/h61dMmSR/:schnecke
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$6yy4RgPsyk/5MyLMo8vgx0:200184
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$hu2rlFEnLFUJmOpQ5Vltr.:050681
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$c9EARtf3rEirPJdph3qYC0:haystack
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$/ljVV6bHgsQ.cDexcbm/k/:210882
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$ZksW0QWRF/BIVUX4avYj60:england2
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$CNgKrDNegN.GVLUEQRlSD0:worldwide
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$xtSMmOJ9tT6qij52yJvpc/:schlampe
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$lPE/z2/ujAEMIGrnI7Z7J1:pepsione
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$i/u6TmNZUHiOVD7Z/RqKt/:03061993
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$KK73INNXQDGhjpSNBxtjP/:wiener
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$xtpdH/IYXO/Sqgn7gRg/S1:moggie
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$jfxB6jW6skyLFK6vbdw7j/:575859
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$Vk1ranAEX01hI4O8PeCiN.:scotia
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$/xhuW1tLUB9jK4NwdWKLL0:180283
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$GIiciZAwaWq8HKKq0scT2.:155555
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$6qWH/eyJoq93TrOfk7/p5/:26031991
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$951y1ZxGRziGV1E4Za4CN/:kasia1
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$hx8ziqcDARlJ874vaPYRj.:221095
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$tMwysCV8bBD7RPVtJdaaH.:canes
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$5SqqrVdqgpPjWb4YPwovG1:cameron9
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$sXkSm/pDUnGoL7.BZZkFD.:08051985
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$GBbGl.54uEXBsoVnzZbFQ/:silky
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$1TVm6Ox8rE006lmN4hId0/:hondac
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$ygtVD.GiNhBbmpR0Qlls70:carlsbad
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$s86/g7PfIPFqfXAc2xUGq/:scott7
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$a4ERTh.lK6wPemBA8jTD0.:shauns
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$W6LP0qkCujSI03v4bPMC31:moremore
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$DLC0YHKXYeJHUmq60a0YX1:milosc
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$9LmNctSlGVZ88X3uaJIF9/:168888
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$ym8TGkgc9VU/M0qjvwnfK1:16071987
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$fNFnkeg0zWziEatlDJfnA1:78907890
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$YSHXbZcI8cvh0Yr0Og0gV/:28101985
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$.AOidfZPg7wxdzJ6Se.QQ.:115511
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$z2x/VCGlixvQ0uYLImrkS1:juillet
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$IeRkkFxzuoWAvt1HDId4w.:bogie1
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$KVLVrHOdyUtwg13G3uUgT0:Arizona
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$cstRXl.nrNz89c.8.UQuG1:bilbo
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$ZsTQ.i82yndEs4hllQ9wa0:12061993
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$Jh4Axmc2d9XSHRN0cYaAC/:kitakita
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$7KPb1BDHN0fBzJrHEgKvn1:casey22
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$KwV5wsrgXlv2R9iFuEwRR/:29011992
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$D6ZJAclJQrYlQDXiV.qJr.:1world
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$gcso/O.xttklA39BlLo8h0:16051991
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$pIhyPbeDvE.2RQU3rT18M0:05071992
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$qzREyxvhXygCLWXbcwLiK0:angel2010
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$LQiOoukUArOvSq0jiPYgy0:sigmanu
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$RFhx8jSGwUJWy/0sjQKhK0:ruggles
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$4Yzp2Ea1TQuNl.MF.6ybD/:xiong
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$2n7czltA/RdocySTMwZj51:winkler
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$PMvd.01mMinkgjILXXP1Q1:totty
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$OfQU23d2K6DOdKx6y8q1A.:29031988
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$eYGOLGpOT/wX5cM/wD.Tw.:060378
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$rPKTOsvle7IYgCcPGiHvn/:281280
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$qe2Z25YxYy0Wxr69cw.sr0:cement
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$gaiuplzvy2G2HJIaHbYN80:botany
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$YT7.kxrd18blcNplp5Q3n0:academic
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$pBaxgVIp4Zewa99/wNzym.:a123456a
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$YDfXSV7wXA0hJVR5KDDac0:200999
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$iATuotAzBDFUx1uB7wGba.:20031984
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$rWbEvos40rUw/URdMVENn1:17051994
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$4MZd.3IVWfGmJzNSPHDU30:080178
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$LyieGoduRce0SHlq3K3Au0:moon1234
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$P0p8fmgxmaAUfkauslCBh/:massive1
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$j8Rcf5CvVk26sv8Fs8CVx/:deadsoul
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$AIkC49GoP5L5tnaxhPJGN1:marmot
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$qC9cAoM3x2D5GN3/mA5CG/:dutton
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$ltM4/UK.AwCpi3pS4CpV01:cassey1
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$l/O0NmderBdjbrTizFX4a0:FRANCE
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$6oTYpOQnxqa3a8aX91JWg0:091076
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$iWYfiO1r9Ug/sMjqNM7lT.:2580
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$IB9Bq05otmC3UwZmfYfcD1:110373
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$JVgKTEPzHprl7WBuCUJym0:020499
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$wRWxF.25dtagT4qJAOR.L0:whoop
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$MfHpSBUU/0t/gcx4FPZ2l1:09101983
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$x2usxiiN5AsjirTwxuasK1:09031986
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$Ws2gcyu/XIaSdiuLUmRSl0:str8edge
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$aBtBlLWwesgIP/HtZtN2b.:020577
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$KjdyM50s.PEP/Tb5M7Rx90:fffffffff
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$..CIVHg9tkpUpDjh8UlFm1:122269
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$drbAbJ0T3vMy0LjuXZ7We0:beerme
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$StYMxV92pAxd7nYFboqC21:batman99
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$/0nHWuk3prtLLbSyIe820/:eatmee
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$kszARqpzfLafmeYD9tPik.:gtagta
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$59oLfoSG8LJQoaSGsFD.7.:beef
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$/nQSNqjkTKOA0ODIZggi8.:benelli
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$vVhiCep6B4JnmkSYKk/SS0:16081980
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$MYY1Ajdt6RCzRgJRuYQso/:091199
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$bOzpm0PUfMQ4V/YuJcfOX1:uconn1
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$XrqGexleZFYZN/Dri/1nF0:sanyo
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$JbXnBum9TBnNq0aEQic1M/:301277
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$4gC24o6y5FPLgT6s4xq1U1:smoked
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$WbIRF9LkMgmStkWk6HK9e/:24051987
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$UVrglQN.qJMf.EB6nfXBk.:17081985
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$p9da9qF1QGlvT8I7.2VJ5.:071169
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$MVtAWzRgY8YfOw8nJnwKm1:070597
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$fyia9SdtTicdZmOznP9ya1:121473
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$fMYsZOWZi4XhqXd0OEMDq.:04091981
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$jOXvBD1NF9Mobce/swLnn/:080572
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$8ba738IdEw56.wJJIywJK.:071097
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$Xl3Vm2pcgdKebN21wZwpy/:3030
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$XcFLGsx.X0e2c4gaNbOrR0:brutus12
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$/Nn30rkmyQeMS5QjzUe.s1:020471
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$tfhdCd9rAaZy9Os/OoCmZ1:11111112
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$exEtHqHC4vlyl8ZK8VulC/:fred10
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$tX2LdGNEk9bwvhqJ/zBkG/:findit
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$jXN4but8wIShv.vqXRWFj/:dragula
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$o5lYCnwmBEMvLMMO6dzyM.:crouton
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$wnSWaVmAhISQUhXnc.xKM.:primes
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$AyAd0QZlrnGgn2LNXW0fQ.:photog
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$2EOOoFU9UodnEAKy5BdNb1:0214
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$nlCSKr4PN2UaxBE51I/9l/:20091997
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$cZSOcIboDErlgR8KX26p7.:159357a
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$Xgo7bSfQldI2G9tILFBMz0:pause
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$HHXbpgjX0nsCBMJ.fDOAB.:master1234
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$fOn30TLdtT5Xd9CV3neGA/:mooker
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$ebN6fnhvN1SHZ0R2kmkfW/:bull
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$QSK86CiRUXShf8lzs7lUc.:altman
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$ajZHp9dml1ysBr8bYLzxe.:reactor
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$/bzNfG0a0tKS5WPPIzR1V/:stain
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$bXJP77BV4HvJgZrT2Ldkt0:qqqqqqq1
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$NrL5tYeiyfB43mKAkVHo10:23051981
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$DjpwEkGfD4J9AIM1kPDHY0:03130313
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$VZ1cdAYmNWzkARLwBJ/zl1:750750
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$KmCWHz6ViyIqg/hXVcDV7.:cooder
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$ldwaZrnjO/WJ01hoEL0Df.:140128
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$QAJKsHkX8AMKHpAMU3oOm1:110173
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$ve46x0ozyBfCCb67HwmcM/:07051978
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$JE2lYU/5dyEG7BDFHpIIx0:190777
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$0uL9T7Gm20T3Ywcr0yYhu/:220974
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$WtPfI8DxEh/fySM78L7Cf0:vibrate
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$cFE1Gteg6dEpIQDRDQgOs1:beeline
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$lDXRWLnSt.ZEI1DTFkvo2/:dooger
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$U4v4uZsJMqYiCukRjGHmv.:271076
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$29QhouWH9dUcVgBqS1Lx2.:291269
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$9Ctr2ZlSraqUNNvJTvaCi/:127777
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$ek4EPyDl31PXVXloedEFW.:150376
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$unAMKL0Xx4S3KwvMHAV9w.:375375
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$tfC8/vsGUE02apavYGaLo1:18091980
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$q3uepJ7iZSkWe1W0LgmUD.:161174
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$DESy.2UAoUcE1NmiZ3qVn.:samadhi
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$RsHNXvsD9PZ0sQqHpEBm71:porn123
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$6Jc26PMaeMLCC/RQWp5H.0:0987poiu
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$wxQQNGXka6PMjeTeUhcgK.:09051973
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$M.exRRgz4pIIDjpizyWc7/:svoboda
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$78mFw5XqWdSZExdicFXse.:cadmus
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$h1QYtIZCEpPLmLFOS65Gp.:1q21q2
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$6HYUSp8ZO0vl3dwv9/bdG/:181097
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$zJbFOmdIejbOmuOxszTvZ0:180373
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$3LI4omB9hlLQgzP7MGgz80:13061976
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$TG0bcKwC5IzXkHnQu4I6c0:12111977
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$qQRWmx5Xzipn7phc3OMy51:DROWSSAP
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$1uz7zzKA5m8eSIiyb3Q990:280198
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$ku2LKqLyrEjU4Y5gY18gK0:shadwell
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$ac.c4AkscQmrvzlqc5rNF/:hoilamgi
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$YiDH76pLkYOtqd9MQxRKz1:210674
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$dB0aHICx8iS29ILJEfRYf1:080173
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$uy092j9We3V1QevxH75BE0:norcross
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$JoHlLpn4ZNkqSSSakxzTN/:fastman
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$8Gdo2W2mdj8ijnCK9ejdN/:awdawd
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$jBFvTDUnVRGCH6zjeYMcM1:250968
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$Vz6RFv3yxZUxvuAa2dhAs1:27101978
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$ueQwk8m3OWU8vzph0nH631:160975
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$NGsi/OXUa8OUZhdWC8Q7D0:16021976
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$L7GImnxdeoU5NzHb0im1u.:13012005
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$M1B4OCv0j1z1/bpbJ9Oi2/:Mouse
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$cXGg98C4VfMbsJUBJynsC0:08061977
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$btWJLGfnUGvb2OVcfH9fm1:03081978
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  [33mCracking performance lower than expected?[0m
+[33m[0m
+[33m* Append -w 3 to the commandline.[0m
+[33m  This can cause your screen to lag.[0m
+[33m[0m
+[33m* Update your OpenCL runtime / driver the right way:[0m
+[33m  https://hashcat.net/faq/wrongdriver[0m
+[33m[0m
+[33m* Create more work items to make use of your parallelization power:[0m
+[33m  https://hashcat.net/faq/morework[0m
+[33m[0m
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$s9M7DuPSpiIjljFih4zy2.:sisi
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$ibBB2l1IGQqAFAIJxl1DI/:miki
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$qie7Y4N9bWR1vEJnJvmyO.:hoppe
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$DW.1md7HrYKaro66x4f/i.:bobolink
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$VbN1UxG3XRwiJXljLYT3Y1:13031967
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$f4YMfnFc2b0pcvb0qFsV81:15032001
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$Mq1mSVWEEx8L6a56PIN3Q.:28121976
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$gc.43pBuy6P8KW4PteLAI.:27041983
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$PCbZ0nVgBK2gZ6zO5I7xS/:22121972
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$n2CqOXWrvDmPCd/RQUzNr/:12051975
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$0VbsysrkR0BYcYF3d6vzB1:04041975
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$kDyY1bHp2FEfnM./DPbBk0:05091998
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$dCX27JxvQKTyrvfNB6BBx1:mesa
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$OWlQU44pc.8eZXAJRIg5n/:lawina
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$zM/.uxNAi5HoWj1gZDLAA/:halberd
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$iU8bqlt/If4o1p05W1zMj.:burnt
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$8suRGM2z5NjqsrtAnlHHE0:decor
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$qegZ6F8M1E1bQOeHRJOBy/:archibal
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$YQLzkWlld7arNFWprKtAt/:944turbo
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$9tk9tZ19HXrrcK3LhQmMU0:260966
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$epvJtpgWz6USZxzFepE7h.:21011969
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$wA89MSrdZdhNNei9n2roz0:25121975
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$LUYX8D5o2VWrxIwUkwcbQ0:25051974
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$ahyTm3Iq5BIKn09mFr.02.:040260
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$k.tuB0Q9HMR3YJMIxPCtK0:03011977
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$OdHekewgVJtxuQLLN1ODc.:0147
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$TLFgdMQLiWlzzCmrhYvgo/:wizar
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$SbeHru28MpZhoG2ezGQAV.:torock
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$WxgRW2w77k0Bzf5KAphqf0:thissuck
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$IXOJia8UcHsXtsKX55ZOZ/:oren
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$rjpULXL82Sfqueo0OBCaD.:opusone
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$QVTaiTbE5doLU5jGmPC/t1:mogilny
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$0Dln5auEnA7vjlalv2sVb0:helo
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$TXOp5slGPO14uLlDo0jgW1:c0rvette
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$ZASfeiM9p27eXLBqlEdUf1:bongload
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$3H.IoD24oBDet3K3yHVPw0:blanked
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$1TJyY.sZV.DAezOQT9dbK.:31051977
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$suaXaHmmOlUP8qYqnB9fE/:29111976
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$MLf7Ys7MpjHDDtxTdDMh40:27101963
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$.x1/kZWGQ6fXkPedoMlWi.:26101978
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$qVw65XJ0oEQ9DAeHtsamk/:20031966
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$ZZhNtjboDoYokulb3KhQy0:181270
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$qBCkTnY.ZaIl8GuV0Ip3M1:210372
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$EmAiHhS8Dwy/pta6ZoBHT/:17081973
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$bZwzYmN.6XkcK1u2d7K8A.:10041970
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$bFWeKbTjolkFTP3ICKkKv/:unlimite
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$npJs0qptpP3OeYHC4J/Rm/:rocha2
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$lHEZ4xmWQRD5fBc/Xnkay0:pentable
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$58MmFv8vWXoj3QsE8e7WR/:kpcofgs
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$zmabrVvT3tsh6qAo3eenP1:ingot
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$2osKY6McXHAH3hfMKnRO20:eded
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$nS0l5gg8EnwMucfZIqhZt/:compliance
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$uLCa0R99LboTFoZqgvSGP0:alexmike
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$G4ljqCV.ZZJ.bmCKl/Yiy/:a1a2a3a
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$T0THJ7xaw/l5ok7H88tcg0:Vader
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$xAxR6XClcxU3MgaMhVBn2.:Greg
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$NDxilJOGGfS0eBrNDSC.Y0:5461
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$zrhKXyI.xH5Kevmtlq8/H0:3012
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$xrmnHonXIB1wzu5TRUobG.:25081975
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$fkQIAlOxMyLyCy4rrIhVy/:26101967
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$59ggUglIjRsMKpTGEydce1:23011962
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$nmlmXFGjA/DQo8ur3/7fd/:20041964
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$aMyeiZWqvYWCRGRc9EvO61:16021998
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$jAPQJJbgDN1vpHXVdg6YP0:15031976
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$d3YmsqPbngJrEuzP/8Zrw/:1355
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$LznRN9yFLpFK5Gb9fIvdC1:12011957
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$H5o9vIxMIOr71hZHtxErR/:09091962
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$ArpjBimppnV2vGYrS1DbW.:02081998
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$rONxLg5fSIQgOiVZjUNzt/:ybrjulf
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$a1kx07xC1osdEADpUMTtE/:yagodka
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$q1tkVEGmzBt8wlHEh51jx.:willee
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$2xy29GII.7IH6s7wfDIhJ1:webste
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$jgw.tJcf/y442p5G1D7x7/:technica
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$8rdS44K.NU1UbvghB46ym1:sven
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$1JWqIvU0h/peQ9KmPx02n/:silke1
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$4VWFX29plGmlFI0jDOCEG/:qweszxc
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$/HYFbIgv2B.D7WFRPF3lK1:nfpa13
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$8vw75PC2C.SpFxIQZ5ER5/:lazarev
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$nDYHMjNpo3UX.oSXdXeBy/:jiang
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$hP/Gr0N6npkhqRBcEowzS/:ivan1984
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$EASc6dp0iEbtpmwoinLe1/:glacius
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$YXC1HhgEajHlvtJn4AJHW0:earnhard
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$9.1Mo4crQe38WBrsQHxVf/:burlroof
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$BX6CV19FD7DcYNjClQP7V/:aware
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$uMiUNPTdHrNrHDhhbzuf6.:amend
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$zLYtfUCiIClTbbDmc71sr0:TITS
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$lh2DnvtzZQ05xid2MfzhQ/:Avatar1
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$u7BVL83w5AQEmVgrsiNFp0:848711
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$WxwL/59X7V/rWyzsER5/t.:7816
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$JNAtp5E.STvPe8X48dBN91:6622
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$Op4lhY38PBo7Zz3ytkIlu0:3304
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$lw7X5tfSqonciiKFixQbX/:23101971
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$NIk.VgcqJ.ZFBb6MwCs4t0:2097
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$NbqRxwT77cuyiwVDbvlXN0:20061966
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$2UwqNn1s77DyYoy6l4csT.:19111961
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$oDLAQBEmRfs62zA9D1I1E/:1708
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$L.ZshYVkHEtnRnJ668Z97.:15041960
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$7nUyiEgrkM8YntbT4qtsD/:1275
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$4DuEWcYOw1e44/.UBVbus/:12051957
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$KRpaRQdjwhd9zC6q9EjzH.:11111aaaaa
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$OadMVIZCFsojzlFDrNfUa/:11011959
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$vOjLg/0dwhqaGctccqdfp/:1078
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$exw2.jYNpApfarhAIcNBx/:09011963
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$KdynSXWPciOTX/g32m4f01:08021963
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$ZkYzXxvWmWA/H2FeSPS4./:07041965
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$tk9GQLpZRw3eCiffgUwGZ.:04061969
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$eE2WB9gMH/duum03WcEsj1:04031971
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$OQ5yLKEJY2kzj73kl.o02/:03121966
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$iQm.4iNBnxL5TzUWm2.Bd/:03021967
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$keYiCLbtaaxfXdbd/HsZ1.:0034
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  [33mApproaching final keyspace - workload adjusted.[0m
+[33m[0m
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  
+Session..........: hashcat
+Status...........: Exhausted
+Hash.Type........: md5crypt, MD5 (Unix), Cisco-IOS $1$ (MD5)
+Hash.Target......: ./hashes/md5/random/500-b.txt
+Time.Started.....: Tue Mar 26 13:07:20 2019 (5 mins, 5 secs)
+Time.Estimated...: Tue Mar 26 13:12:25 2019 (0 secs)
+Guess.Base.......: File (lists/rockyou.txt)
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........:    26205 H/s (18.39ms) @ Accel:512 Loops:125 Thr:1 Vec:8
+Speed.#2.........:    20004 H/s (18.33ms) @ Accel:832 Loops:62 Thr:1 Vec:8
+Speed.#*.........:    46208 H/s
+Recovered........: 444/500 (88.80%) Digests, 0/1 (0.00%) Salts
+Progress.........: 14344385/14344385 (100.00%)
+Rejected.........: 244335/14344385 (1.70%)
+Restore.Point....: 14338981/14344385 (99.96%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:875-1000
+Restore.Sub.#2...: Salt:0 Amplifier:0-1 Iteration:992-1000
+Candidates.#1....: $HEX[2140233132336861727279] -> $HEX[042a0337c2a156616d6f732103]
+Candidates.#2....: #1soco -> !kika!235
+Hardware.Mon.#1..: N/A
+Hardware.Mon.#2..: N/A
+
+Started: Tue Mar 26 13:07:19 2019
+[2KStopped: Tue Mar 26 13:12:26 2019

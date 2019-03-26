@@ -1,0 +1,115 @@
+hashcat (v5.1.0) starting...
+
+OpenCL Platform #1: Intel(R) Corporation
+========================================
+* Device #1: Intel(R) Xeon(R) CPU E3-1240 v3 @ 3.40GHz, 3996/15984 MB allocatable, 8MCU
+
+OpenCL Platform #2: The pocl project
+====================================
+* Device #2: pthread-Intel(R) Xeon(R) CPU E3-1240 v3 @ 3.40GHz, 4096/13936 MB allocatable, 8MCU
+
+OpenCL Platform #3: NVIDIA Corporation
+======================================
+* Device #3: Quadro K600, skipped.
+
+Counting lines in ./hashes/md5/random/50-b.txt...[2KCounted lines in ./hashes/md5/random/50-b.txt...[2KParsing Hashes: 1/50 (2.00%)...[2KParsed Hashes: 50/50 (100.00%)[2KSorting hashes...[2KSorted hashes...[2KRemoving duplicate hashes...[2KRemoved duplicate hashes...[2KSorting salts...[2KSorted salts...[2KComparing hashes with potfile entries...[2KCompared hashes with potfile entries...[2KGenerating bitmap tables...[2KGenerated bitmap tables...[2KHashes: 50 digests; 50 unique digests, 1 unique salts
+Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
+Rules: 1
+
+Applicable optimizers:
+* Optimized-Kernel
+* Zero-Byte
+* Single-Salt
+
+Minimum password length supported by kernel: 0
+Maximum password length supported by kernel: 15
+
+Watchdog: Temperature abort trigger set to 90c
+
+Initializing device kernels and memory...[2KInitializing OpenCL runtime for device #1...[2K[33m* Device #1: build_opts '-cl-std=CL1.2 -I OpenCL -I /usr/share/hashcat/OpenCL -D LOCAL_MEM_TYPE=2 -D VENDOR_ID=8 -D CUDA_ARCH=0 -D AMD_ROCM=0 -D VECT_SIZE=8 -D DEVICE_TYPE=2 -D DGST_R0=0 -D DGST_R1=1 -D DGST_R2=2 -D DGST_R3=3 -D DGST_ELEM=4 -D KERN_TYPE=500 -D _unroll'[0m
+Initialized OpenCL runtime for device #1...[2KInitializing OpenCL runtime for device #2...[2K[33m* Device #2: build_opts '-cl-std=CL1.2 -I OpenCL -I /usr/share/hashcat/OpenCL -D LOCAL_MEM_TYPE=2 -D VENDOR_ID=64 -D CUDA_ARCH=0 -D AMD_ROCM=0 -D VECT_SIZE=8 -D DEVICE_TYPE=2 -D DGST_R0=0 -D DGST_R1=1 -D DGST_R2=2 -D DGST_R3=3 -D DGST_ELEM=4 -D KERN_TYPE=500 -D _unroll'[0m
+Initialized OpenCL runtime for device #2...[2KInitialized device kernels and memory...[2KDictionary cache hit:
+* Filename..: lists/rockyou.txt
+* Passwords.: 14344385
+* Bytes.....: 139921507
+* Keyspace..: 14344385
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$sgqxwCJlQ3K/du60dRtA51:leanne
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$ZAAsMaIxzIpCqlwc615aJ.:spirit
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$A8MLaIrVQDqMH0n6PxQHw.:theone
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$boTV9c7q.DNV5bxQ6jZi91:757575
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$dYMT24AXRUUt3Ow3n2Oja1:hello11
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$SbwxSwmK17aOAm61REDja/:061091
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$9..PHgPBcjv3RiGSqj9iw/:nellie1
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$oSVl1TCQ95Tsa2jGUqUxc0:103190
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$p42PsbOc8Vgem.BZWq53i/:biglips
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$jgsLOSkxkF8Pku.Gz0rbX1:210795
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$BRIKKcuMPvCdMwsNJ.CH41:darby1
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$EPDibAQw9ZFSikTxS52Gm1:tackle
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$wKFk5kRjcUtiOk1zZWtmj/:170384
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$RG//7n5LvA68GIboFjuCf0:Nintendo
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$Gk7eMvOnR5tQ1ZYFk2bJR0:morgaine
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$g6mBISfS4IknqPu.dyymV/:greyson
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$TvAYNybOC8k5y/8hj48N91:23051988
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$lpw7qT5kQNk/WwbYZo2lW.:eagle3
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$Q2nniDWib.4/SpFQZmklH1:02061996
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$O.ijPa5V2GVHOuyCU.Oqr0:Coffee
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$Y0gccPqdZkE7oE79B7Nu5.:lothar
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$0BCd4a4zptW3FZiD8ssqB/:finalcut
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$y7u.W.B/IG06T0DiEYLHh0:hologram
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$r.qPg/BEhX8wpetXyBqHC/:fishfry
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$KFdw9zqhaBdHHNH5vFZZl1:07031982
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$s2pjIyjdTVdVXVTC1.BuM0:12109
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$PkJ1qXLWcqgL0Lq9Qig8x/:picturs
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$ac.c4AkscQmrvzlqc5rNF/:hoilamgi
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$Ec4I8R72sJdvbAbeQTfjY.:19041982
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  [33mCracking performance lower than expected?[0m
+[33m[0m
+[33m* Append -w 3 to the commandline.[0m
+[33m  This can cause your screen to lag.[0m
+[33m[0m
+[33m* Update your OpenCL runtime / driver the right way:[0m
+[33m  https://hashcat.net/faq/wrongdriver[0m
+[33m[0m
+[33m* Create more work items to make use of your parallelization power:[0m
+[33m  https://hashcat.net/faq/morework[0m
+[33m[0m
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$z1x5G2SsjhRJnRPW1KHYT0:041068
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$Sn1M1nAp.BnuUH9kFaxe9.:timeport
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$XCDmZtDcYNklvF4aVkr6V1:sasha007
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$F1mYKonzKTvGbMj3r08Mw1:241971
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$PQr3zuU0YGORGbfW36lFV/:290772
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$BFZOoxRbqZF1aja/5a7li/:21324354
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$bnlHfCvA54Ui/.G8nNJrL0:fibers
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$KbqU0jQNKyGxz1NeBylEe/:27121965
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$TWaEX3KGVpzItHU82syLB0:rediska
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$J9uipem6F48TCa0OzKTDk0:24051975
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$p86kzsvd2wYqZ3R/kcm/a1:22111971
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  $1$""$JNXdN9N2BDoqiXimJE4Fh/:05101973
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  [33mApproaching final keyspace - workload adjusted.[0m
+[33m[0m
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  
+Session..........: hashcat
+Status...........: Exhausted
+Hash.Type........: md5crypt, MD5 (Unix), Cisco-IOS $1$ (MD5)
+Hash.Target......: ./hashes/md5/random/50-b.txt
+Time.Started.....: Tue Mar 26 12:36:17 2019 (5 mins, 10 secs)
+Time.Estimated...: Tue Mar 26 12:41:27 2019 (0 secs)
+Guess.Base.......: File (lists/rockyou.txt)
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........:    22368 H/s (5.38ms) @ Accel:128 Loops:125 Thr:1 Vec:8
+Speed.#2.........:    23076 H/s (19.41ms) @ Accel:512 Loops:125 Thr:1 Vec:8
+Speed.#*.........:    45444 H/s
+Recovered........: 41/50 (82.00%) Digests, 0/1 (0.00%) Salts
+Progress.........: 14344385/14344385 (100.00%)
+Rejected.........: 244335/14344385 (1.70%)
+Restore.Point....: 14342675/14344385 (99.99%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:875-1000
+Restore.Sub.#2...: Salt:0 Amplifier:0-1 Iteration:875-1000
+Candidates.#1....: $HEX[21214d6f746974612121] -> $HEX[042a0337c2a156616d6f732103]
+Candidates.#2....: !matt! -> !*muah*!
+Hardware.Mon.#1..: N/A
+Hardware.Mon.#2..: N/A
+
+Started: Tue Mar 26 12:36:15 2019
+[2KStopped: Tue Mar 26 12:41:28 2019
