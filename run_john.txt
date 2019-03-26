@@ -1,0 +1,254 @@
+(1/63) john Raw-MD5 md5_10-a
+mprof: Sampling memory every 0.1s
+(2/63) john Raw-SHA1 sha_10-a
+mprof: Sampling memory every 0.1s
+(3/63) john LM lm_10-a
+mprof: Sampling memory every 0.1s
+(4/63) john Raw-MD5 md5_10-b
+mprof: Sampling memory every 0.1s
+(5/63) john Raw-SHA1 sha_10-b
+mprof: Sampling memory every 0.1s
+(6/63) john LM lm_10-b
+mprof: Sampling memory every 0.1s
+(7/63) john Raw-MD5 md5_10-c
+mprof: Sampling memory every 0.1s
+(8/63) john Raw-SHA1 sha_10-c
+mprof: Sampling memory every 0.1s
+(9/63) john LM lm_10-c
+mprof: Sampling memory every 0.1s
+(10/63) john Raw-MD5 md5_50-a
+mprof: Sampling memory every 0.1s
+(11/63) john Raw-SHA1 sha_50-a
+mprof: Sampling memory every 0.1s
+(12/63) john LM lm_50-a
+mprof: Sampling memory every 0.1s
+(13/63) john Raw-MD5 md5_50-b
+mprof: Sampling memory every 0.1s
+(14/63) john Raw-SHA1 sha_50-b
+mprof: Sampling memory every 0.1s
+(15/63) john LM lm_50-b
+mprof: Sampling memory every 0.1s
+(16/63) john Raw-MD5 md5_50-c
+mprof: Sampling memory every 0.1s
+(17/63) john Raw-SHA1 sha_50-c
+mprof: Sampling memory every 0.1s
+(18/63) john LM lm_50-c
+mprof: Sampling memory every 0.1s
+(19/63) john Raw-MD5 md5_100-a
+mprof: Sampling memory every 0.1s
+(20/63) john Raw-SHA1 sha_100-a
+mprof: Sampling memory every 0.1s
+(21/63) john LM lm_100-a
+mprof: Sampling memory every 0.1s
+(22/63) john Raw-MD5 md5_100-b
+mprof: Sampling memory every 0.1s
+(23/63) john Raw-SHA1 sha_100-b
+mprof: Sampling memory every 0.1s
+(24/63) john LM lm_100-b
+mprof: Sampling memory every 0.1s
+(25/63) john Raw-MD5 md5_100-c
+mprof: Sampling memory every 0.1s
+(26/63) john Raw-SHA1 sha_100-c
+mprof: Sampling memory every 0.1s
+(27/63) john LM lm_100-c
+mprof: Sampling memory every 0.1s
+(28/63) john Raw-MD5 md5_500-a
+mprof: Sampling memory every 0.1s
+(29/63) john Raw-SHA1 sha_500-a
+mprof: Sampling memory every 0.1s
+(30/63) john LM lm_500-a
+mprof: Sampling memory every 0.1s
+(31/63) john Raw-MD5 md5_500-b
+mprof: Sampling memory every 0.1s
+(32/63) john Raw-SHA1 sha_500-b
+mprof: Sampling memory every 0.1s
+(33/63) john LM lm_500-b
+mprof: Sampling memory every 0.1s
+(34/63) john Raw-MD5 md5_500-c
+mprof: Sampling memory every 0.1s
+(35/63) john Raw-SHA1 sha_500-c
+mprof: Sampling memory every 0.1s
+(36/63) john LM lm_500-c
+mprof: Sampling memory every 0.1s
+(37/63) john Raw-MD5 md5_1000-a
+mprof: Sampling memory every 0.1s
+(38/63) john Raw-SHA1 sha_1000-a
+mprof: Sampling memory every 0.1s
+(39/63) john LM lm_1000-a
+mprof: Sampling memory every 0.1s
+(40/63) john Raw-MD5 md5_1000-b
+mprof: Sampling memory every 0.1s
+(41/63) john Raw-SHA1 sha_1000-b
+mprof: Sampling memory every 0.1s
+(42/63) john LM lm_1000-b
+mprof: Sampling memory every 0.1s
+(43/63) john Raw-MD5 md5_1000-c
+mprof: Sampling memory every 0.1s
+(44/63) john Raw-SHA1 sha_1000-c
+mprof: Sampling memory every 0.1s
+(45/63) john LM lm_1000-c
+mprof: Sampling memory every 0.1s
+(46/63) john Raw-MD5 md5_5000-a
+mprof: Sampling memory every 0.1s
+(47/63) john Raw-SHA1 sha_5000-a
+mprof: Sampling memory every 0.1s
+(48/63) john LM lm_5000-a
+mprof: Sampling memory every 0.1s
+(49/63) john Raw-MD5 md5_5000-b
+mprof: Sampling memory every 0.1s
+(50/63) john Raw-SHA1 sha_5000-b
+mprof: Sampling memory every 0.1s
+(51/63) john LM lm_5000-b
+mprof: Sampling memory every 0.1s
+(52/63) john Raw-MD5 md5_5000-c
+mprof: Sampling memory every 0.1s
+(53/63) john Raw-SHA1 sha_5000-c
+mprof: Sampling memory every 0.1s
+(54/63) john LM lm_5000-c
+mprof: Sampling memory every 0.1s
+(55/63) john Raw-MD5 md5_10000-a
+mprof: Sampling memory every 0.1s
+(56/63) john Raw-SHA1 sha_10000-a
+mprof: Sampling memory every 0.1s
+(57/63) john LM lm_10000-a
+mprof: Sampling memory every 0.1s
+(58/63) john Raw-MD5 md5_10000-b
+mprof: Sampling memory every 0.1s
+(59/63) john Raw-SHA1 sha_10000-b
+mprof: Sampling memory every 0.1s
+(60/63) john LM lm_10000-b
+mprof: Sampling memory every 0.1s
+(61/63) john Raw-MD5 md5_10000-c
+mprof: Sampling memory every 0.1s
+(62/63) john Raw-SHA1 sha_10000-c
+mprof: Sampling memory every 0.1s
+(63/63) john LM lm_10000-c
+mprof: Sampling memory every 0.1s
+(1/63) john Raw-MD5 md5_10-a
+mprof: Sampling memory every 0.1s
+(2/63) john Raw-SHA1 sha1_10-a
+mprof: Sampling memory every 0.1s
+(3/63) john LM lm10-a
+mprof: Sampling memory every 0.1s
+(4/63) john Raw-MD5 md5_10-b
+mprof: Sampling memory every 0.1s
+(5/63) john Raw-SHA1 sha1_10-b
+mprof: Sampling memory every 0.1s
+(6/63) john LM lm10-b
+mprof: Sampling memory every 0.1s
+(7/63) john Raw-MD5 md5_10-c
+mprof: Sampling memory every 0.1s
+(8/63) john Raw-SHA1 sha1_10-c
+mprof: Sampling memory every 0.1s
+(9/63) john LM lm10-c
+mprof: Sampling memory every 0.1s
+(10/63) john Raw-MD5 md5_50-a
+mprof: Sampling memory every 0.1s
+(11/63) john Raw-SHA1 sha1_50-a
+mprof: Sampling memory every 0.1s
+(12/63) john LM lm50-a
+mprof: Sampling memory every 0.1s
+(13/63) john Raw-MD5 md5_50-b
+mprof: Sampling memory every 0.1s
+(14/63) john Raw-SHA1 sha1_50-b
+mprof: Sampling memory every 0.1s
+(15/63) john LM lm50-b
+mprof: Sampling memory every 0.1s
+(16/63) john Raw-MD5 md5_50-c
+mprof: Sampling memory every 0.1s
+(17/63) john Raw-SHA1 sha1_50-c
+mprof: Sampling memory every 0.1s
+(18/63) john LM lm50-c
+mprof: Sampling memory every 0.1s
+(19/63) john Raw-MD5 md5_100-a
+mprof: Sampling memory every 0.1s
+(20/63) john Raw-SHA1 sha1_100-a
+mprof: Sampling memory every 0.1s
+(21/63) john LM lm100-a
+mprof: Sampling memory every 0.1s
+(22/63) john Raw-MD5 md5_100-b
+mprof: Sampling memory every 0.1s
+(23/63) john Raw-SHA1 sha1_100-b
+mprof: Sampling memory every 0.1s
+(24/63) john LM lm100-b
+mprof: Sampling memory every 0.1s
+(25/63) john Raw-MD5 md5_100-c
+mprof: Sampling memory every 0.1s
+(26/63) john Raw-SHA1 sha1_100-c
+mprof: Sampling memory every 0.1s
+(27/63) john LM lm100-c
+mprof: Sampling memory every 0.1s
+(28/63) john Raw-MD5 md5_500-a
+mprof: Sampling memory every 0.1s
+(29/63) john Raw-SHA1 sha1_500-a
+mprof: Sampling memory every 0.1s
+(30/63) john LM lm500-a
+mprof: Sampling memory every 0.1s
+(31/63) john Raw-MD5 md5_500-b
+mprof: Sampling memory every 0.1s
+(32/63) john Raw-SHA1 sha1_500-b
+mprof: Sampling memory every 0.1s
+(33/63) john LM lm500-b
+mprof: Sampling memory every 0.1s
+(34/63) john Raw-MD5 md5_500-c
+mprof: Sampling memory every 0.1s
+(35/63) john Raw-SHA1 sha1_500-c
+mprof: Sampling memory every 0.1s
+(36/63) john LM lm500-c
+mprof: Sampling memory every 0.1s
+(37/63) john Raw-MD5 md5_1000-a
+mprof: Sampling memory every 0.1s
+(38/63) john Raw-SHA1 sha1_1000-a
+mprof: Sampling memory every 0.1s
+(39/63) john LM lm1000-a
+mprof: Sampling memory every 0.1s
+(40/63) john Raw-MD5 md5_1000-b
+mprof: Sampling memory every 0.1s
+(41/63) john Raw-SHA1 sha1_1000-b
+mprof: Sampling memory every 0.1s
+(42/63) john LM lm1000-b
+mprof: Sampling memory every 0.1s
+(43/63) john Raw-MD5 md5_1000-c
+mprof: Sampling memory every 0.1s
+(44/63) john Raw-SHA1 sha1_1000-c
+mprof: Sampling memory every 0.1s
+(45/63) john LM lm1000-c
+mprof: Sampling memory every 0.1s
+(46/63) john Raw-MD5 md5_5000-a
+mprof: Sampling memory every 0.1s
+(47/63) john Raw-SHA1 sha1_5000-a
+mprof: Sampling memory every 0.1s
+(48/63) john LM lm5000-a
+mprof: Sampling memory every 0.1s
+(49/63) john Raw-MD5 md5_5000-b
+mprof: Sampling memory every 0.1s
+(50/63) john Raw-SHA1 sha1_5000-b
+mprof: Sampling memory every 0.1s
+(51/63) john LM lm5000-b
+mprof: Sampling memory every 0.1s
+(52/63) john Raw-MD5 md5_5000-c
+mprof: Sampling memory every 0.1s
+(53/63) john Raw-SHA1 sha1_5000-c
+mprof: Sampling memory every 0.1s
+(54/63) john LM lm5000-c
+mprof: Sampling memory every 0.1s
+(55/63) john Raw-MD5 md5_10000-a
+mprof: Sampling memory every 0.1s
+(56/63) john Raw-SHA1 sha1_10000-a
+mprof: Sampling memory every 0.1s
+(57/63) john LM lm10000-a
+mprof: Sampling memory every 0.1s
+(58/63) john Raw-MD5 md5_10000-b
+mprof: Sampling memory every 0.1s
+(59/63) john Raw-SHA1 sha1_10000-b
+mprof: Sampling memory every 0.1s
+(60/63) john LM lm10000-b
+mprof: Sampling memory every 0.1s
+(61/63) john Raw-MD5 md5_10000-c
+mprof: Sampling memory every 0.1s
+(62/63) john Raw-SHA1 sha1_10000-c
+mprof: Sampling memory every 0.1s
+(63/63) john LM lm10000-c
+mprof: Sampling memory every 0.1s
+running john with dictionary attack using list rockyou.txt
+running john with brute force attack

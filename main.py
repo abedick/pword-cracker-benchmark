@@ -46,7 +46,7 @@ def main():
 	'''
 
 	# for running john with dictionary list rockyou
-	#start_john_dict(trials, mem)
+	start_john_dict(trials, mem)
 
 	# for running hash_cat with dictionary list rockyou
 	#start_hc_dict(trials, mem)
