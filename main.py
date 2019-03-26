@@ -5,6 +5,8 @@ import re
 import os
 import random
 from io import StringIO
+from passlib.hash import lmhash
+import hashlib
 
 # For john the ripper
 # john --wordlist=lists/rockyou.txt --format=md5crypt ./hashes/100_000_md5.txt
@@ -66,7 +68,8 @@ def gen_hash_files(sizes, ltr):
 	# Generate hashed files for dictionary attacks
 	print("generating hashed word lists for dictionary attacks")
 	mkdir("./hashes/md5/random")
-	mkdir("./hashes/sha256/random")
+	mkdir("./hashes/sha1/random")
+	mkdir("./hashes/lm/random")
 	words = sample_wordList("./input/100_000.txt")
 
 	for x in sizes:
@@ -76,7 +79,8 @@ def gen_hash_files(sizes, ltr):
 	# generate hashes files for brute force attacks
 	print("generating hashed word lists for brute force attacks")
 	mkdir("./hashes/md5/fivechar")
-	mkdir("./hashes/sha256/fivechar")
+	mkdir("./hashes/sha1/fivechar")
+	mkdir("./hashes/lm/fivechar")
 	words = gen_wordList_fivechar("lists/rockyou.txt")
 
 	for x in sizes:
@@ -87,7 +91,10 @@ def gen_hash_files(sizes, ltr):
 def gen_hashes(words, dst, ra, size, ltr):
 
 	md5 = open("./hashes/md5/"+dst+"/"+str(size)+"-"+ltr+".txt", "w")
-	sha = open("./hashes/sha256/"+dst+"/"+str(size)+"-"+ltr+".txt", "w")
+	sha = open("./hashes/sha1/"+dst+"/"+str(size)+"-"+ltr+".txt", "w")
+	lm = open("./hashes/lm/"+dst+"/"+str(size)+"-"+ltr+".txt", "w")
+
+	index_list = open("./hashes/indexlist.txt","w")
 
 	found = {}
 	i = 0
@@ -101,13 +108,19 @@ def gen_hashes(words, dst, ra, size, ltr):
 			i += 1
 
 		md5_hash = subprocess.check_output(["openssl", "passwd", "-salt", "\"\"", "-1", words[target]])
-		sha_hash = subprocess.check_output(["openssl", "passwd", "-salt", "\"\"", "-5", words[target]])
+		sha_hash = hashlib.sha1(bytes(words[target], 'utf-8')).hexdigest()
+		lm_hash = lmhash.hash(words[target])
 
-		md5.write((str(md5_hash))[2:-3] + "\r\n")
-		sha.write((str(sha_hash))[2:-3] + "\r\n")
+		md5.write(md5_hash + "\r\n")
+		sha.write(sha_hash + "\r\n")
+		lm.write(lm_hash + "\r\n")
 
 	md5.close()
 	sha.close()
+	lm.close()
+
+	index_list.write(str(found))
+	index_list.close()
 
 '''
 	John the Ripper
