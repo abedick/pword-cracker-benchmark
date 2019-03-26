@@ -131,15 +131,19 @@ def start_john_dict(trials, mem):
 	i = 1
 	for trial in trials:
 
-		args1 = ["lists/rockyou.txt", "./hashes/md5/random/"+trial+".txt", "md5crypt", "md5_"+trial, str(i), str(len(trials)*2)]
+		args1 = ["lists/rockyou.txt", "./hashes/md5/random/"+trial+".txt", "md5crypt", "md5_"+trial, str(i), str(len(trials)*3
 		args1 = ','.join(str(x) for x in args1)
 		forkExec(args1,"john_dict", mem, "./output/john/dict/mem/md5_"+trial+".dat")
 
-		args2 = ["lists/rockyou.txt", "./hashes/sha256/random/"+trial+".txt", "sha256crypt", "sha_"+trial, str(i+1), str(len(trials)*2)]
+		args2 = ["lists/rockyou.txt", "./hashes/sha1/random/"+trial+".txt", "Raw-SH1", "sha_"+trial, str(i+1), str(len(trials)*3)]
 		args2 = ','.join(str(x) for x in args2)
 		forkExec(args2,"john_dict", mem, "./output/john/dict/mem/sha_"+trial+".dat")
-		
-		i += 2
+
+		args3 = ["lists/rockyou.txt", "./hashes/lm/random/"+trial+".txt", "LM", "lm_"+trial, str(i+2), str(len(trials)*3)]
+		args3 = ','.join(str(x) for x in args3)
+		forkExec(args3,"john_dict", mem, "./output/john/dict/mem/lm_"+trial+".dat")		
+
+		i += 3
 
 def start_john_brute(trials, mem):
 	print("running john with brute force attack")
