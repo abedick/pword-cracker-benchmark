@@ -65,13 +65,13 @@ def run_hc_dict(dic, hashFile, format, fname, x, y):
 	g = open(path+fname+"_err.txt", "w")
 
 	# hashcat -a 0 -m 500 ./hashes/100_000_md5.txt ./lists/rockyou.txt
-	subprocess.call(["hashcat", "-a", "0", "-m", format, hashFile, dic, "--force"],stdout=f, stderr=g)
+	subprocess.call(["hashcat", "--opencl-device-types", "1", "-a", "0", "-m", format, hashFile, dic, "--force"],stdout=f, stderr=g)
 
 	# Remove the pot and session
 	subprocess.call(["rm", "/root/.hashcat/hashcat.potfile"])
 	subprocess.call(["rm", "-rf", "/root/.hashcat/sessions"])
 
-def run_hc_brute(hashFile, format, fname, x, y):
+def run_hc_brute(format, hashFile, fname, x, y):
 	print("("+x+"/"+y+") hashcat " + format + " " + fname)
 
 	path = "output/hc/brute/"
@@ -80,7 +80,7 @@ def run_hc_brute(hashFile, format, fname, x, y):
 	g = open(path+fname+"_err.txt", "w")
 
 	# hashcat -a 3 -m 500 l?l?l?l?
-	subprocess.call(["hashcat", "-a", "3", "-m", format, hashFile, "?l?l?l?l?l", "--force"],stdout=f, stderr=g)
+	subprocess.call(["hashcat", "--opencl-device-types", "1", "-a", "3", "-m", format, hashFile, "?l?l?l?l?l", "--force"],stdout=f, stderr=g)
 
 	# Remove the pot and session
 	subprocess.call(["rm", "/root/.hashcat/hashcat.potfile"])
