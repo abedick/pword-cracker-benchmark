@@ -29,6 +29,13 @@ def main():
 		for y in ltr:
 			trials.append(str(x)+"-"+y)
 
+	mem = True
+	if mem:
+		mkdir("output/john/dict/mem")
+		mkdir("output/john/brute/mem")
+		mkdir("output/hc/dict/mem")
+		mkdir("output/hc/brute/mem")
+
 	# for generating hash files for the dictionary attacks
 	gen_hash_files(sizes, ltr)
 
@@ -37,20 +44,20 @@ def main():
 	'''
 
 	# for running john with dictionary list rockyou
-	start_john_dict(trials)
+	start_john_dict(trials, mem)
 
 	# for running hash_cat with dictionary list rockyou
-	start_hc_dict(trials)
+	start_hc_dict(trials, mem)
 
 	'''
 		Brute Force Attacks
 	'''
 
 	# for running john with brute froce
-	start_john_brute(trials)
+	start_john_brute(trials, mem)
 
 	# for running hans_cat with brute force
-	start_hc_brute(trials)
+	start_hc_brute(trials, mem)
 
 def gen_hash_files(sizes, ltr):
 	if os.path.exists("hashes"):
@@ -106,106 +113,78 @@ def gen_hashes(words, dst, ra, size, ltr):
 	John the Ripper
 '''
 
-def start_john_dict(trials):
+def start_john_dict(trials, mem):
 	print("running john with dictionary attack using list rockyou.txt")
 	i = 1
 	for trial in trials:
-		run_john_dict("lists/rockyou.txt", "./hashes/md5/random/"+trial+".txt", "md5crypt", "md5_"+trial, str(i), str(len(trials)*2))		
-		run_john_dict("lists/rockyou.txt", "./hashes/sha256/random/"+trial+".txt", "sha256crypt", "sha_"+trial, str(i+1), str(len(trials)*2))
+
+		args1 = ["lists/rockyou.txt", "./hashes/md5/random/"+trial+".txt", "md5crypt", "md5_"+trial, str(i), str(len(trials)*2)]
+		args1 = ','.join(str(x) for x in args1)
+		forkExec(args1,"john_dict", mem, "./output/john/dict/mem/md5_"+trial+".dat")
+
+		args2 = ["lists/rockyou.txt", "./hashes/sha256/random/"+trial+".txt", "sha256crypt", "sha_"+trial, str(i+1), str(len(trials)*2)]
+		args2 = ','.join(str(x) for x in args2)
+		forkExec(args2,"john_dict", mem, "./output/john/dict/mem/sha_"+trial+".dat")
+		
 		i += 2
 
-def run_john_dict(dic, hashFile, format, fname, x, y):
-	print("("+x+"/"+y+") john " + format + " " + fname)
-
-	path = "output/john/dict/"
-	mkdir(path)
-	f = open(path+fname+"_out.txt", "w")
-	g = open(path+fname+"_err.txt", "w")
-
-	# john --wordlist=lists/rockyou.txt --format=md5crypt ./hashes/100_000_md5.txt
-	subprocess.call(["john", "--wordlist="+dic, "--format="+format, hashFile],stdout=f, stderr=g)
-
-	# Remove the pot
-	subprocess.call(["rm", "/root/.john/john.pot"])
-	subprocess.call(["rm", "/root/.john/john.log"])
-
-def start_john_brute(trials):
+def start_john_brute(trials, mem):
 	print("running john with brute force attack")
 	i = 1
 	for trial in trials:
-		run_john_brute("md5crypt", "./hashes/md5/fivechar/"+trial+".txt", "md5_"+trial, str(i), str(len(trials)*2))
-		run_john_brute("sha256crypt", "./hashes/sha256/fivechar/"+trial+".txt", "sha256_"+trial, str(i+1), str(len(trials)*2))
+
+		args1 = ["md5crypt", "./hashes/md5/fivechar/"+trial+".txt", "md5_"+trial, str(i), str(len(trials)*2)]
+		args1 = ','.join(str(x) for x in args1)
+		forkExec(args1,"john_brute", mem, "./output/john/brute/mem/md5_"+trial+".dat")
+
+		args2 = ["sha256crypt", "./hashes/sha256/fivechar/"+trial+".txt", "sha256_"+trial, str(i+1), str(len(trials)*2)]
+		args2 = ','.join(str(x) for x in args2)
+		forkExec(args2,"john_brute", mem, "./output/john/brute/mem/sha_"+trial+".dat")
+
 		i += 2
-
-def run_john_brute(format, hashFile, fname, x, y):
-	print("("+x+"/"+y+") john " + format + " " + fname)
-
-	path = "output/john/brute/"
-	mkdir(path)
-
-	f = open(path+fname+"_out.txt", "w")
-	g = open(path+fname+"_err.txt", "w")
-
-	subprocess.call(["john", "--incremental=lower", "--format="+format, hashFile],stdout=f, stderr=g)
-
-	# Remove the pot
-	subprocess.call(["rm", "/root/.john/john.pot"])
-	subprocess.call(["rm", "/root/.john/john.log"])
 
 '''
 	hashcat
 '''
 
-def start_hc_dict(trials):
+def start_hc_dict(trials, mem):
 	print("running hashcat with dictionary attack using list rockyou.txt")
 	i = 1
 	for trial in trials:
-		run_hc_dict("lists/rockyou.txt", "./hashes/md5/random/"+trial+".txt", "500", "md5_"+trial, str(i), str(len(trials)*2))
-		run_hc_dict("lists/rockyou.txt", "./hashes/sha256/random/"+trial+".txt", "7400", "sha_"+trial, str(i+1), str(len(trials)*2))
+
+		args1 = ["lists/rockyou.txt", "./hashes/md5/random/"+trial+".txt", "500", "md5_"+trial, str(i), str(len(trials)*2)]
+		args1 = ','.join(str(x) for x in args1)
+		forkExec(args1,"hc_dict", mem, "./output/hc/dict/mem/md5_"+trial+".dat")
+
+		args2 = ["lists/rockyou.txt", "./hashes/sha256/random/"+trial+".txt", "7400", "sha_"+trial, str(i+1), str(len(trials)*2)]
+		args2 = ','.join(str(x) for x in args2)
+		forkExec(args2,"hc_dict", mem, "./output/hc/dict/mem/sha_"+trial+".dat")
+
 		i += 2
 
-def run_hc_dict(dic, hashFile, format, fname, x, y):
-	print("("+x+"/"+y+") hashcat " + format + " " + fname)
-
-	path = "output/hc/dict/"
-	mkdir(path)
-	f = open(path+fname+"_out.txt", "w")
-	g = open(path+fname+"_err.txt", "w")
-
-	# hashcat -a 0 -m 500 ./hashes/100_000_md5.txt ./lists/rockyou.txt
-	subprocess.call(["hashcat", "-a", "0", "-m", format, hashFile, dic, "--force"],stdout=f, stderr=g)
-
-	# Remove the pot and session
-	subprocess.call(["rm", "/root/.hashcat/hashcat.potfile"])
-	subprocess.call(["rm", "-rf", "/root/.hashcat/sessions"])
-
-def start_hc_brute(trials):
+def start_hc_brute(trials, mem):
 	print("running hashcat with dictionary attack using list rockyou.txt")
 	i = 1
 	for trial in trials:
-		run_hc_brute("./hashes/md5/fivechar/"+trial+".txt", "500", "md5_"+trial, str(i), str(len(trials)*2))
-		run_hc_brute("./hashes/sha256/fivechar/"+trial+".txt", "7400", "sha_"+trial, str(i+1), str(len(trials)*2))
+		args1 = ["./hashes/md5/fivechar/"+trial+".txt", "500", "md5_"+trial, str(i), str(len(trials)*2)]
+		args1 = ','.join(str(x) for x in args1)
+		forkExec(args1,"john_dict", mem, "./output/hc/brute/mem/md5_"+trial+".dat")
+
+		args2 = ["./hashes/sha256/fivechar/"+trial+".txt", "7400", "sha_"+trial, str(i+1), str(len(trials)*2)]
+		args2 = ','.join(str(x) for x in args2)
+		forkExec(args2,"john_dict", mem, "./output/hc/brute/mem/sha_"+trial+".dat")
+
 		i += 2
-
-def run_hc_brute(hashFile, format, fname, x, y):
-	print("("+x+"/"+y+") hashcat " + format + " " + fname)
-
-	path = "output/hc/brute/"
-	mkdir(path)
-	f = open(path+fname+"_out.txt", "w")
-	g = open(path+fname+"_err.txt", "w")
-
-	# hashcat -a 3 -m 500 l?l?l?l?
-	subprocess.call(["hashcat", "-a", "3", "-m", format, hashFile, "?l?l?l?l?l", "--force"],stdout=f, stderr=g)
-
-	# Remove the pot and session
-	subprocess.call(["rm", "/root/.hashcat/hashcat.potfile"])
-	subprocess.call(["rm", "-rf", "/root/.hashcat/sessions"])
-
 
 ''' 
 	helpers
 '''
+
+def forkExec(args, ptype, mem, outputFile):
+		if mem:
+			subprocess.call(["mprof", "run", "-M", "-C", "-o",outputFile, "python3","run.py", ptype, args])
+		else:
+			subprocess.call(["python3","run.py", ptype, args])
 
 # Reds a file and returns it as an array with each element a single line
 def sample_wordList(fpath):
