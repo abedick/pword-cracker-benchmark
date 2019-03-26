@@ -46,20 +46,20 @@ def main():
 	'''
 
 	# for running john with dictionary list rockyou
-	start_john_dict(trials, mem)
+	#start_john_dict(trials, mem)
 
 	# for running hash_cat with dictionary list rockyou
-	start_hc_dict(trials, mem)
+	#start_hc_dict(trials, mem)
 
 	'''
 		Brute Force Attacks
 	'''
 
 	# for running john with brute froce
-	start_john_brute(trials, mem)
+	#start_john_brute(trials, mem)
 
 	# for running hans_cat with brute force
-	start_hc_brute(trials, mem)
+	#start_hc_brute(trials, mem)
 
 def gen_hash_files(sizes, ltr):
 	if os.path.exists("hashes"):
@@ -94,7 +94,7 @@ def gen_hashes(words, dst, ra, size, ltr):
 	sha = open("./hashes/sha1/"+dst+"/"+str(size)+"-"+ltr+".txt", "w")
 	lm = open("./hashes/lm/"+dst+"/"+str(size)+"-"+ltr+".txt", "w")
 
-	index_list = open("./hashes/indexlist.txt","w")
+	index_list = open("./hashes/indexlist"+str(size)+"-"+ltr+".txt","w")
 
 	found = {}
 	i = 0
@@ -111,9 +111,9 @@ def gen_hashes(words, dst, ra, size, ltr):
 		sha_hash = hashlib.sha1(bytes(words[target], 'utf-8')).hexdigest()
 		lm_hash = lmhash.hash(words[target])
 
-		md5.write(md5_hash + "\r\n")
-		sha.write(sha_hash + "\r\n")
-		lm.write(lm_hash + "\r\n")
+		md5.write((str(md5_hash))[2:-3] + "\r\n")
+		sha.write(str(sha_hash) + "\r\n")
+		lm.write(str(lm_hash) + "\r\n")
 
 	md5.close()
 	sha.close()
