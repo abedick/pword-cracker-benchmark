@@ -23,7 +23,7 @@ import hashlib
 
 def main():
 
-	sizes = [10,50,100,500,1000]
+	sizes = [10,50,100,500,1000,5000,10000]
 	ltr = ["a", "b", "c"]
 
 	trials = []
@@ -56,7 +56,7 @@ def main():
 	'''
 
 	# for running john with brute froce
-	#start_john_brute(trials, mem)
+	start_john_brute(trials, mem)
 
 	# for running hans_cat with brute force
 	#start_hc_brute(trials, mem)
@@ -85,8 +85,8 @@ def gen_hash_files(sizes, ltr):
 
 	for x in sizes:
 		for y in ltr:
-			if x < 1001:
-				gen_hashes(words, "fivechar", 7499, x, y)
+			#if x < 1001:
+			gen_hashes(words, "fivechar", 7499, x, y)
 
 def gen_hashes(words, dst, ra, size, ltr):
 
@@ -107,11 +107,12 @@ def gen_hashes(words, dst, ra, size, ltr):
 			found[str(target)] = True
 			i += 1
 
-		md5_hash = subprocess.check_output(["openssl", "passwd", "-salt", "\"\"", "-1", words[target]])
+		#md5_hash = subprocess.check_output(["openssl", "passwd", "-salt", "\"\"", "-1", words[target]])
+		md5_hash = hashlib.md5(bytes(words[target], 'utf-8')).hexdigest()
 		sha_hash = hashlib.sha1(bytes(words[target], 'utf-8')).hexdigest()
 		lm_hash = lmhash.hash(words[target])
 
-		md5.write((str(md5_hash))[2:-3] + "\r\n")
+		md5.write(str(md5_hash) + "\r\n")
 		sha.write(str(sha_hash) + "\r\n")
 		lm.write(str(lm_hash) + "\r\n")
 
@@ -131,11 +132,11 @@ def start_john_dict(trials, mem):
 	i = 1
 	for trial in trials:
 
-		args1 = ["lists/rockyou.txt", "./hashes/md5/random/"+trial+".txt", "md5crypt", "md5_"+trial, str(i), str(len(trials)*3
+		args1 = ["lists/rockyou.txt", "./hashes/md5/random/"+trial+".txt", "Raw-MD5", "md5_"+trial, str(i), str(len(trials)*3)]
 		args1 = ','.join(str(x) for x in args1)
 		forkExec(args1,"john_dict", mem, "./output/john/dict/mem/md5_"+trial+".dat")
 
-		args2 = ["lists/rockyou.txt", "./hashes/sha1/random/"+trial+".txt", "Raw-SH1", "sha_"+trial, str(i+1), str(len(trials)*3)]
+		args2 = ["lists/rockyou.txt", "./hashes/sha1/random/"+trial+".txt", "Raw-SHA1", "sha_"+trial, str(i+1), str(len(trials)*3)]
 		args2 = ','.join(str(x) for x in args2)
 		forkExec(args2,"john_dict", mem, "./output/john/dict/mem/sha_"+trial+".dat")
 
@@ -150,15 +151,19 @@ def start_john_brute(trials, mem):
 	i = 1
 	for trial in trials:
 
-		args1 = ["md5crypt", "./hashes/md5/fivechar/"+trial+".txt", "md5_"+trial, str(i), str(len(trials)*2)]
+		args1 = ["Raw-MD5", "./hashes/md5/fivechar/"+trial+".txt", "md5_"+trial, str(i), str(len(trials)*3)]
 		args1 = ','.join(str(x) for x in args1)
 		forkExec(args1,"john_brute", mem, "./output/john/brute/mem/md5_"+trial+".dat")
 
-		args2 = ["sha256crypt", "./hashes/sha256/fivechar/"+trial+".txt", "sha256_"+trial, str(i+1), str(len(trials)*2)]
+		args2 = ["Raw-SHA1", "./hashes/sha1/fivechar/"+trial+".txt", "sha1_"+trial, str(i+1), str(len(trials)*3)]
 		args2 = ','.join(str(x) for x in args2)
 		forkExec(args2,"john_brute", mem, "./output/john/brute/mem/sha_"+trial+".dat")
 
-		i += 2
+		args3 = ["LM", "./hashes/lm/fivechar/"+trial+".txt", "lm"+trial, str(i+2), str(len(trials)*3)]
+		args3 = ','.join(str(x) for x in args2)
+		forkExec(args2,"john_brute", mem, "./output/john/brute/mem/lm_"+trial+".dat")
+
+		i += 3
 
 '''
 	hashcat
