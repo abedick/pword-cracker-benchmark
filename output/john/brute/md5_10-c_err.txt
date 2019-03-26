@@ -1,0 +1,5 @@
+Using default input encoding: UTF-8
+Press 'q' or Ctrl-C to abort, almost any other key for status
+10g 0:00:00:04 DONE (2019-03-26 17:24) 2.398g/s 28325Kp/s 28325Kc/s 41517KC/s adddaducu..urmoo
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed

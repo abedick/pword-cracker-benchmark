@@ -1,0 +1,5 @@
+Using default input encoding: UTF-8
+Press 'q' or Ctrl-C to abort, almost any other key for status
+100g 0:00:00:08 DONE (2019-03-26 17:28) 12.34g/s 28483Kp/s 28483Kc/s 79689KC/s xiosl..xioms
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed

@@ -1,0 +1,7 @@
+Using default input encoding: UTF-8
+Using default target encoding: CP850
+Press 'q' or Ctrl-C to abort, almost any other key for status
+979g 0:00:00:01 DONE (2019-03-26 17:23) 615.7g/s 6785Kp/s 6785Kc/s 1047MC/s  110786..*7¡VA
+Warning: passwords printed above might be partial and not be all those cracked
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed

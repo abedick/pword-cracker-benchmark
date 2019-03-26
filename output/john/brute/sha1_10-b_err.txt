@@ -1,0 +1,5 @@
+Using default input encoding: UTF-8
+Press 'q' or Ctrl-C to abort, almost any other key for status
+10g 0:00:00:01 DONE (2019-03-26 17:24) 8.064g/s 15984Kp/s 15984Kc/s 44523KC/s viviz..viver
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed

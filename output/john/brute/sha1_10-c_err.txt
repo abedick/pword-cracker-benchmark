@@ -1,0 +1,5 @@
+Using default input encoding: UTF-8
+Press 'q' or Ctrl-C to abort, almost any other key for status
+10g 0:00:00:06 DONE (2019-03-26 17:24) 1.459g/s 17243Kp/s 17243Kc/s 25274KC/s adddaduri..urmom
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed

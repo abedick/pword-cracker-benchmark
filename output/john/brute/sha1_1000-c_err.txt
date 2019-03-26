@@ -1,0 +1,6 @@
+Using default input encoding: UTF-8
+Press 'q' or Ctrl-C to abort, almost any other key for status
+945g 0:00:00:15 DONE (2019-03-26 17:32) 62.79g/s 17787Kp/s 17787Kc/s 373474KC/s squit..squid
+Warning: passwords printed above might not be all those cracked
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed

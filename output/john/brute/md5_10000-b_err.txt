@@ -1,0 +1,6 @@
+Using default input encoding: UTF-8
+Press 'q' or Ctrl-C to abort, almost any other key for status
+5485g 0:00:00:46 DONE (2019-03-26 17:40) 117.6g/s 30290Kp/s 30290Kc/s 790563KC/s iqbar..iqbak
+Warning: passwords printed above might not be all those cracked
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed

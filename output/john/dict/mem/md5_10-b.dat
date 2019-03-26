@@ -1,0 +1,4 @@
+CMDLINE python3 run.py john_dict lists/rockyou.txt,./hashes/md5/random/10-b.txt,Raw-MD5,md5_10-b,4,63
+MEM 1.378906 1553638963.1151
+MEM 19.371094 1553638963.2274
+CHLD 0 9.539062 1553638963.2335

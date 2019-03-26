@@ -1,0 +1,5 @@
+Using default input encoding: UTF-8
+Press 'q' or Ctrl-C to abort, almost any other key for status
+50g 0:00:00:07 DONE (2019-03-26 17:25) 7.092g/s 16605Kp/s 16605Kc/s 37799KC/s quifb..quang
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed

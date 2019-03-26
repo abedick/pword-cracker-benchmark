@@ -1,0 +1,4 @@
+CMDLINE python3 run.py john_dict lists/rockyou.txt,./hashes/sha1/random/10-b.txt,Raw-SHA1,sha_10-b,5,63
+MEM 1.375000 1553638963.3860
+MEM 19.273438 1553638963.4983
+CHLD 0 9.445312 1553638963.5036

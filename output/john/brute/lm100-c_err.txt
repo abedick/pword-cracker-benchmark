@@ -1,0 +1,7 @@
+Using default input encoding: UTF-8
+Using default target encoding: CP850
+Warning: MaxLen = 13 is too large for the current hash type, reduced to 7
+Press 'q' or Ctrl-C to abort, almost any other key for status
+100g 0:00:00:04 DONE (2019-03-26 17:29) 21.27g/s 35697Kp/s 35697Kc/s 108713KC/s XIOSU..XIOTL
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed

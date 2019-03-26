@@ -1,0 +1,6 @@
+Using default input encoding: UTF-8
+Press 'q' or Ctrl-C to abort, almost any other key for status
+927g 0:00:00:09 DONE (2019-03-26 17:32) 101.8g/s 29399Kp/s 29399Kc/s 604666KC/s iwisa..iwisk
+Warning: passwords printed above might not be all those cracked
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed

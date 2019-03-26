@@ -1,0 +1,6 @@
+Using default input encoding: UTF-8
+Press 'q' or Ctrl-C to abort, almost any other key for status
+484g 0:00:00:27 DONE (2019-03-26 17:30) 17.35g/s 17890Kp/s 17890Kc/s 120652KC/s axell..axels
+Warning: passwords printed above might not be all those cracked
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed

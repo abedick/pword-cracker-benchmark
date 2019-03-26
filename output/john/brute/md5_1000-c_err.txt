@@ -1,0 +1,6 @@
+Using default input encoding: UTF-8
+Press 'q' or Ctrl-C to abort, almost any other key for status
+945g 0:00:00:08 DONE (2019-03-26 17:32) 106.0g/s 30045Kp/s 30045Kc/s 700264KC/s mfvxf..squii
+Warning: passwords printed above might not be all those cracked
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed
