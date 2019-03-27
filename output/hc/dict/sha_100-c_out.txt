@@ -1,0 +1,115 @@
+hashcat (v5.1.0) starting...
+
+OpenCL Platform #1: Intel(R) Corporation
+========================================
+* Device #1: Intel(R) Xeon(R) CPU E3-1240 v3 @ 3.40GHz, 3996/15984 MB allocatable, 8MCU
+
+OpenCL Platform #2: The pocl project
+====================================
+* Device #2: pthread-Intel(R) Xeon(R) CPU E3-1240 v3 @ 3.40GHz, 4096/13936 MB allocatable, 8MCU
+
+OpenCL Platform #3: NVIDIA Corporation
+======================================
+* Device #3: Quadro K600, skipped.
+
+Counting lines in ./hashes/sha1/random/100-c.txt...[2KCounted lines in ./hashes/sha1/random/100-c.txt...[2KParsing Hashes: 1/100 (1.00%)...[2KParsed Hashes: 100/100 (100.00%)[2KSorting hashes...[2KSorted hashes...[2KRemoving duplicate hashes...[2KRemoved duplicate hashes...[2KSorting salts...[2KSorted salts...[2KComparing hashes with potfile entries...[2KCompared hashes with potfile entries...[2KGenerating bitmap tables...[2KGenerated bitmap tables...[2KHashes: 100 digests; 100 unique digests, 1 unique salts
+Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
+Rules: 1
+
+Applicable optimizers:
+* Zero-Byte
+* Early-Skip
+* Not-Salted
+* Not-Iterated
+* Single-Salt
+* Raw-Hash
+
+Minimum password length supported by kernel: 0
+Maximum password length supported by kernel: 256
+
+[33mATTENTION! Pure (unoptimized) OpenCL kernels selected.[0m
+[33mThis enables cracking passwords and salts > length 32 but for the price of drastically reduced performance.[0m
+[33mIf you want to switch to optimized OpenCL kernels, append -O to your commandline.[0m
+[33m[0m
+Watchdog: Temperature abort trigger set to 90c
+
+Initializing device kernels and memory...[2KInitializing OpenCL runtime for device #1...[2K[33m* Device #1: build_opts '-cl-std=CL1.2 -I OpenCL -I /usr/share/hashcat/OpenCL -D LOCAL_MEM_TYPE=2 -D VENDOR_ID=8 -D CUDA_ARCH=0 -D AMD_ROCM=0 -D VECT_SIZE=8 -D DEVICE_TYPE=2 -D DGST_R0=3 -D DGST_R1=4 -D DGST_R2=2 -D DGST_R3=1 -D DGST_ELEM=5 -D KERN_TYPE=100 -D _unroll'[0m
+Initialized OpenCL runtime for device #1...[2KInitializing OpenCL runtime for device #2...[2K[33m* Device #2: build_opts '-cl-std=CL1.2 -I OpenCL -I /usr/share/hashcat/OpenCL -D LOCAL_MEM_TYPE=2 -D VENDOR_ID=64 -D CUDA_ARCH=0 -D AMD_ROCM=0 -D VECT_SIZE=8 -D DEVICE_TYPE=2 -D DGST_R0=3 -D DGST_R1=4 -D DGST_R2=2 -D DGST_R3=1 -D DGST_ELEM=5 -D KERN_TYPE=100 -D _unroll'[0m
+Initialized OpenCL runtime for device #2...[2KInitialized device kernels and memory...[2KDictionary cache building lists/rockyou.txt: 33553434 bytes (23.98%)[2KDictionary cache building lists/rockyou.txt: 67106869 bytes (47.96%)[2KDictionary cache building lists/rockyou.txt: 134213744 bytes (95.92%)[2KDictionary cache built:
+* Filename..: lists/rockyou.txt
+* Passwords.: 14344392
+* Bytes.....: 139921507
+* Keyspace..: 14344385
+* Runtime...: 2 secs
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  939376d3d78ead95f8ee533dd2f1c2050b30ea8b:loveandhate
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  2e2b6533a81bc15430cf65de46dc097eeb5ba70c:passwort
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  99acedb50df0fad5058814e18fc23421731a964b:paul01
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  07efc2c53e83d1d747feba7c05daee87fe8f6fe2:mimi23
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  d6276ba82780a1d830748e344ae3b2b84b62d4e7:112681
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  802005e569824d7795121269d2e1b49622859588:217217
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  0f5f556593a0c3d6ae9980428cd6fb9a7dc330e4:garvin
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  8e856e79d0d554460c53bf0b40372b6628191f37:bigdog2
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  db78b9859052010ec594c33b3784dfce79726620:222422
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  44a93aca79ff27f8887ca68f94314a900729b651:CHRONIC
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  cfb344227d2d4f10a3b9662cd350b4e397a304c3:matrix7
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  590341df78d81f7f94a3271dd41db663de78f110:paperchase
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  dec9dfbd5d88fa0b2d30247c984474fa09924e4b:granby
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  378c9015b66048e8bd64ecf4cbec51409d552f23:21051982
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  691b0ee8ea31184bfde0104dca4351f238e5b1da:astrologia
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  5c8fd88efcdf91b426833e6433d212946c55f887:cxzcxz
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  3596c2bd502979cec649ac0b7ba820897b45fb82:redbag
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  68d44596ec1c6430bc4eabe1b14f6cd610c86bd1:wasdale
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  a274441ac4167153965da10e5ad57b20325b7815:12041970
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  fd854a0a155ef228a927d2479fd6cfb02e69b070:techman
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  0d2d33c4b39b5fce0bbd152e6a58b4a70428ae05:dean25
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  5499cc74fdd9a754e88916bc0c862b97fbd1b45e:14071976
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  53140064238a76ce8a9ea2560b882f46b7658d45:th1rt33n
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  8e6a6b90c965994c539cd4464ff48de6452b7e2d:51435143
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  2fa425a273d45abd4834144ff5355689b1c1da28:spoon13
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  d86ac9d6cebd15c0a6ecd82cd10c1ff0fff28e57:adidas31
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  74f7e7425d0f1c163e0c41e24123a6230fc68c2a:07171982
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  0161428c44b9ba0400aad921c2863e2038e37f42:q9w8e7r6
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  c8b1ac63ba2133d2d4a7da64b5c7c6b8f5f28dd8:giddie
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  3df1a8a24cd0d57dda9fa6bba80b035ddc0ceafb:Meteor
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  b54030fae337bcd11775ed876053a751c415ce43:755655
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  b06bc6878154cb7e6e828c24225f1a396b24d56b:36666
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  6f09bd6b334fcc6a0414a068aa0cb5ceda76a0d5:25081970
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  700770a83c8a356267586812e883e9d8075738aa:21346578
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  b9b98380282e99b45d6318acd685dc849d4afccf:youngdr
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  845cd3386431ff13bfee4ae5b9a39d04232f98a2:sept139
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  333d12b5df28203852fdec9ce0d8373a87de2d1e:noranis
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  b6cb8c5c85480c1d5801cff76c9f4087af25d253:mariotto
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  7584787ecae4c3132c4ce773dae3f86872145cc5:buey
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  da336c829265561bb3b6c6afe00da035cf7b0cfc:bongoes
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  5a73ee61317c2af56e9aaba5d6dc293ab56beb34:889213
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  66959bd1af4d8be4901dd7900df559c6046778d1:7ygv8uhb
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  27143aa2afcd1fb4a892d41806de0ca7eb68b624:333777333
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  92328337c45dfe24bd8e3ba1482450b761e10ee6:1Christ
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  [33mApproaching final keyspace - workload adjusted.[0m
+[33m[0m
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  
+Session..........: hashcat
+Status...........: Exhausted
+Hash.Type........: SHA1
+Hash.Target......: ./hashes/sha1/random/100-c.txt
+Time.Started.....: Wed Mar 27 14:31:29 2019 (2 secs)
+Time.Estimated...: Wed Mar 27 14:31:31 2019 (0 secs)
+Guess.Base.......: File (lists/rockyou.txt)
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........:  3272.5 kH/s (0.81ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Speed.#2.........:  3394.9 kH/s (0.71ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Speed.#*.........:  6667.3 kH/s
+Recovered........: 44/100 (44.00%) Digests, 0/1 (0.00%) Salts
+Progress.........: 14344385/14344385 (100.00%)
+Rejected.........: 0/14344385 (0.00%)
+Restore.Point....: 14340193/14344385 (99.97%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Restore.Sub.#2...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidates.#1....: $HEX[216272696e616261793838] -> $HEX[042a0337c2a156616d6f732103]
+Candidates.#2....: #!hottie -> !brit!
+Hardware.Mon.#1..: N/A
+Hardware.Mon.#2..: N/A
+
+Started: Wed Mar 27 14:31:26 2019
+[2KStopped: Wed Mar 27 14:31:31 2019
