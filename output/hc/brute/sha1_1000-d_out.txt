@@ -1,0 +1,82 @@
+hashcat (v5.1.0) starting...
+
+OpenCL Platform #1: Intel(R) Corporation
+========================================
+* Device #1: Intel(R) Xeon(R) CPU E3-1240 v3 @ 3.40GHz, 3996/15984 MB allocatable, 8MCU
+
+OpenCL Platform #2: The pocl project
+====================================
+* Device #2: pthread-Intel(R) Xeon(R) CPU E3-1240 v3 @ 3.40GHz, 4096/13936 MB allocatable, 8MCU
+
+OpenCL Platform #3: NVIDIA Corporation
+======================================
+* Device #3: Quadro K600, skipped.
+
+Counting lines in ./hashes/sha1/fivechar/1000-d.txt...[2KCounted lines in ./hashes/sha1/fivechar/1000-d.txt...[2KParsing Hashes: 1/1000 (0.10%)...[2KParsed Hashes: 1000/1000 (100.00%)[2KSorting hashes...[2KSorted hashes...[2KRemoving duplicate hashes...[2KRemoved duplicate hashes...[2KSorting salts...[2KSorted salts...[2KComparing hashes with potfile entries...[2KCompared hashes with potfile entries...[2KGenerating bitmap tables...[2KGenerated bitmap tables...[2KHashes: 1000 digests; 999 unique digests, 1 unique salts
+Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
+
+Applicable optimizers:
+* Zero-Byte
+* Early-Skip
+* Not-Salted
+* Not-Iterated
+* Single-Salt
+* Brute-Force
+* Raw-Hash
+
+Minimum password length supported by kernel: 0
+Maximum password length supported by kernel: 256
+
+[33mATTENTION! Pure (unoptimized) OpenCL kernels selected.[0m
+[33mThis enables cracking passwords and salts > length 32 but for the price of drastically reduced performance.[0m
+[33mIf you want to switch to optimized OpenCL kernels, append -O to your commandline.[0m
+[33m[0m
+Watchdog: Temperature abort trigger set to 90c
+
+Initializing device kernels and memory...[2KInitializing OpenCL runtime for device #1...[2K[33m* Device #1: build_opts '-cl-std=CL1.2 -I OpenCL -I /usr/share/hashcat/OpenCL -D LOCAL_MEM_TYPE=2 -D VENDOR_ID=8 -D CUDA_ARCH=0 -D AMD_ROCM=0 -D VECT_SIZE=8 -D DEVICE_TYPE=2 -D DGST_R0=3 -D DGST_R1=4 -D DGST_R2=2 -D DGST_R3=1 -D DGST_ELEM=5 -D KERN_TYPE=100 -D _unroll'[0m
+Initialized OpenCL runtime for device #1...[2KInitializing OpenCL runtime for device #2...[2K[33m* Device #2: build_opts '-cl-std=CL1.2 -I OpenCL -I /usr/share/hashcat/OpenCL -D LOCAL_MEM_TYPE=2 -D VENDOR_ID=64 -D CUDA_ARCH=0 -D AMD_ROCM=0 -D VECT_SIZE=8 -D DEVICE_TYPE=2 -D DGST_R0=3 -D DGST_R1=4 -D DGST_R2=2 -D DGST_R3=1 -D DGST_ELEM=5 -D KERN_TYPE=100 -D _unroll'[0m
+Initialized OpenCL runtime for device #2...[2KInitialized device kernels and memory...[2K[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  473a89ec9690d0cb3ab77f6f470d2c52c69116fb:lione
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  047349e5aea6fb7de075fc63ada34130551f13dc:gater
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  4a21ef56662b4b4e15326333afd448c51d2e0bc8:josma
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  0dcb3bf1ea792cc549a5b76bcf88784e706ff626:lawre
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  c5ed64b7c28c742f9baeaae3857c5aecd6e8350d:farda
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  e093548081b6f789d8cac08210d0d98cbf0e52d6:pitfa
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  bc90a589ac0a0a407b3fa29b2fe3209f6a17c53f:klava
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  b96019d2f5e5bcc9236e3807fcbafddb8fd634b8:noura
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  052a2f84343826ffacf91b283045e9d70e699bd7:cozzi
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  f9913e872943a167767850a99cbc5df1b09a03c5:kunal
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  c5fb192a6423491bc4cca8446fcb12bfb6a46f34:amato
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  3d5d70fb9a5ba393896f0308f270cacb6af9d0df:juanc
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  fa97b61f38b3c471951222b6fb58750779a78bf6:zevmu
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  73755b6968681dc36e2ade51823378f40eed5e7e:bipod
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  a225bbd135515140f85907517d386975e890c9f2:ztirf
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  7bb459019b6c1ec212d209419de9a97fffdb1e95:glemz
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  5612608e375821c6e1305ba0076e3d3db7114d9b:rgbbv
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  [33mApproaching final keyspace - workload adjusted.[0m
+[33m[0m
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  0eb72b65605e656c90904cd59de12af9d46f88fd:ambpq
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  
+Session..........: hashcat
+Status...........: Exhausted
+Hash.Type........: SHA1
+Hash.Target......: ./hashes/sha1/fivechar/1000-d.txt
+Time.Started.....: Wed Mar 27 15:11:50 2019 (0 secs)
+Time.Estimated...: Wed Mar 27 15:11:50 2019 (0 secs)
+Guess.Mask.......: ?l?l?l?l?l [5]
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........: 43734.8 kH/s (3.73ms) @ Accel:1024 Loops:26 Thr:1 Vec:8
+Speed.#2.........: 40049.2 kH/s (3.83ms) @ Accel:1024 Loops:26 Thr:1 Vec:8
+Speed.#*.........: 83784.0 kH/s
+Recovered........: 18/999 (1.80%) Digests, 0/1 (0.00%) Salts
+Progress.........: 11881376/11881376 (100.00%)
+Rejected.........: 0/11881376 (0.00%)
+Restore.Point....: 449672/456976 (98.40%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-26 Iteration:0-26
+Restore.Sub.#2...: Salt:0 Amplifier:0-26 Iteration:0-26
+Candidates.#1....: suicq -> xosyq
+Candidates.#2....: sexlx -> xqxvq
+Hardware.Mon.#1..: N/A
+Hardware.Mon.#2..: N/A
+
+Started: Wed Mar 27 15:11:47 2019
+[2KStopped: Wed Mar 27 15:11:51 2019
