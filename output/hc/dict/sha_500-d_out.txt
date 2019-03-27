@@ -1,0 +1,441 @@
+hashcat (v5.1.0) starting...
+
+OpenCL Platform #1: Intel(R) Corporation
+========================================
+* Device #1: Intel(R) Xeon(R) CPU E3-1240 v3 @ 3.40GHz, 3996/15984 MB allocatable, 8MCU
+
+OpenCL Platform #2: The pocl project
+====================================
+* Device #2: pthread-Intel(R) Xeon(R) CPU E3-1240 v3 @ 3.40GHz, 4096/13936 MB allocatable, 8MCU
+
+OpenCL Platform #3: NVIDIA Corporation
+======================================
+* Device #3: Quadro K600, skipped.
+
+Counting lines in ./hashes/lm/random/500-d.txt...[2KCounted lines in ./hashes/lm/random/500-d.txt...[2KParsing Hashes: 2/1000 (0.20%)...[2KParsed Hashes: 1000/1000 (100.00%)[2KSorting hashes...[2KSorted hashes...[2KRemoving duplicate hashes...[2KRemoved duplicate hashes...[2KSorting salts...[2KSorted salts...[2KComparing hashes with potfile entries...[2KCompared hashes with potfile entries...[2KGenerating bitmap tables...[2KGenerated bitmap tables...[2KHashes: 1000 digests; 630 unique digests, 1 unique salts
+Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
+Rules: 1
+
+Applicable optimizers:
+* Zero-Byte
+* Precompute-Final-Permutation
+* Not-Iterated
+* Single-Salt
+
+Minimum password length supported by kernel: 0
+Maximum password length supported by kernel: 7
+
+Watchdog: Temperature abort trigger set to 90c
+
+Initializing device kernels and memory...[2KInitializing OpenCL runtime for device #1...[2K[33m* Device #1: build_opts '-cl-std=CL1.2 -I OpenCL -I /usr/share/hashcat/OpenCL -D LOCAL_MEM_TYPE=2 -D VENDOR_ID=8 -D CUDA_ARCH=0 -D AMD_ROCM=0 -D VECT_SIZE=8 -D DEVICE_TYPE=2 -D DGST_R0=0 -D DGST_R1=1 -D DGST_R2=2 -D DGST_R3=3 -D DGST_ELEM=4 -D KERN_TYPE=3000 -D _unroll'[0m
+Initialized OpenCL runtime for device #1...[2KInitializing OpenCL runtime for device #2...[2K[33m* Device #2: build_opts '-cl-std=CL1.2 -I OpenCL -I /usr/share/hashcat/OpenCL -D LOCAL_MEM_TYPE=2 -D VENDOR_ID=64 -D CUDA_ARCH=0 -D AMD_ROCM=0 -D VECT_SIZE=8 -D DEVICE_TYPE=2 -D DGST_R0=0 -D DGST_R1=1 -D DGST_R2=2 -D DGST_R3=3 -D DGST_ELEM=4 -D KERN_TYPE=3000 -D _unroll'[0m
+Initialized OpenCL runtime for device #2...[2KInitialized device kernels and memory...[2KDictionary cache building lists/rockyou.txt: 33553434 bytes (23.98%)[2KDictionary cache building lists/rockyou.txt: 67106869 bytes (47.96%)[2KDictionary cache building lists/rockyou.txt: 100660302 bytes (71.94%)[2KDictionary cache built:
+* Filename..: lists/rockyou.txt
+* Passwords.: 27181943
+* Bytes.....: 139921507
+* Keyspace..: 27181943
+* Runtime...: 3 secs
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  0182bd0bd4444bf8:1234567
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  aad3b435b51404ee:
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  7584248b8d2c9f9e:A
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  4a3b108f3fa6cb6d:D
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  613e9293942509f0:U
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  1aa818381e4e281b:3
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  93e28745b8bf4ba6:S
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  c2265b23734e0dac:1
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  36077a718ccdf409:8
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  f500944b53168930:L
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  417eaf50cfac29c3:T
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  1486235a2333e4d2:M
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  b79ae2610dd89d4c:Y
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  944e2df489a880e4:R
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  b28bd20b0d3770eb:PENGUIN
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  df128b2dd32bad07:G
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  e72c57ef50f76a05:N
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  17306d272a9441bb:E
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  8b0ea5a7df135b03:P
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  5acdcd7c247fa83a:H
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  c23413a8a1e7665f:WELCOME
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  25ad3b83fa6627c7:0
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  fc3a211d991668db:321
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  cdf5e5fd95c14d93:SUPERMA
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  1104594f8c2ef12b:F
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  e68aa26a841a86fa:O
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  219ad59f77805fe5:ZXCVBNM
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  120fafeb2e7c7e58:WHATEVE
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  daa9def854f4533f:WILLIAM
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  1d91a081d4b37861:Z
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  8eefe33a7f9bee0d:69
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  5e57fc0295493699:AR
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  1d71060d896b7a46:2
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  f9393d97e7a1873c:C
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  87694d42e68df5ee:OWN
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  faf6645e5f76db8e:CO
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  ff17365faf1ffe89:4
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  c187b8085fe1d9df:X
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  c482c03f54cdb5d9:K
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  066b9e64566c2479:LL
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  7c3113b4a1a5e3a0:7
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  8358f3d2c80c1dc5:ON
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  7180c8d3db03ec8c:PEPITO
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  4c381c572d2b6a1c:MNBVCXZ
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  c81667e9d738c5d9:6
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  2eac541d19bc1646:09
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  00a7af7ac715311e:08
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  9c5014ae4718a7ee:5
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  98f47bad8bf9d3d5:LATOYA
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  73251aa2b4314b90:01
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  09752a3293831d17:9
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  c9e756a5bd14ab15:HOOTERS
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  2d33f60811d230af:RUKAWA
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  e4ecfdc5b3736a6b:LYNETTE
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  a20d151f0335f473:DEADMAN
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  3c1438e23e14acfe:BUBBLE1
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  5d3872c04445e010:11
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  fae6a38a362334e2:MISSION
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  9a0f5d12d8f612d0:ET
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  0279963575ff2d48:LLO
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  00270de6e7812f79:REDWING
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  736f8ef8ad5efb7a:47
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  e6ff2bbf57cd8ee0:FOOTIE
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  fdcfc2afb2d1be34:V
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  92a1ee073470d392:CKS
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  12abbab370072f3c:2010
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  1e13adbc627d0b1a:STONEY
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  65d743d366cb0a1e:ULTRAMA
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  67049b879258babd:TOS
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  407c6a6436850d91:JOHNNIE
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  6c2cc25bf8fb32a6:LOREN
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  76da1739f77a5130:BIGBOOB
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  2a892e1fa4c0a7fb:JAIRO
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  c9d77311b2a1251e:SEXYONE
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  4d5df223e03e456b:6789
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  e07c14bf5020cc5c:MUSICMA
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  7ca65f36030673dd:J
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  4bf0b6bc98c3b9d6:2008
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  50171f090cdd6e03:GIORGIO
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  6eddbd2d19915f64:METALGE
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  acc32cd3722b6011:RUNNER1
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  5c863e11cab559fc:APOCALY
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  7ff30c2d9be62150:QWERTY2
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  4c0e0ed810d0b77f:ITE
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  fbae2060f410f67c:NATHAN2
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  5468f2ad1f3b98ba:ORE
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  19f10a933d4868dc:34
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  47c0a417b2805eb3:CHEESEB
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  d34c9bfbab6314f5:URGER
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  570c1f0356eb0f4d:CARIBE
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  6c4691c0029ebe9f:88
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  1ad5573c73fe7b14:MOOMOO2
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  1f66994b4fc2476e:98
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  d8f7f5860820ed3f:Q
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  a364a7bc4abb8fa7:JAYDEN3
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  bb1f540d099e095d:LK
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  69bb231a1cac5e83:DANNY17
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  198b6b0803d49465:KAYSHA
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  b85ebea904a749b9:2345
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  7b264130c245f6dd:86
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  ac97f1d8636bffca:VISTA
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  f67023e95cc9dc1c:WOMBLE
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  ee2b0b34e0112872:VALLEY1
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  aa3f61f75a405382:070207
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  32cc1380fa7e9c1f:IST
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  633726f2ea9e031e:PI
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  e08e8ea8a540b510:DRUMSTI
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  18b54e8c655a9042:4CHRIST
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  909fb7932d287162:FIREDRA
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  419c03be6578e38e:2212198
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  69dbb4a1e4c9788a:MJORDAN
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  94132c07680950f3:HYPERLI
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  695eb97414066a4c:1204198
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  aac68f5b5103b33a:110880
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  3f1acdf2b75671f3:WHITEHA
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  955e8cc3239d10b5:PANZON
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  45121bc3bb99d10e:LUCKY19
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  b956a820fc718cdb:WHITEFA
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  da457cf3ad361bc0:KENNWOR
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  c84d34b5a6ff2ae5:SOPHIE3
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  4d5baa2f4c846568:ORANGE0
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  a91e548719c3ac6e:80
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  42d1b879090f477b:SHOCK
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  90ca8dfc54f094f4:HASANI
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  f2d826f24eb5dbc3:290395
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  c4bd89daa60016c2:BARROSO
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  7fad35a428642da7:THEDRAG
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  0dd3a0d7230902ad:MANTA
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  6cb42e5a3c28c4a3:N19
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  d4793410002bf4e3:OKFINE
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  571b0f329f854a99:GINGER6
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  cc6656eb8ce88a71:JEN
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  80942ef1364a7e31:FRIEDCH
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  5804c87ac198d1ad:ICKEN
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  6f66c6cb04363006:CARMEN3
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  5e34749e73fa9c64:96
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  d09d6a8554a873b0:91
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  5bdd849711462507:011280
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  a7ca3600c0e0eeaf:1902199
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  0d96d88a3cf696c1:009
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  fbd59e6545742c03:221997
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  727ce7d8c55f6410:5556667
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  ffcbbaebf9c5fbe4:1978
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  207bffe50f1396d2:97
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  a1434762501287f0:994
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  8d3c1a680e580374:GREYSON
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  676b32a9232a1192:030681
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  18a2678be0985d54:2108198
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  4fe7d5bfc3e002cc:WILLIE3
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  f28d1055c6a18b34:POOOOOO
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  b67fc58a84937cc6:LISTERI
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  bf8c35fc08019fbb:CLAIRE4
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  b9fe13ef62a0c96a:CHRIS82
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  e39d9dc70d55b08d:SONIC7
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  4b90fd7fc4d32f6c:D83
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  e2e38b947ae16b33:GOOFEY
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  563fdd5b8b942f95:3105198
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  ffe6456ea5ed23b6:KITTYHE
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  1cb311d16eaed6b3:0711198
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  56ea4a79b7174ce5:TENNIS6
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  63f12b239138793b:PAROLAN
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  00797353f6a4d2e3:LU
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  d60bf38fb86c7b22:APRIL99
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  8f50e0f3f436693a:MAGAN
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  1dd37398013cfec1:LIDIJA
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  fc8feb176a4902d2:RANDY24
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  e7ad845e462b8df1:MAIKEN
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  c5b594b76ce7dacb:LOVERED
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  99e3617f23c88079:1BRENDA
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  04d90bfaca451487:147
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  6e5a8b36e7e70a66:PROXIMA
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  e4c857be9cd2f2a6:ACY
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  e862e440f55320a1:121369
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  85ed5a817b65b3c5:TBIRD
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  c192f88180c5b447:GEORG
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  d4f3b48747544b54:260329
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  9ce9d2c239ac3f65:TRILLIA
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  db7a0b621cdf9082:XANDER3
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  e3df55c813db6014:6101989
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  f6a6dd97ed17729f:DOM
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  493f9a41dfd5a467:TOMMO
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  7a2b6b5b8bf357ae:TAKING
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  b9dfd44fe5f91fdf:SPORT12
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  f247cda3d9b06e79:S55555
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  68a2d15cfaa58ad7:LOGINS
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  22fac50e30d15df4:MAKATA
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  aac067bc2f29daf6:2611200
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  b87c5c962bcd9afa:CEY
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  bd7eab3d1509922f:ITSTRUE
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  9cf2c70e8252ec3c:2302200
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  92c0eb0abe52ac19:POEPPOE
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  465bec02731a9088:CORNNUT
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  eed94654a8024f0f:EMIKO
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  4b376ab9667666b8:SERENA0
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  3115b8996c8503ea:1973
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  9ce2b264b7e5326f:120728
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  4fc17e1ed0d64959:POLSKA2
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  eb5cbf52f6e1c572:KATE69
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  39e1d0a159c39a14:DIANA08
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  3ab614f1b892fcb0:BISSAU
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  e6cffaa22feacd06:ABBEY11
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  a86fb73c70515bd7:&
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  bd9dbd0c8b7adafe:TREESTU
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  7e41a13afdeb3200:RAMMER
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  e8ecbce89092aea1:KAGEMAN
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  5d5267a16836dfc9:JEVON1
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  0d71d256842c196a:FINEONE
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  ec929677bc5e62bd:ECSTATI
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  d80ac0422beaedff:CONSTAB
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  8ec832c8db5d4146:312700
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  55e713787b98f2e0:SALOMAO
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  071ad3edd7c122ff:MICROCE
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  94cf48552ceed573:BOEING1
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  28acf2c9306003af:455555
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  f190d91e29c9a402:124125
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  4d85e44a381e0bc3:ZALJUBL
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  857efdb8887b4701:SAUVEUR
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  79bbc43f521b52e3:LADYFIR
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  b6a89e75c1fe88e0:DOGASS
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  5c1fa794248af516:6666661
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  b724dcd735454506:YOURI
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  7b3f6ff9f24ad9f4:1FORRES
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  d73c77edb7fdb32a:170198
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  c1ca93125b3a1cde:NOOPY
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  d4a542dd2ed4fb7c:FORD16
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  c43767f56f04806b:ERICSAN
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  57a8e6988dfe97aa:BUTLER2
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  f62135b17ad53e4f:21994
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  e65f73e5138fd2bc:1010196
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  39185155266ed5ea:VEROBEA
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  1aa53c9d3bff2b7f:ZASADA
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  ef37e41421db1c08:-
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  2c585c06f7d3eaaa:KONVIC
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  1c1ab6ab09d19c41:GAGA85
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  deb0e805a163bb9e:DRAGBIK
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  fd02ef84a6875a97:AUDI90
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  51316b541e6dd473:ASWQASW
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  fd45371d27b7c7f5:WILKY1
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  adfdac7ca2c30c35:WEINER7
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  b38d75b704150ac0:ST33L3R
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  8bad321550bc64d8:SAMURIA
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  b213dd7685a22b29:POMPIDO
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  d38c4f03ed26f629:PLONKY
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  02671359c34e22a9:LCON
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  d80f021a83d6faa8:LAUDE
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  b357df972cd24085:EITH
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  bb6c16c4a20eb96b:JAMESWH
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  690835efc06abee9:EXTRACT
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  319706d2db7b534f:EUROCOP
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  ade255f817c93864:AMIEVIL
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  acf2f8e10bdc75e9:ALGHERO
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  229e104ce5b74b4e:7677767
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  ff8936caf68be096:599
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  d0a02b40efbd11c8:151058
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  de55d4e50e936213:932
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  5d353487ad112cdf:4024
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  cfa4824c16f5483b:070962
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  2902bb39a33c886e:WIPAPOR
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  a93910fa5797e7ed:0M
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  7a7e1be91d7eaf47:TURNIPP
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  41e67f6cba88f573:TOTS
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  7de91380e339e4a7:AFE
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  9564656563152e8d:OTULP
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  5888386e36216db7:PEPINS
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  41050881588f6f25:MARIA48
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  8650f782d44c6ec9:JJANG
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  f155d8f71e61650e:HOMER02
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  4070938447ca53bc:DABONE
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  e2472c16d3d79657:CHAEGYU
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  769b5d6d0f79d30e:ATRAPAD
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  26ebc503716ee587:1980012
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  b029c27f940fe2a2:19035
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  d415a92f871d2d82:165200
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  a527bc1d7222bf7d:1234515
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  8f83b25e99012937:10312
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  0c4e4a43af9b55bb:0361036
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  8b2f984fd57abbf9:010458
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  f3c7254998810641:YOUGOTT
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  c5c4dd1dcd55d937:NG03
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  4306629b9e646316:OMIE
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  eb76fe56709b2f19:WARSAW1
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  5843a6f82b03d1c3:VLAD199
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  1fa0d3c06db75be9:534
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  a330f5cb6ffac612:03X
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  d7fa23e883ed0b3a:VERN98
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  803af884eea1f111:VECTRA2
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  70a521f1a5fd8d88:STONGO
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  683e50c82a0fe2f2:6Z
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  31c3094048441d3d:RURIK
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  c66f1b9497161d64:POSAUNE
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  ffafac7244f8582d:MIKEYC3
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  fd85f92263b8c28d:7582
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  17fc756e8651a2eb:MARY201
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  84cb5a0cd76974b1:EY22
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  82a195dd52c27797:8565
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  0d9b1e48a4e54d8d:JUMP99
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  30882558cfcaa13f:JIGGSY
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  b264cd4c6746d367:ICYCLE
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  0488c7710da3b678:CODY120
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  aefb7aa2fb83176f:BREWER6
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  f35a6d08af2e529b:BALLFIR
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  6847331facbe9799:6M
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  b1700750d2fccc07:722888
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  2ee91f0e93abfd91:0159
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  3a9585e7e4586f6c:221880
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  cf3a9794e8e55043:1993130
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  de3cb8fda40745f9:4933
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  14b20dfed3d8d711:ZUNZARA
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  86a27d9ce73ff21b:ZOOOOZ
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  f861c9f8443c3d2c:NJH
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  cf80565283b93277:ZAINAB_
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  087a510a058c0609:7N
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  91908ae28574b4cf:XPAC69
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  ebe066164a41ab79:XDRESSE
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  9edbf830963a5d80:5295
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  06a4748c359b0e75:WOLF999
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  8c2c799ef987a803:WIGGLY2
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  8d4395230d9819d4:WENDYMO
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  98719df31de69547:WBEARD
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  786d73802fdf86a9:VURTIS
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  41347243d6821621:VOVCHIK
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  c235e8729bedf1ab:VOLVO21
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  71462dde1232a087:VLAD240
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  4aebbec2173afa5f:A153
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  549f3f985675fb52:TURRITA
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  7ea534c668034fce:TROYM4
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  e80944e08fc3f6a6:HEDI
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  a54f7780a98aa7e3:SPUD34
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  8baabd295a199039:KRK
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  87b900a054f8f59b:NM123
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  2bff7b5662f9a126:QUAKETW
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  04ed56730f12e889:PONY50
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  0323a0bf77b90455:PITTY10
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  6e6392f92c74de74:PEDER1
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  bd0ef37fa50ea5b1:PASS556
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  bc4b1c7c88081b58:ASEE
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  cc436bf02a6f3226:LICAONE
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  f84c4435dc6d3fe0:KUSCHI1
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  a23369aa91c842c2:JIMBEA
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  9fed8eb6c10f6579:GKH
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  8d77f8bfa7ea5375:INNA198
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  1522e9bc3345e7f2:HUNK19
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  0348bf6482f798d9:FAINA12
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  a34d6685c63ada0f:ERNTE23
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  160c40794eac8f57:1NC
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  7173165fca014228:DDAAII
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  ca4d30ad19721e62:CUCHY
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  76a1d5552bade70e:ALVERSO
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  252e7a65373811b7:BUNK438
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  fa1e48a3ee7c729c:BUFF10
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  842748f1d6b64c4b:BRAINN
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  2457a913359aa345:BOUNCY2
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  f566229016a81aef:BOB2222
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  1d2f431645556066:BERNIEW
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  306921bf6cb2f7fd:BARRYNO
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  f7c0983642d3a818:BADMA
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  e22e1990e8bebc51:AZERTU
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  78984b00f636cce1:ASASIN1
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  01e90cc302f908bb:ANTWAT
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  acd3732a333d4740:ALIVALI
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  fce3e403c865d378:6779
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  1ee3ca597ab85da2:AKIRAT
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  29265392f6e10213:586183
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  2e7691955f2d1f39:IGGIES
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  17366ec512559d96:276500
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  66c1dbd7fdb79652:2706195
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  dca4259109deec7b:2601195
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  7572ab767264805c:24VIPER
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  15c16869fd32ec08:2206195
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  da91f81a518387b0:2000LAN
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  ba02857d8ed3325c:1975061
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  47ae6cdb5f6a6626:1824144
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  7454333a4a749726:4VEGAS
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  a0f0946039d0bc67:1131111
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  0bbf975db662ca6e:062147
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  a7f5e47398ce4dcf:0532008
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  [33mApproaching final keyspace - workload adjusted.[0m
+[33m[0m
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  
+Session..........: hashcat
+Status...........: Exhausted
+Hash.Type........: LM
+Hash.Target......: 8c2a38187238e4f2, e68aa26a841a86fa
+Time.Started.....: Wed Mar 27 14:52:38 2019 (5 secs)
+Time.Estimated...: Wed Mar 27 14:52:43 2019 (0 secs)
+Guess.Base.......: File (lists/rockyou.txt)
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........:  3031.3 kH/s (1.57ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Speed.#2.........:  2483.9 kH/s (1.43ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Speed.#*.........:  5515.2 kH/s
+Recovered........: 376/630 (59.68%) Digests, 0/1 (0.00%) Salts
+Progress.........: 27181943/27181943 (100.00%)
+Rejected.........: 0/27181943 (0.00%)
+Restore.Point....: 27177404/27181943 (99.98%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Restore.Sub.#2...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidates.#1....: I -> (
+Candidates.#2....: $HEX[21392833424a4b] -> $HEX[414d4f532103]
+Hardware.Mon.#1..: N/A
+Hardware.Mon.#2..: N/A
+
+Started: Wed Mar 27 14:52:34 2019
+[2KStopped: Wed Mar 27 14:52:43 2019
