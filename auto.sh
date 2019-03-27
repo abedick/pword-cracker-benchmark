@@ -21,5 +21,5 @@ else
 	/usr/bin/git push
 
 	echo "reboot"
-	/usr/sbin/reboot
+	#/usr/sbin/reboot
 fi
