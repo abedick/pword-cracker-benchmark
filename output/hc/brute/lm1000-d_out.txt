@@ -1,0 +1,83 @@
+hashcat (v5.1.0) starting...
+
+OpenCL Platform #1: Intel(R) Corporation
+========================================
+* Device #1: Intel(R) Xeon(R) CPU E3-1240 v3 @ 3.40GHz, 3996/15984 MB allocatable, 8MCU
+
+OpenCL Platform #2: The pocl project
+====================================
+* Device #2: pthread-Intel(R) Xeon(R) CPU E3-1240 v3 @ 3.40GHz, 4096/13936 MB allocatable, 8MCU
+
+OpenCL Platform #3: NVIDIA Corporation
+======================================
+* Device #3: Quadro K600, skipped.
+
+Counting lines in ./hashes/lm/fivechar/1000-d.txt...[2KCounted lines in ./hashes/lm/fivechar/1000-d.txt...[2KParsing Hashes: 2/2000 (0.10%)...[2KParsed Hashes: 2000/2000 (100.00%)[2KSorting hashes...[2KSorted hashes...[2KRemoving duplicate hashes...[2KRemoved duplicate hashes...[2KSorting salts...[2KSorted salts...[2KComparing hashes with potfile entries...[2KCompared hashes with potfile entries...[2KGenerating bitmap tables...[2KGenerated bitmap tables...[2KHashes: 2000 digests; 1199 unique digests, 1 unique salts
+Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
+
+Applicable optimizers:
+* Zero-Byte
+* Precompute-Final-Permutation
+* Not-Iterated
+* Single-Salt
+* Brute-Force
+
+Minimum password length supported by kernel: 0
+Maximum password length supported by kernel: 7
+
+Watchdog: Temperature abort trigger set to 90c
+
+Initializing device kernels and memory...[2KInitializing OpenCL runtime for device #1...[2K[33m* Device #1: build_opts '-cl-std=CL1.2 -I OpenCL -I /usr/share/hashcat/OpenCL -D LOCAL_MEM_TYPE=2 -D VENDOR_ID=8 -D CUDA_ARCH=0 -D AMD_ROCM=0 -D VECT_SIZE=8 -D DEVICE_TYPE=2 -D DGST_R0=0 -D DGST_R1=1 -D DGST_R2=2 -D DGST_R3=3 -D DGST_ELEM=4 -D KERN_TYPE=3000 -D _unroll'[0m
+Initialized OpenCL runtime for device #1...[2KInitializing OpenCL runtime for device #2...[2K[33m* Device #2: build_opts '-cl-std=CL1.2 -I OpenCL -I /usr/share/hashcat/OpenCL -D LOCAL_MEM_TYPE=2 -D VENDOR_ID=64 -D CUDA_ARCH=0 -D AMD_ROCM=0 -D VECT_SIZE=8 -D DEVICE_TYPE=2 -D DGST_R0=0 -D DGST_R1=1 -D DGST_R2=2 -D DGST_R3=3 -D DGST_ELEM=4 -D KERN_TYPE=3000 -D _unroll'[0m
+Initialized OpenCL runtime for device #2...[2KInitialized device kernels and memory...[2K[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  66b5040cac61bdc3:GATER
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  113ad3dee6105ff8:FARDA
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  8490404637c4a3f4:JOSMA
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  d694ac8a982dd05b:LIONE
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  40d91b8509dcf9c3:LAWRE
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  ffafd24f02b724f0:PITFA
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  4dcb64a8a1bdfcbd:NOURA
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  ff60a2631e0bc6ca:COZZI
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  2efe830f59e9a5b9:KUNAL
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  c04571fe3bacc8ba:KLAVA
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  d446629ef0534ecb:JUANC
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  4bafaee219ae7e57:MADDO
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  59b626574974974c:AMATO
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  d5b58548df7ea6d3:NGLEY
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  6bd3a91f787af3cd:ZEVMU
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  ed95e14c86565ac6:BIPOD
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  253c94f1f03bc3d2:EFLAP
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  df5cbfa8c00a85e4:FRFRF
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  6e9beda4e59af987:ZTIRF
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  e0f2ba74240280d7:GLEMZ
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  0e32e661d989ebb0:BGWSZ
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  4c68921a63b7fc54:RGBBV
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  1d7f4f5463f65b47:IDSQG
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  3de7d343d7121478:AMBPQ
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  [33mApproaching final keyspace - workload adjusted.[0m
+[33m[0m
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  
+Session..........: hashcat
+Status...........: Exhausted
+Hash.Type........: LM
+Hash.Target......: e0065ab628b6b426, 36c8f83040de5a84
+Time.Started.....: Wed Mar 27 15:43:41 2019 (6 secs)
+Time.Estimated...: Wed Mar 27 15:43:47 2019 (0 secs)
+Guess.Mask.......: ?l?l?l?l?l [5]
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........:   973.1 kH/s (12.34ms) @ Accel:64 Loops:1024 Thr:1 Vec:8
+Speed.#2.........:   961.4 kH/s (22.63ms) @ Accel:128 Loops:1024 Thr:1 Vec:8
+Speed.#*.........:  1934.5 kH/s
+Recovered........: 24/1199 (2.00%) Digests, 0/1 (0.00%) Salts
+Recovered/Time...: CUR:N/A,N/A,N/A AVG:234,14051,337236 (Min,Hour,Day)
+Progress.........: 11881376/11881376 (100.00%)
+Rejected.........: 0/11881376 (0.00%)
+Restore.Point....: 456192/456976 (99.83%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-26 Iteration:0-1024
+Restore.Sub.#2...: Salt:0 Amplifier:0-26 Iteration:0-1024
+Candidates.#1....: MXNQF -> XQXQF
+Candidates.#2....: MTSQF -> XVXVQ
+Hardware.Mon.#1..: N/A
+Hardware.Mon.#2..: N/A
+
+Started: Wed Mar 27 15:43:38 2019
+[2KStopped: Wed Mar 27 15:43:48 2019
