@@ -1,25 +1,11 @@
-
-
 import subprocess
 import re
 import os
 import random
+import ast
 from io import StringIO
 from passlib.hash import lmhash
 import hashlib
-
-# For john the ripper
-# john --wordlist=lists/rockyou.txt --format=md5crypt ./hashes/100_000_md5.txt
-
-# For hashcat
-# hashcat -a 0 -m 500 ./hashes/100_000_md5.txt ./lists/rockyou.txt
-
-# for bruteforce hashcat
-# -a 3 -m 500 l?l?l?l?
-
-# for bruteforce john
-# john --incremental=lower --format
-# modify john.conf [incremental:lower]
 
 def main():
 
@@ -31,35 +17,48 @@ def main():
 		for y in ltr:
 			trials.append(str(x)+"-"+y)
 
+	tests = []
+	try:
+		f = open("./remaining_tests.txt", "r")
+		t = f.read()
+		tests = ast.literal_eval(t)
+	except OSError:
+
+		t = ["1","2","3"]
+		tests = []
+		for x in trials:
+			for y in t:
+				tests.append(x + ":" + y)
+		
+		f = open("./remaining_tests.txt", "w")
+		f.write(str(tests))
+		return
+			
+	thisInt = random.randint(0,len(tests)-1)
+	thisOne = tests[thisInt].split(":")
+	print(thisOne)
+
+	tests.remove(tests[thisInt])
+	f = open("./remaining_tests.txt", "w")
+	f.write(str(tests))
+
 	mem = True
 	if mem:
 		mkdir("output/john/dict/mem")
 		mkdir("output/john/brute/mem")
 		mkdir("output/hc/dict/mem")
 		mkdir("output/hc/brute/mem")
+		mkdir("output/stdout")
+
+
+	start_john_dict(thisOne, mem)
+	start_hc_brute(thisOne, mem)
+	start_john_brute(thisOne, mem)
+	start_hc_dict(thisOne, mem)
+
 
 	# for generating hash files for the dictionary attacks
-	gen_hash_files(sizes, ltr)
-
-	'''
-		Dictionary Attacks
-	'''
-
-	# for running john with dictionary list rockyou
-	#start_john_dict(trials, mem)
-
-	# for running hash_cat with dictionary list rockyou
-	#start_hc_dict(trials, mem)
-
-	'''
-		Brute Force Attacks
-	'''
-
-	# for running john with brute froce
-	#start_john_brute(trials, mem)
-
-	# for running hans_cat with brute force
-	#start_hc_brute(trials, mem)
+	#gen_hash_files(sizes, ltr)
 
 def gen_hash_files(sizes, ltr):
 	if os.path.exists("hashes"):
@@ -130,85 +129,86 @@ def gen_hashes(words, dst, ra, size, ltr):
 	John the Ripper
 '''
 
-def start_john_dict(trials, mem):
+def start_john_dict(trial, mem):
 	print("running john with dictionary attack using list rockyou.txt")
-	i = 1
-	for trial in trials:
 
-		args1 = ["lists/rockyou.txt", "./hashes/md5/random/"+trial+".txt", "Raw-MD5", "md5_"+trial, str(i), str(len(trials)*3)]
+	if trial[1] == "1":	
+		args1 = ["lists/rockyou.txt", "./hashes/md5/random/"+trial[0]+".txt", "Raw-MD5", "md5_"+trial[0]]
 		args1 = ','.join(str(x) for x in args1)
-		forkExec(args1,"john_dict", mem, "./output/john/dict/mem/md5_"+trial+".dat")
+		forkExec(args1,"john_dict", mem, "./output/john/dict/mem/md5_"+trial[0]+".dat")
 
-		args2 = ["lists/rockyou.txt", "./hashes/sha1/random/"+trial+".txt", "Raw-SHA1", "sha_"+trial, str(i+1), str(len(trials)*3)]
+	elif trial[1] == "2":
+		args2 = ["lists/rockyou.txt", "./hashes/sha1/random/"+trial[0]+".txt", "Raw-SHA1", "sha_"+trial[0]]
 		args2 = ','.join(str(x) for x in args2)
-		forkExec(args2,"john_dict", mem, "./output/john/dict/mem/sha_"+trial+".dat")
+		forkExec(args2,"john_dict", mem, "./output/john/dict/mem/sha_"+trial[0]+".dat")
 
-		args3 = ["lists/rockyou.txt", "./hashes/lm/random/"+trial+".txt", "LM", "lm_"+trial, str(i+2), str(len(trials)*3)]
+	elif trial[1] == "3":
+		args3 = ["lists/rockyou.txt", "./hashes/lm/random/"+trial[0]+".txt", "LM", "lm_"+trial[0]]
 		args3 = ','.join(str(x) for x in args3)
-		forkExec(args3,"john_dict", mem, "./output/john/dict/mem/lm_"+trial+".dat")		
+		forkExec(args3,"john_dict", mem, "./output/john/dict/mem/lm_"+trial[0]+".dat")		
 
-		i += 3
 
-def start_john_brute(trials, mem):
+def start_john_brute(trial, mem):
 	print("running john with brute force attack")
-	i = 1
-	for trial in trials:
 
-		args1 = ["Raw-MD5", "./hashes/md5/fivechar/"+trial+".txt", "md5_"+trial, str(i), str(len(trials)*3)]
+	if trial[1] == "1":	
+		args1 = ["Raw-MD5", "./hashes/md5/fivechar/"+trial[0]+".txt", "md5_"+trial[0]]
 		args1 = ','.join(str(x) for x in args1)
-		forkExec(args1,"john_brute", mem, "./output/john/brute/mem/md5_"+trial+".dat")
+		forkExec(args1,"john_brute", mem, "./output/john/brute/mem/md5_"+trial[0]+".dat")
 
-		args2 = ["Raw-SHA1", "./hashes/sha1/fivechar/"+trial+".txt", "sha1_"+trial, str(i+1), str(len(trials)*3)]
+	elif trial[1] == "2":	
+		args2 = ["Raw-SHA1", "./hashes/sha1/fivechar/"+trial[0]+".txt", "sha1_"+trial[0]]
 		args2 = ','.join(str(x) for x in args2)
-		forkExec(args2,"john_brute", mem, "./output/john/brute/mem/sha_"+trial+".dat")
+		forkExec(args2,"john_brute", mem, "./output/john/brute/mem/sha_"+trial[0]+".dat")
 
-		args3 = ["LM", "./hashes/lm/fivechar/"+trial+".txt", "lm"+trial, str(i+2), str(len(trials)*3)]
+	elif trial[1] == "3":	
+		args3 = ["LM", "./hashes/lm/fivechar/"+trial[0]+".txt", "lm"+trial[0]]
 		args3 = ','.join(str(x) for x in args3)
-		forkExec(args3,"john_brute", mem, "./output/john/brute/mem/lm_"+trial+".dat")
+		forkExec(args3,"john_brute", mem, "./output/john/brute/mem/lm_"+trial[0]+".dat")
 
-		i += 3
+
 
 '''
 	hashcat
 '''
 
-def start_hc_dict(trials, mem):
+def start_hc_dict(trial, mem):
 	print("running hashcat with dictionary attack using list rockyou.txt")
-	i = 1
-	for trial in trials:
 
-		args1 = ["lists/rockyou.txt", "./hashes/md5/random/"+trial+".txt", "0", "md5_"+trial, str(i), str(len(trials)*3)]
+	if trial[1] == "1":	
+		args1 = ["lists/rockyou.txt", "./hashes/md5/random/"+trial[0]+".txt", "0", "md5_"+trial[0]]
 		args1 = ','.join(str(x) for x in args1)
-		forkExec(args1,"hc_dict", mem, "./output/hc/dict/mem/md5_"+trial+".dat")
+		forkExec(args1,"hc_dict", mem, "./output/hc/dict/mem/md5_"+trial[0]+".dat")
 
-		args2 = ["lists/rockyou.txt", "./hashes/sha1/random/"+trial+".txt", "100", "sha_"+trial, str(i+1), str(len(trials)*3)]
+	elif trial[1] == "2":	
+		args2 = ["lists/rockyou.txt", "./hashes/sha1/random/"+trial[0]+".txt", "100", "sha_"+trial[0]]
 		args2 = ','.join(str(x) for x in args2)
-		forkExec(args2,"hc_dict", mem, "./output/hc/dict/mem/sha_"+trial+".dat")
+		forkExec(args2,"hc_dict", mem, "./output/hc/dict/mem/sha_"+trial[0]+".dat")
 
-		args3 = ["lists/rockyou.txt", "./hashes/lm/random/"+trial+".txt", "3000", "sha_"+trial, str(i+2), str(len(trials)*3)]
+	elif trial[1] == "3":	
+		args3 = ["lists/rockyou.txt", "./hashes/lm/random/"+trial[0]+".txt", "3000", "sha_"+trial[0]]
 		args3 = ','.join(str(x) for x in args3)
-		forkExec(args3,"hc_dict", mem, "./output/hc/dict/mem/lm_"+trial+".dat")
+		forkExec(args3,"hc_dict", mem, "./output/hc/dict/mem/lm_"+trial[0]+".dat")
 
-		i += 3
 
-def start_hc_brute(trials, mem):
+
+def start_hc_brute(trial, mem):
 	print("running hashcat with brute force attack")
-	i = 1
-	for trial in trials:
 
-		args1 = ["0", "./hashes/md5/fivechar/"+trial+".txt", "md5_"+trial, str(i), str(len(trials)*3)]
+	if trial[1] == "1":	
+		args1 = ["0", "./hashes/md5/fivechar/"+trial[0]+".txt", "md5_"+trial[0]]
 		args1 = ','.join(str(x) for x in args1)
-		forkExec(args1,"hc_brute", mem, "./output/hc/brute/mem/md5_"+trial+".dat")
+		forkExec(args1,"hc_brute", mem, "./output/hc/brute/mem/md5_"+trial[0]+".dat")
 
-		args2 = ["100", "./hashes/sha1/fivechar/"+trial+".txt", "sha1_"+trial, str(i+1), str(len(trials)*3)]
+	elif trial[1] == "2":	
+		args2 = ["100", "./hashes/sha1/fivechar/"+trial[0]+".txt", "sha1_"+trial[0]]
 		args2 = ','.join(str(x) for x in args2)
-		forkExec(args2,"hc_brute", mem, "./output/hc/brute/mem/sha_"+trial+".dat")
+		forkExec(args2,"hc_brute", mem, "./output/hc/brute/mem/sha_"+trial[0]+".dat")
 
-		args3 = ["3000", "./hashes/lm/fivechar/"+trial+".txt", "lm"+trial, str(i+2), str(len(trials)*3)]
+	elif trial[1] == "3":	
+		args3 = ["3000", "./hashes/lm/fivechar/"+trial[0]+".txt", "lm"+trial[0]]
 		args3 = ','.join(str(x) for x in args3)
-		forkExec(args3,"hc_brute", mem, "./output/hc/brute/mem/lm_"+trial+".dat")
-
-		i += 3
+		forkExec(args3,"hc_brute", mem, "./output/hc/brute/mem/lm_"+trial[0]+".dat")
 
 ''' 
 	helpers
