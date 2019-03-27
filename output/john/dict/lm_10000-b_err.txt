@@ -1,0 +1,9 @@
+Using default input encoding: UTF-8
+Using default target encoding: CP850
+Warning: poor OpenMP scalability for this hash type, consider --fork=8
+Will run 8 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+5618g 0:00:00:02 DONE (2019-03-27 14:20) 2625g/s 5041Kp/s 5041Kc/s 34964MC/s #1FOXY..*7¡VA
+Warning: passwords printed above might be partial and not be all those cracked
+Use the "--show --format=LM" options to display all of the cracked passwords reliably
+Session completed
