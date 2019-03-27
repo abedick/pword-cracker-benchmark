@@ -76,6 +76,7 @@ def run_hc_dict(dic, hashFile, format, fname):
 	# Remove the pot and session
 	subprocess.call(["/usr/bin/rm", "/root/.hashcat/hashcat.potfile"])
 	subprocess.call(["/usr/bin/rm", "-rf", "/root/.hashcat/sessions"])
+	subprocess.call(["/usr/bin/rm", "-rf", "/root/.hashcat/hashcat.dictstat2"])
 
 def run_hc_brute(format, hashFile, fname):
 	path = "output/hc/brute/"
