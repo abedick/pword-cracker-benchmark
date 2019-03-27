@@ -23,8 +23,8 @@ import hashlib
 
 def main():
 
-	sizes = [10,50,100,500,1000,5000,10000]
-	ltr = ["a", "b", "c"]
+	sizes = [100,500,1000,5000,10000,50000]
+	ltr = ["a","b","c", "d"]
 
 	trials = []
 	for x in sizes:
@@ -39,7 +39,7 @@ def main():
 		mkdir("output/hc/brute/mem")
 
 	# for generating hash files for the dictionary attacks
-	#gen_hash_files(sizes, ltr)
+	gen_hash_files(sizes, ltr)
 
 	'''
 		Dictionary Attacks
@@ -56,7 +56,7 @@ def main():
 	'''
 
 	# for running john with brute froce
-	start_john_brute(trials, mem)
+	#start_john_brute(trials, mem)
 
 	# for running hans_cat with brute force
 	#start_hc_brute(trials, mem)
@@ -70,23 +70,23 @@ def gen_hash_files(sizes, ltr):
 	mkdir("./hashes/md5/random")
 	mkdir("./hashes/sha1/random")
 	mkdir("./hashes/lm/random")
-	words = sample_wordList("./input/100_000.txt")
+	words = sample_wordList("./input/1_000_000.txt")
 
 	for x in sizes:
 		for y in ltr:
-			gen_hashes(words, "random", 99_999, x, y)
+			gen_hashes(words, "random", 999_990, x, y)
 
 	# generate hashes files for brute force attacks
 	print("generating hashed word lists for brute force attacks")
 	mkdir("./hashes/md5/fivechar")
 	mkdir("./hashes/sha1/fivechar")
 	mkdir("./hashes/lm/fivechar")
-	words = gen_wordList_fivechar("lists/rockyou.txt")
+	# words = gen_wordList_fivechar("lists/rockyou.txt")
 
 	for x in sizes:
 		for y in ltr:
 			#if x < 1001:
-			gen_hashes(words, "fivechar", 7499, x, y)
+			gen_hashes(words, "fivechar", 999_990, x, y)
 
 def gen_hashes(words, dst, ra, size, ltr):
 
@@ -95,7 +95,6 @@ def gen_hashes(words, dst, ra, size, ltr):
 	lm = open("./hashes/lm/"+dst+"/"+str(size)+"-"+ltr+".txt", "w")
 
 	index_list = open("./hashes/indexlist"+str(size)+"-"+ltr+".txt","w")
-
 	found = {}
 	i = 0
 	while i < size:
@@ -107,14 +106,18 @@ def gen_hashes(words, dst, ra, size, ltr):
 			found[str(target)] = True
 			i += 1
 
-		#md5_hash = subprocess.check_output(["openssl", "passwd", "-salt", "\"\"", "-1", words[target]])
-		md5_hash = hashlib.md5(bytes(words[target], 'utf-8')).hexdigest()
-		sha_hash = hashlib.sha1(bytes(words[target], 'utf-8')).hexdigest()
-		lm_hash = lmhash.hash(words[target])
+		word = words[target]
 
-		md5.write(str(md5_hash) + "\r\n")
-		sha.write(str(sha_hash) + "\r\n")
-		lm.write(str(lm_hash) + "\r\n")
+		try:
+			md5_hash = hashlib.md5(bytes(word, 'utf-8')).hexdigest()
+			sha_hash = hashlib.sha1(bytes(word, 'utf-8')).hexdigest()
+			lm_hash = lmhash.hash(word)
+
+			md5.write(str(md5_hash) + "\r\n")
+			sha.write(str(sha_hash) + "\r\n")
+			lm.write(str(lm_hash) + "\r\n")
+		except:
+			i  -= 1
 
 	md5.close()
 	sha.close()
@@ -136,7 +139,7 @@ def start_john_dict(trials, mem):
 		args1 = ','.join(str(x) for x in args1)
 		forkExec(args1,"john_dict", mem, "./output/john/dict/mem/md5_"+trial+".dat")
 
-		args2 = ["lists/yourock.txt", "./hashes/sha1/random/"+trial+".txt", "Raw-SHA1", "sha_"+trial, str(i+1), str(len(trials)*3)]
+		args2 = ["lists/rockyou.txt", "./hashes/sha1/random/"+trial+".txt", "Raw-SHA1", "sha_"+trial, str(i+1), str(len(trials)*3)]
 		args2 = ','.join(str(x) for x in args2)
 		forkExec(args2,"john_dict", mem, "./output/john/dict/mem/sha_"+trial+".dat")
 
