@@ -1,0 +1,92 @@
+hashcat (v5.1.0) starting...
+
+OpenCL Platform #1: Intel(R) Corporation
+========================================
+* Device #1: Intel(R) Xeon(R) CPU E3-1240 v3 @ 3.40GHz, 3996/15984 MB allocatable, 8MCU
+
+OpenCL Platform #2: The pocl project
+====================================
+* Device #2: pthread-Intel(R) Xeon(R) CPU E3-1240 v3 @ 3.40GHz, 4096/13936 MB allocatable, 8MCU
+
+OpenCL Platform #3: NVIDIA Corporation
+======================================
+* Device #3: Quadro K600, skipped.
+
+Counting lines in ./hashes/lm/fivechar/1000-a.txt...[2KCounted lines in ./hashes/lm/fivechar/1000-a.txt...[2KParsing Hashes: 2/2000 (0.10%)...[2KParsed Hashes: 2000/2000 (100.00%)[2KSorting hashes...[2KSorted hashes...[2KRemoving duplicate hashes...[2KRemoved duplicate hashes...[2KSorting salts...[2KSorted salts...[2KComparing hashes with potfile entries...[2KCompared hashes with potfile entries...[2KGenerating bitmap tables...[2KGenerated bitmap tables...[2KHashes: 2000 digests; 1209 unique digests, 1 unique salts
+Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
+
+Applicable optimizers:
+* Zero-Byte
+* Precompute-Final-Permutation
+* Not-Iterated
+* Single-Salt
+* Brute-Force
+
+Minimum password length supported by kernel: 0
+Maximum password length supported by kernel: 7
+
+Watchdog: Temperature abort trigger set to 90c
+
+Initializing device kernels and memory...[2KInitializing OpenCL runtime for device #1...[2K[33m* Device #1: build_opts '-cl-std=CL1.2 -I OpenCL -I /usr/share/hashcat/OpenCL -D LOCAL_MEM_TYPE=2 -D VENDOR_ID=8 -D CUDA_ARCH=0 -D AMD_ROCM=0 -D VECT_SIZE=8 -D DEVICE_TYPE=2 -D DGST_R0=0 -D DGST_R1=1 -D DGST_R2=2 -D DGST_R3=3 -D DGST_ELEM=4 -D KERN_TYPE=3000 -D _unroll'[0m
+Initialized OpenCL runtime for device #1...[2KInitializing OpenCL runtime for device #2...[2K[33m* Device #2: build_opts '-cl-std=CL1.2 -I OpenCL -I /usr/share/hashcat/OpenCL -D LOCAL_MEM_TYPE=2 -D VENDOR_ID=64 -D CUDA_ARCH=0 -D AMD_ROCM=0 -D VECT_SIZE=8 -D DEVICE_TYPE=2 -D DGST_R0=0 -D DGST_R1=1 -D DGST_R2=2 -D DGST_R3=3 -D DGST_ELEM=4 -D KERN_TYPE=3000 -D _unroll'[0m
+Initialized OpenCL runtime for device #2...[2KInitialized device kernels and memory...[2K[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  c95b7e1daedcc3e8:PICKE
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  0deb7d54a26f220b:AGGIE
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  97e0b6b058345d83:BITCH
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  dc18f558dde2ebb6:CADAR
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  5d47251434d3b923:BOBBE
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  d60c1cb35555edeb:BLADE
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  b98c32b5231e2a94:POLLO
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  0ddf861b42265fe8:PLATA
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  e5b2f435add85d6e:IOBRA
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  0a1c03bce04db2ba:WONKA
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  31032e13fb455f99:FORKS
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  61687a4294c558dd:SHAUN
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  174f516c1d0bcf76:PEONY
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  69ecb1ee68ddcdbe:LONDR
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  b5e230032aff752a:DICEY
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  d00cced0442ab915:FLUSS
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  2f772e0265ab1711:BUCCI
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  51fd0a4aa6148e73:HOLDS
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  e0b9602007a0623e:STELS
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  9357cc7104411897:WOODS
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  fa91231cd32c588e:YAKEE
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  60efa69fefcd2dbf:TRIAD
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  bba8cfc2a657bf7e:FLATS
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  3105e858d5f8a98e:STAGY
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  7f18f24a634e89b1:DFVGB
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  6e0f6db982e03e39:PDECM
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  cbf44be5575c2ae8:APARN
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  e4ddedf82a494450:IBMIB
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  a635e25eaacc7112:BIRDP
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  4f7f2d7a857d3a8b:LXQRZ
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  bef019d0290a8741:ERREW
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  8cc5b2c769d1fb0c:KAVEH
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  120b002161de82b7:HSIEH
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  [33mApproaching final keyspace - workload adjusted.[0m
+[33m[0m
+[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  
+Session..........: hashcat
+Status...........: Exhausted
+Hash.Type........: LM
+Hash.Target......: 98942c1cea389ad2, e68aa26a841a86fa
+Time.Started.....: Wed Mar 27 14:18:49 2019 (6 secs)
+Time.Estimated...: Wed Mar 27 14:18:55 2019 (0 secs)
+Guess.Mask.......: ?l?l?l?l?l [5]
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........:  1060.9 kH/s (23.87ms) @ Accel:128 Loops:1024 Thr:1 Vec:8
+Speed.#2.........:   809.4 kH/s (12.10ms) @ Accel:64 Loops:1024 Thr:1 Vec:8
+Speed.#*.........:  1870.2 kH/s
+Recovered........: 33/1209 (2.73%) Digests, 0/1 (0.00%) Salts
+Recovered/Time...: CUR:N/A,N/A,N/A AVG:311,18688,448514 (Min,Hour,Day)
+Progress.........: 11881376/11881376 (100.00%)
+Rejected.........: 0/11881376 (0.00%)
+Restore.Point....: 454656/456976 (99.49%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-26 Iteration:0-1024
+Restore.Sub.#2...: Salt:0 Amplifier:0-26 Iteration:0-1024
+Candidates.#1....: MENQF -> XQXQF
+Candidates.#2....: MEZPQ -> XKTJQ
+Hardware.Mon.#1..: N/A
+Hardware.Mon.#2..: N/A
+
+Started: Wed Mar 27 14:18:46 2019
+[2KStopped: Wed Mar 27 14:18:55 2019
