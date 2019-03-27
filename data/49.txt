@@ -1,0 +1,13 @@
+1.2278435230255127
+mprof: Sampling memory every 0.1s
+3.62855863571167
+mprof: Sampling memory every 0.1s
+7.907810688018799
+mprof: Sampling memory every 0.1s
+6.220412731170654
+mprof: Sampling memory every 0.1s
+['50000-c', '1']
+running john with dictionary attack using list rockyou.txt
+running hashcat with brute force attack
+running john with brute force attack
+running hashcat with dictionary attack using list rockyou.txt
