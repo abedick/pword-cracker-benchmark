@@ -1,4 +1,0 @@
-2.69089937210083
-mprof: Sampling memory every 0.1s
-29.745370388031006
-mprof: Sampling memory every 0.1s

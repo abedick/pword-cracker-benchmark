@@ -16,10 +16,10 @@ rc=$?
 if [[ $rc != 0 ]]; then 
 	echo "error"
 else
-	/usr/bin/git add .
-	/usr/bin/git git commit -am "au$line"
-	/usr/bin/git push
+	#/usr/bin/git add .
+	#/usr/bin/git git commit -am "au$line"
+	#/usr/bin/git push
 
 	echo "reboot"
-	#/usr/sbin/reboot
+	/usr/sbin/reboot
 fi
