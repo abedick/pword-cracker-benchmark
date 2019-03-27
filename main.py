@@ -136,7 +136,7 @@ def start_john_dict(trials, mem):
 		args1 = ','.join(str(x) for x in args1)
 		forkExec(args1,"john_dict", mem, "./output/john/dict/mem/md5_"+trial+".dat")
 
-		args2 = ["lists/rockyou.txt", "./hashes/sha1/random/"+trial+".txt", "Raw-SHA1", "sha_"+trial, str(i+1), str(len(trials)*3)]
+		args2 = ["lists/yourock.txt", "./hashes/sha1/random/"+trial+".txt", "Raw-SHA1", "sha_"+trial, str(i+1), str(len(trials)*3)]
 		args2 = ','.join(str(x) for x in args2)
 		forkExec(args2,"john_dict", mem, "./output/john/dict/mem/sha_"+trial+".dat")
 
@@ -186,7 +186,7 @@ def start_hc_dict(trials, mem):
 		args3 = ','.join(str(x) for x in args3)
 		forkExec(args3,"hc_dict", mem, "./output/hc/dict/mem/lm_"+trial+".dat")
 
-		i += 2
+		i += 3
 
 def start_hc_brute(trials, mem):
 	print("running hashcat with brute force attack")
@@ -202,7 +202,7 @@ def start_hc_brute(trials, mem):
 		forkExec(args2,"hc_brute", mem, "./output/hc/brute/mem/sha_"+trial+".dat")
 
 		args3 = ["3000", "./hashes/lm/fivechar/"+trial+".txt", "lm"+trial, str(i+2), str(len(trials)*3)]
-		args3 = ','.join(str(x) for x in args2)
+		args3 = ','.join(str(x) for x in args3)
 		forkExec(args3,"hc_brute", mem, "./output/hc/brute/mem/lm_"+trial+".dat")
 
 		i += 3

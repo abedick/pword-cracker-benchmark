@@ -1,6 +1,7 @@
 import sys
 import os
 import subprocess
+import time
 
 def main():
     if len(sys.argv) != 3:
@@ -36,11 +37,18 @@ def run_john_dict(dic, hashFile, format, fname, x, y):
 	g = open(path+fname+"_err.txt", "w")
 
 	# john --wordlist=lists/rockyou.txt --format=md5crypt ./hashes/100_000_md5.txt
+	t = time.time()
 	subprocess.call(["john", "--wordlist="+dic, "--format="+format, hashFile],stdout=f, stderr=g)
+	print(time.time()-t)
+
 
 	# Remove the pot
-	subprocess.call(["rm", "/root/.john/john.pot"])
-	subprocess.call(["rm", "/root/.john/john.log"])
+	FNULL = open(os.devnull, 'w')
+	subprocess.call(["rm", "/root/.john/john.pot"], stdout=FNULL, stderr=subprocess.STDOUT)
+	subprocess.call(["rm", "/root/.john/john.log"], stdout=FNULL, stderr=subprocess.STDOUT)
+
+	# Run the clear program
+	subprocess.call(["python3", "clear.py"])
 
 def run_john_brute(format, hashFile, fname, x, y):
 	print("("+x+"/"+y+") john " + format + " " + fname)
@@ -51,11 +59,17 @@ def run_john_brute(format, hashFile, fname, x, y):
 	f = open(path+fname+"_out.txt", "w")
 	g = open(path+fname+"_err.txt", "w")
 
+	t = time.time()
 	subprocess.call(["john", "--incremental=lower", "--format="+format, hashFile],stdout=f, stderr=g)
+	print(time.time()-t)
 
 	# Remove the pot
-	subprocess.call(["rm", "/root/.john/john.pot"])
-	subprocess.call(["rm", "/root/.john/john.log"])
+	FNULL = open(os.devnull, 'w')
+	subprocess.call(["rm", "/root/.john/john.pot"], stdout=FNULL, stderr=subprocess.STDOUT)
+	subprocess.call(["rm", "/root/.john/john.log"], stdout=FNULL, stderr=subprocess.STDOUT)
+	subprocess.call(["rm", "/root/.john/john.rec"], stdout=FNULL, stderr=subprocess.STDOUT)
+
+	time.sleep(3)
 
 def run_hc_dict(dic, hashFile, format, fname, x, y):
 	print("("+x+"/"+y+") hashcat " + format + " " + fname)
