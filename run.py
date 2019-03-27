@@ -36,15 +36,15 @@ def run_john_dict(dic, hashFile, format, fname):
 
 	# john --wordlist=lists/rockyou.txt --format=md5crypt ./hashes/100_000_md5.txt
 	t = time.time()
-	subprocess.call(["john", "--wordlist="+dic, "--format="+format, hashFile],stdout=f, stderr=g)
+	subprocess.call(["/usr/sbin/john", "--wordlist="+dic, "--format="+format, hashFile],stdout=f, stderr=g)
 	print(time.time()-t)
 
 
 	# Remove the pot
 	FNULL = open(os.devnull, 'w')
-	subprocess.call(["rm", "/root/.john/john.pot"], stdout=FNULL, stderr=subprocess.STDOUT)
-	subprocess.call(["rm", "/root/.john/john.log"], stdout=FNULL, stderr=subprocess.STDOUT)
-	subprocess.call(["rm", "/root/.john/john.rec"], stdout=FNULL, stderr=subprocess.STDOUT)
+	subprocess.call(["/usr/bin/rm", "/root/.john/john.pot"], stdout=FNULL, stderr=subprocess.STDOUT)
+	subprocess.call(["/usr/bin/rm", "/root/.john/john.log"], stdout=FNULL, stderr=subprocess.STDOUT)
+	subprocess.call(["/usr/bin/rm", "/root/.john/john.rec"], stdout=FNULL, stderr=subprocess.STDOUT)
 
 def run_john_brute(format, hashFile, fname):
 	path = "output/john/brute/"
@@ -54,14 +54,14 @@ def run_john_brute(format, hashFile, fname):
 	g = open(path+fname+"_err.txt", "w")
 
 	t = time.time()
-	subprocess.call(["john", "--incremental=lower", "--format="+format, hashFile],stdout=f, stderr=g)
+	subprocess.call(["/usr/sbin/john", "--incremental=lower", "--format="+format, hashFile],stdout=f, stderr=g)
 	print(time.time()-t)
 
 	# Remove the pot
 	FNULL = open(os.devnull, 'w')
-	subprocess.call(["rm", "/root/.john/john.pot"], stdout=FNULL, stderr=subprocess.STDOUT)
-	subprocess.call(["rm", "/root/.john/john.log"], stdout=FNULL, stderr=subprocess.STDOUT)
-	subprocess.call(["rm", "/root/.john/john.rec"], stdout=FNULL, stderr=subprocess.STDOUT)
+	subprocess.call(["/usr/bin/rm", "/root/.john/john.pot"], stdout=FNULL, stderr=subprocess.STDOUT)
+	subprocess.call(["/usr/bin/rm", "/root/.john/john.log"], stdout=FNULL, stderr=subprocess.STDOUT)
+	subprocess.call(["/usr/bin/rm", "/root/.john/john.rec"], stdout=FNULL, stderr=subprocess.STDOUT)
 
 def run_hc_dict(dic, hashFile, format, fname):
 	path = "output/hc/dict/"
@@ -70,12 +70,12 @@ def run_hc_dict(dic, hashFile, format, fname):
 	g = open(path+fname+"_err.txt", "w")
 
 	t = time.time()
-	subprocess.call(["hashcat", "--opencl-device-types", "1", "-a", "0", "-m", format, hashFile, dic, "--force"],stdout=f, stderr=g)
+	subprocess.call(["/usr/bin/hashcat", "--opencl-device-types", "1", "-a", "0", "-m", format, hashFile, dic, "--force"],stdout=f, stderr=g)
 	print(time.time()-t)
 
 	# Remove the pot and session
-	subprocess.call(["rm", "/root/.hashcat/hashcat.potfile"])
-	subprocess.call(["rm", "-rf", "/root/.hashcat/sessions"])
+	subprocess.call(["/usr/bin/rm", "/root/.hashcat/hashcat.potfile"])
+	subprocess.call(["/usr/bin/rm", "-rf", "/root/.hashcat/sessions"])
 
 def run_hc_brute(format, hashFile, fname):
 	path = "output/hc/brute/"
@@ -84,12 +84,12 @@ def run_hc_brute(format, hashFile, fname):
 	g = open(path+fname+"_err.txt", "w")
 
 	t = time.time()
-	subprocess.call(["hashcat", "--opencl-device-types", "1", "-a", "3", "-m", format, hashFile, "?l?l?l?l?l", "--force"],stdout=f, stderr=g)
+	subprocess.call(["/usr/bin/hashcat", "--opencl-device-types", "1", "-a", "3", "-m", format, hashFile, "?l?l?l?l?l", "--force"],stdout=f, stderr=g)
 	print(time.time()-t)
 
 	# Remove the pot and session
-	subprocess.call(["rm", "/root/.hashcat/hashcat.potfile"])
-	subprocess.call(["rm", "-rf", "/root/.hashcat/sessions"])
+	subprocess.call(["/usr/bin/rm", "/root/.hashcat/hashcat.potfile"])
+	subprocess.call(["/usr/bin/rm", "-rf", "/root/.hashcat/sessions"])
 
 # makes fpath dir is not exist
 def mkdir(fpath):

@@ -1,6 +1,7 @@
 import subprocess
 import re
 import os
+import sys
 import random
 import ast
 from io import StringIO
@@ -32,8 +33,12 @@ def main():
 		
 		f = open("./remaining_tests.txt", "w")
 		f.write(str(tests))
-		return
-			
+		sys.exit(1)
+
+	if len(tests) == 0:
+		sys.exit(1)
+					
+
 	thisInt = random.randint(0,len(tests)-1)
 	thisOne = tests[thisInt].split(":")
 	print(thisOne)
@@ -56,7 +61,7 @@ def main():
 	start_john_brute(thisOne, mem)
 	start_hc_dict(thisOne, mem)
 
-
+	sys.exit(0)
 	# for generating hash files for the dictionary attacks
 	#gen_hash_files(sizes, ltr)
 
@@ -216,7 +221,7 @@ def start_hc_brute(trial, mem):
 
 def forkExec(args, ptype, mem, outputFile):
 		if mem:
-			subprocess.call(["mprof", "run", "-M", "-C", "-o",outputFile, "python3","run.py", ptype, args])
+			subprocess.call(["/usr/local/bin/mprof", "run", "-M", "-C", "-o",outputFile, "python3","run.py", ptype, args])
 		else:
 			subprocess.call(["python3","run.py", ptype, args])
 
