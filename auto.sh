@@ -15,6 +15,7 @@ rc=$?
 
 if [[ $rc != 0 ]]; then 
 	echo "error"
+	sleep 96
 	/usr/bin/git add .
 	/usr/bin/git git commit -am "err or fin"
 	/usr/bin/git push
