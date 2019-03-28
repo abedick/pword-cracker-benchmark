@@ -59,7 +59,7 @@ def main():
 	start_john_dict(thisOne, mem)
 	#start_hc_brute(thisOne, mem)
 	#start_john_brute(thisOne, mem)
-	start_hc_dict(thisOne, mem)
+	#start_hc_dict(thisOne, mem)
 
 	sys.exit(0)
 	# for generating hash files for the dictionary attacks
