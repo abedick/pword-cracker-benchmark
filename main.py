@@ -43,9 +43,9 @@ def main():
 	thisOne = tests[thisInt].split(":")
 	print(thisOne)
 
-	tests.remove(tests[thisInt])
-	f = open("./remaining_tests.txt", "w")
-	f.write(str(tests))
+	# tests.remove(tests[thisInt])
+	# f = open("./remaining_tests.txt", "w")
+	# f.write(str(tests))
 
 	mem = True
 	if mem:
@@ -57,8 +57,8 @@ def main():
 
 
 	start_john_dict(thisOne, mem)
-	start_hc_brute(thisOne, mem)
-	start_john_brute(thisOne, mem)
+	#start_hc_brute(thisOne, mem)
+	#start_john_brute(thisOne, mem)
 	start_hc_dict(thisOne, mem)
 
 	sys.exit(0)

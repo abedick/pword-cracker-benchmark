@@ -11,18 +11,18 @@ echo $line > $BOOKMARK
 
 python3 main.py &> data/$line.txt
 
-rc=$?
+#rc=$?
 
-if [[ $rc != 0 ]]; then 
-	echo "error"
-	sleep 96
-	/usr/bin/git add .
-	/usr/bin/git git commit -am "err or fin"
-	/usr/bin/git push
+#if [[ $rc != 0 ]]; then 
+	#echo "error"
+	#sleep 96
+	#/usr/bin/git add .
+	#/usr/bin/git git commit -am "err or fin"
+	#/usr/bin/git push
 
-else
+#else
 
 
-	echo "reboot"
-	/usr/sbin/reboot
-fi
+	#echo "reboot"
+	#/usr/sbin/reboot
+#fi

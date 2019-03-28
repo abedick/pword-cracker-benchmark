@@ -1,80 +1,0 @@
-hashcat (v5.1.0) starting...
-
-OpenCL Platform #1: Intel(R) Corporation
-========================================
-* Device #1: Intel(R) Xeon(R) CPU E3-1240 v3 @ 3.40GHz, 3996/15984 MB allocatable, 8MCU
-
-OpenCL Platform #2: The pocl project
-====================================
-* Device #2: pthread-Intel(R) Xeon(R) CPU E3-1240 v3 @ 3.40GHz, 4096/13936 MB allocatable, 8MCU
-
-OpenCL Platform #3: NVIDIA Corporation
-======================================
-* Device #3: Quadro K600, skipped.
-
-Counting lines in ./hashes/sha1/fivechar/500-d.txt...[2KCounted lines in ./hashes/sha1/fivechar/500-d.txt...[2KParsing Hashes: 1/500 (0.20%)...[2KParsed Hashes: 500/500 (100.00%)[2KSorting hashes...[2KSorted hashes...[2KRemoving duplicate hashes...[2KRemoved duplicate hashes...[2KSorting salts...[2KSorted salts...[2KComparing hashes with potfile entries...[2KCompared hashes with potfile entries...[2KGenerating bitmap tables...[2KGenerated bitmap tables...[2KHashes: 500 digests; 500 unique digests, 1 unique salts
-Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
-
-Applicable optimizers:
-* Zero-Byte
-* Early-Skip
-* Not-Salted
-* Not-Iterated
-* Single-Salt
-* Brute-Force
-* Raw-Hash
-
-Minimum password length supported by kernel: 0
-Maximum password length supported by kernel: 256
-
-[33mATTENTION! Pure (unoptimized) OpenCL kernels selected.[0m
-[33mThis enables cracking passwords and salts > length 32 but for the price of drastically reduced performance.[0m
-[33mIf you want to switch to optimized OpenCL kernels, append -O to your commandline.[0m
-[33m[0m
-Watchdog: Temperature abort trigger set to 90c
-
-Initializing device kernels and memory...[2KInitializing OpenCL runtime for device #1...[2K[33m* Device #1: build_opts '-cl-std=CL1.2 -I OpenCL -I /usr/share/hashcat/OpenCL -D LOCAL_MEM_TYPE=2 -D VENDOR_ID=8 -D CUDA_ARCH=0 -D AMD_ROCM=0 -D VECT_SIZE=8 -D DEVICE_TYPE=2 -D DGST_R0=3 -D DGST_R1=4 -D DGST_R2=2 -D DGST_R3=1 -D DGST_ELEM=5 -D KERN_TYPE=100 -D _unroll'[0m
-Initialized OpenCL runtime for device #1...[2KInitializing OpenCL runtime for device #2...[2K[33m* Device #2: build_opts '-cl-std=CL1.2 -I OpenCL -I /usr/share/hashcat/OpenCL -D LOCAL_MEM_TYPE=2 -D VENDOR_ID=64 -D CUDA_ARCH=0 -D AMD_ROCM=0 -D VECT_SIZE=8 -D DEVICE_TYPE=2 -D DGST_R0=3 -D DGST_R1=4 -D DGST_R2=2 -D DGST_R3=1 -D DGST_ELEM=5 -D KERN_TYPE=100 -D _unroll'[0m
-Initialized OpenCL runtime for device #2...[2KInitialized device kernels and memory...[2K[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  78492a38605bdf6e691c4e2f77c69c4a0904c647:mambo
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  8715c95f52e20552633be9d68ca05aa648c40a9d:spare
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  aa2521688dc8a0d74bd77a583e928d31a5731836:earle
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  02f4913e37bed3f8b553e0a051186c8c81cafed8:inker
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  f1d4a665e4048b52ea0d216fa8bae6d3ab81b34e:zhopa
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  859a4e4ae06375d1b41f745a5eed780bf3482ad5:xuxis
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  afa57e389c09b4bd9b728c505d03f2830dbb46a7:allys
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  304a04499d095a842ad9efec65f8f0b81c05aaa7:wangg
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  2aed2af22dd611d93760f446734ef1a2fb8a02e0:wizzo
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  3101c72727fbf5277d3ef8c281b109596b52ba96:beatl
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  9844ab0a1791c3ffb77eb72e34f37b0a93ec4af6:germs
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  d4e85270b662dc5e973e470c0cbccc4b29124968:vitek
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  fb6e6d11508a1aff33824aad552c6a5ba8b9caf6:zaniy
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  5890fd8fed7e7fc4e4a2aeb36845cf4003aca502:yripd
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  f7e071827d69d10cad28373e88e0539a9e95894e:ymdqp
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  464bcf43f591dd6b456ac0f0509a6a1b633df264:ohwow
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  [33mApproaching final keyspace - workload adjusted.[0m
-[33m[0m
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  
-Session..........: hashcat
-Status...........: Exhausted
-Hash.Type........: SHA1
-Hash.Target......: ./hashes/sha1/fivechar/500-d.txt
-Time.Started.....: Wed Mar 27 15:36:58 2019 (1 sec)
-Time.Estimated...: Wed Mar 27 15:36:59 2019 (0 secs)
-Guess.Mask.......: ?l?l?l?l?l [5]
-Guess.Queue......: 1/1 (100.00%)
-Speed.#1.........: 43376.3 kH/s (3.61ms) @ Accel:1024 Loops:26 Thr:1 Vec:8
-Speed.#2.........: 37844.5 kH/s (3.99ms) @ Accel:1024 Loops:26 Thr:1 Vec:8
-Speed.#*.........: 81220.8 kH/s
-Recovered........: 16/500 (3.20%) Digests, 0/1 (0.00%) Salts
-Progress.........: 11881376/11881376 (100.00%)
-Rejected.........: 0/11881376 (0.00%)
-Restore.Point....: 449672/456976 (98.40%)
-Restore.Sub.#1...: Salt:0 Amplifier:0-26 Iteration:0-26
-Restore.Sub.#2...: Salt:0 Amplifier:0-26 Iteration:0-26
-Candidates.#1....: suicq -> xosyq
-Candidates.#2....: sexlx -> xqxvq
-Hardware.Mon.#1..: N/A
-Hardware.Mon.#2..: N/A
-
-Started: Wed Mar 27 15:36:56 2019
-[2KStopped: Wed Mar 27 15:37:00 2019

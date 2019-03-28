@@ -1,71 +1,0 @@
-hashcat (v5.1.0) starting...
-
-OpenCL Platform #1: Intel(R) Corporation
-========================================
-* Device #1: Intel(R) Xeon(R) CPU E3-1240 v3 @ 3.40GHz, 3996/15984 MB allocatable, 8MCU
-
-OpenCL Platform #2: The pocl project
-====================================
-* Device #2: pthread-Intel(R) Xeon(R) CPU E3-1240 v3 @ 3.40GHz, 4096/13936 MB allocatable, 8MCU
-
-OpenCL Platform #3: NVIDIA Corporation
-======================================
-* Device #3: Quadro K600, skipped.
-
-Counting lines in ./hashes/lm/fivechar/500-c.txt...[2KCounted lines in ./hashes/lm/fivechar/500-c.txt...[2KParsing Hashes: 2/1000 (0.20%)...[2KParsed Hashes: 1000/1000 (100.00%)[2KSorting hashes...[2KSorted hashes...[2KRemoving duplicate hashes...[2KRemoved duplicate hashes...[2KSorting salts...[2KSorted salts...[2KComparing hashes with potfile entries...[2KCompared hashes with potfile entries...[2KGenerating bitmap tables...[2KGenerated bitmap tables...[2KHashes: 1000 digests; 624 unique digests, 1 unique salts
-Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
-
-Applicable optimizers:
-* Zero-Byte
-* Precompute-Final-Permutation
-* Not-Iterated
-* Single-Salt
-* Brute-Force
-
-Minimum password length supported by kernel: 0
-Maximum password length supported by kernel: 7
-
-Watchdog: Temperature abort trigger set to 90c
-
-Initializing device kernels and memory...[2KInitializing OpenCL runtime for device #1...[2K[33m* Device #1: build_opts '-cl-std=CL1.2 -I OpenCL -I /usr/share/hashcat/OpenCL -D LOCAL_MEM_TYPE=2 -D VENDOR_ID=8 -D CUDA_ARCH=0 -D AMD_ROCM=0 -D VECT_SIZE=8 -D DEVICE_TYPE=2 -D DGST_R0=0 -D DGST_R1=1 -D DGST_R2=2 -D DGST_R3=3 -D DGST_ELEM=4 -D KERN_TYPE=3000 -D _unroll'[0m
-Initialized OpenCL runtime for device #1...[2KInitializing OpenCL runtime for device #2...[2K[33m* Device #2: build_opts '-cl-std=CL1.2 -I OpenCL -I /usr/share/hashcat/OpenCL -D LOCAL_MEM_TYPE=2 -D VENDOR_ID=64 -D CUDA_ARCH=0 -D AMD_ROCM=0 -D VECT_SIZE=8 -D DEVICE_TYPE=2 -D DGST_R0=0 -D DGST_R1=1 -D DGST_R2=2 -D DGST_R3=3 -D DGST_ELEM=4 -D KERN_TYPE=3000 -D _unroll'[0m
-Initialized OpenCL runtime for device #2...[2KInitialized device kernels and memory...[2K[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  4c3ad3e75e0de479:MONIE
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  0dc29bd3244b3856:ILLER
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  62fd32240342bcb1:ASITE
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  291a58fafadb7a24:NAINE
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  0cb564428374d68a:IRENE
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  761661bdd3b8b89c:ZOREY
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  acbe3be3ad3ef1e4:AXUCI
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  11c719153c2f8fac:ZWONG
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  c385578af2f28918:BRENT
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  c47e5f17c642aa8d:NODIR
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  5ba761a97ad2a148:COCOC
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  1038cbbbd3f30263:SNEEK
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  f1e3946bfb92464f:PFKBD
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  [33mApproaching final keyspace - workload adjusted.[0m
-[33m[0m
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  
-Session..........: hashcat
-Status...........: Exhausted
-Hash.Type........: LM
-Hash.Target......: a202b0a0cc08e46e, b2ee463660965ef2
-Time.Started.....: Wed Mar 27 15:32:58 2019 (6 secs)
-Time.Estimated...: Wed Mar 27 15:33:04 2019 (0 secs)
-Guess.Mask.......: ?l?l?l?l?l [5]
-Guess.Queue......: 1/1 (100.00%)
-Speed.#1.........:  1107.5 kH/s (23.62ms) @ Accel:128 Loops:1024 Thr:1 Vec:8
-Speed.#2.........:   781.7 kH/s (11.76ms) @ Accel:64 Loops:1024 Thr:1 Vec:8
-Speed.#*.........:  1889.2 kH/s
-Recovered........: 13/624 (2.08%) Digests, 0/1 (0.00%) Salts
-Progress.........: 11881376/11881376 (100.00%)
-Rejected.........: 0/11881376 (0.00%)
-Restore.Point....: 456840/456976 (99.97%)
-Restore.Sub.#1...: Salt:0 Amplifier:0-26 Iteration:0-1024
-Restore.Sub.#2...: Salt:0 Amplifier:0-26 Iteration:0-1024
-Candidates.#1....: MFYQF -> XKFQF
-Candidates.#2....: MGJQF -> XQXQF
-Hardware.Mon.#1..: N/A
-Hardware.Mon.#2..: N/A
-
-Started: Wed Mar 27 15:32:55 2019
-[2KStopped: Wed Mar 27 15:33:05 2019

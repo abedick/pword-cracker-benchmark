@@ -1,82 +1,0 @@
-hashcat (v5.1.0) starting...
-
-OpenCL Platform #1: Intel(R) Corporation
-========================================
-* Device #1: Intel(R) Xeon(R) CPU E3-1240 v3 @ 3.40GHz, 3996/15984 MB allocatable, 8MCU
-
-OpenCL Platform #2: The pocl project
-====================================
-* Device #2: pthread-Intel(R) Xeon(R) CPU E3-1240 v3 @ 3.40GHz, 4096/13936 MB allocatable, 8MCU
-
-OpenCL Platform #3: NVIDIA Corporation
-======================================
-* Device #3: Quadro K600, skipped.
-
-Counting lines in ./hashes/md5/fivechar/1000-d.txt...[2KCounted lines in ./hashes/md5/fivechar/1000-d.txt...[2KParsing Hashes: 1/1000 (0.10%)...[2KParsed Hashes: 1000/1000 (100.00%)[2KSorting hashes...[2KSorted hashes...[2KRemoving duplicate hashes...[2KRemoved duplicate hashes...[2KSorting salts...[2KSorted salts...[2KComparing hashes with potfile entries...[2KCompared hashes with potfile entries...[2KGenerating bitmap tables...[2KGenerated bitmap tables...[2KHashes: 1000 digests; 999 unique digests, 1 unique salts
-Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
-
-Applicable optimizers:
-* Zero-Byte
-* Early-Skip
-* Not-Salted
-* Not-Iterated
-* Single-Salt
-* Brute-Force
-* Raw-Hash
-
-Minimum password length supported by kernel: 0
-Maximum password length supported by kernel: 256
-
-[33mATTENTION! Pure (unoptimized) OpenCL kernels selected.[0m
-[33mThis enables cracking passwords and salts > length 32 but for the price of drastically reduced performance.[0m
-[33mIf you want to switch to optimized OpenCL kernels, append -O to your commandline.[0m
-[33m[0m
-Watchdog: Temperature abort trigger set to 90c
-
-Initializing device kernels and memory...[2KInitializing OpenCL runtime for device #1...[2K[33m* Device #1: build_opts '-cl-std=CL1.2 -I OpenCL -I /usr/share/hashcat/OpenCL -D LOCAL_MEM_TYPE=2 -D VENDOR_ID=8 -D CUDA_ARCH=0 -D AMD_ROCM=0 -D VECT_SIZE=8 -D DEVICE_TYPE=2 -D DGST_R0=0 -D DGST_R1=3 -D DGST_R2=2 -D DGST_R3=1 -D DGST_ELEM=4 -D KERN_TYPE=0 -D _unroll'[0m
-Initialized OpenCL runtime for device #1...[2KInitializing OpenCL runtime for device #2...[2K[33m* Device #2: build_opts '-cl-std=CL1.2 -I OpenCL -I /usr/share/hashcat/OpenCL -D LOCAL_MEM_TYPE=2 -D VENDOR_ID=64 -D CUDA_ARCH=0 -D AMD_ROCM=0 -D VECT_SIZE=8 -D DEVICE_TYPE=2 -D DGST_R0=0 -D DGST_R1=3 -D DGST_R2=2 -D DGST_R3=1 -D DGST_ELEM=4 -D KERN_TYPE=0 -D _unroll'[0m
-Initialized OpenCL runtime for device #2...[2KInitialized device kernels and memory...[2K[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  9c5f5507f3dfebcffba7e79c512ad9c7:lione
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  e6adbba86c7efdb9f5ceb182fc302bd0:lawre
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  c2b65375ee85c08cc7d5c4896678e216:gater
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  c496536f0816da24630711ddc3865ffc:josma
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  eaead72f1a76933b4ed8221160f74f68:farda
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  2c332463df17b093eb3c15726c6e58a7:noura
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  3f1cf4c789f69868ca8bc6b63fb10ccc:cozzi
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  b33a46f5ee81f6f0790f3ea9f02468e1:kunal
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  731080dc38cb29efbb8974eeccaf4f29:pitfa
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  c725b4477def0f7ad8eec8e010ac3d07:juanc
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  3854ab5f68f575f5984749b6aa09330c:amato
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  32ad3d2d2591b334582c224f84cfc459:klava
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  556d079e0b732c8052efcd3564677f0d:zevmu
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  7ce1fda5fad119e0ef60af054c0bd43c:bipod
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  76f34910f24c40909c9ff42be2af59d1:ztirf
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  2f3b98d6b89aeba78de02c580b691aa9:glemz
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  a139f3ee0030b940ea3941798eb59383:rgbbv
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  [33mApproaching final keyspace - workload adjusted.[0m
-[33m[0m
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  a6152471192febb339c0ce47dd190770:ambpq
-[s]tatus [p]ause [b]ypass [c]heckpoint [q]uit =>                                                  
-Session..........: hashcat
-Status...........: Exhausted
-Hash.Type........: MD5
-Hash.Target......: ./hashes/md5/fivechar/1000-d.txt
-Time.Started.....: Wed Mar 27 15:10:38 2019 (1 sec)
-Time.Estimated...: Wed Mar 27 15:10:39 2019 (0 secs)
-Guess.Mask.......: ?l?l?l?l?l [5]
-Guess.Queue......: 1/1 (100.00%)
-Speed.#1.........: 50384.1 kH/s (3.09ms) @ Accel:1024 Loops:26 Thr:1 Vec:8
-Speed.#2.........: 49620.5 kH/s (2.76ms) @ Accel:1024 Loops:26 Thr:1 Vec:8
-Speed.#*.........:   100.0 MH/s
-Recovered........: 18/999 (1.80%) Digests, 0/1 (0.00%) Salts
-Progress.........: 11881376/11881376 (100.00%)
-Rejected.........: 0/11881376 (0.00%)
-Restore.Point....: 449672/456976 (98.40%)
-Restore.Sub.#1...: Salt:0 Amplifier:0-26 Iteration:0-26
-Restore.Sub.#2...: Salt:0 Amplifier:0-26 Iteration:0-26
-Candidates.#1....: suicq -> xosyq
-Candidates.#2....: sexlx -> xqxvq
-Hardware.Mon.#1..: N/A
-Hardware.Mon.#2..: N/A
-
-Started: Wed Mar 27 15:10:36 2019
-[2KStopped: Wed Mar 27 15:10:40 2019

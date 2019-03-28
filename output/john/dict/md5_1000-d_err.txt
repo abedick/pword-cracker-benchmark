@@ -1,6 +1,0 @@
-Using default input encoding: UTF-8
-Warning: no OpenMP support for this hash type, consider --fork=8
-Press 'q' or Ctrl-C to abort, almost any other key for status
-391g 0:00:00:00 DONE (2019-03-27 15:10) 460.0g/s 16874Kp/s 16874Kc/s 9680MC/s  fuckyooh21..*7¡Vamos!
-Use the "--show --format=Raw-MD5" options to display all of the cracked passwords reliably
-Session completed
